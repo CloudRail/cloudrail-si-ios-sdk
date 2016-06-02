@@ -1,16 +1,16 @@
 PODS:
-  - CloudRail-SI-iOS (1.0.0)
+  - cloudrail-si-ios-sdk (1.0.0)
 
 DEPENDENCIES:
-  - CloudRail-SI-iOS (from `../`)
+  - cloudrail-si-ios-sdk (from `../`)
 
 EXTERNAL SOURCES:
-  CloudRail-SI-iOS:
+  cloudrail-si-ios-sdk:
     :path: ../
 
 SPEC CHECKSUMS:
-  CloudRail-SI-iOS: 14e4b02cc3ae3fb8714b83cd380c4a101627a2b4
+  cloudrail-si-ios-sdk: f96d9dfd8e3a3d1d43ddc75ab441dfd98f6f04c0
 
-PODFILE CHECKSUM: c479cc8f11b6d6966cb6fefb7a57a3500662fbe2
+PODFILE CHECKSUM: 926202127d4801d18d8dc291dc95340e91bf8014
 
 COCOAPODS: 1.0.0

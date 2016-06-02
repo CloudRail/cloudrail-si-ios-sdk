@@ -42,7 +42,7 @@ negligence or intent. The above-referenced liability limitations do not apply to
 liability in the event of injury to life, body and health or in case CloudRail
 assumed a guarantee.</string>
 			<key>Title</key>
-			<string>CloudRail-SI-iOS</string>
+			<string>cloudrail-si-ios-sdk</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
