@@ -1,0 +1,6 @@
+framework module CloudRail_ServiceCode {
+  umbrella header "CloudRail_ServiceCode.h"
+
+  export *
+  module * { export * }
+}
