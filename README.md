@@ -1,7 +1,28 @@
+<!--# CloudRail-SI-iOS-->
+<!---->
+<!--[![CI Status](http://img.shields.io/travis/Felipe Cesar/CloudRail-SI-iOS.svg?style=flat)](https://travis-ci.org/Felipe Cesar/CloudRail-SI-iOS)-->
+<!--[![Version](https://img.shields.io/cocoapods/v/CloudRail-SI-iOS.svg?style=flat)](http://cocoapods.org/pods/CloudRail-SI-iOS)-->
+<!--[![Platform](https://img.shields.io/cocoapods/p/CloudRail-SI-iOS.svg?style=flat)](http://cocoapods.org/pods/CloudRail-SI-iOS)-->
+<!---->
+<!--## Example-->
+<!---->
+<!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
+<!---->
+<!--## Requirements-->
+
+## Installation
+
+CloudRail-SI-iOS is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+````ruby
+pod "CloudRail-SI-iOS"
+````
+
 # CloudRail - Integrate Mulitple Services With Just One API
 
 <p align="center">
-  <img src="http://cloudrail.com/wp-content/uploads/2016/05/cloudrail_SI_github.png"/>
+<img src="http://cloudrail.com/wp-content/uploads/2016/05/cloudrail_SI_github.png"/>
 </p>
 
 CloudRail is a free software library which abstracts multiple APIs from different providers into a single and universal interface.
@@ -12,7 +33,7 @@ With CloudRail, you can easily integrate external APIs into your application. Cl
 
 ## Integrate Into Existing projects
 
-Simply frag an drop the Framework file to the "Embedded Binaries" of the iOS project, check "copy files" if needed. Import the framework on the desired class ( Code Sample Below), and have fun!
+Simply drag an drop the Framework file to the "Embedded Binaries" of the iOS project, check "copy files" if needed. Import the framework on the desired class ( Code Sample Below), and have fun!
 
 ## Code Sample
 ```` objective-c
@@ -29,21 +50,21 @@ Simply frag an drop the Framework file to the "Embedded Binaries" of the iOS pro
 
 - (void)viewDidLoad
 {
-  [super viewDidLoad];
-  self.dropbox = [[Dropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
+[super viewDidLoad];
+self.dropbox = [[Dropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
 
-  self.dropbox = [[GoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
+self.dropbox = [[GoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
 
 
 }
 
 -(void)downloadAndUpload{
 
-  //Download File from Dropbox
-  NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudkip.jpg"];
+//Download File from Dropbox
+NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudkip.jpg"];
 
-  //Upload the downloaded file to Googledrive
-  [self.googleDrive uploadWithPath:@"/mudkip.jpg" inputStream:streamToDownloadedFile size:size];
+//Upload the downloaded file to Googledrive
+[self.googleDrive uploadWithPath:@"/mudkip.jpg" inputStream:streamToDownloadedFile size:size];
 
 }
 

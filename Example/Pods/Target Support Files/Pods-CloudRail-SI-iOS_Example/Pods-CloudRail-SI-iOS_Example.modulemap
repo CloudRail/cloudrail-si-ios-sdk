@@ -1,0 +1,6 @@
+framework module Pods_CloudRail_SI_iOS_Example {
+  umbrella header "Pods-CloudRail-SI-iOS_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

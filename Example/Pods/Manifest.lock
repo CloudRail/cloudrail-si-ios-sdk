@@ -1,0 +1,16 @@
+PODS:
+  - CloudRail-SI-iOS (1.0.0)
+
+DEPENDENCIES:
+  - CloudRail-SI-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  CloudRail-SI-iOS:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CloudRail-SI-iOS: 14e4b02cc3ae3fb8714b83cd380c4a101627a2b4
+
+PODFILE CHECKSUM: c479cc8f11b6d6966cb6fefb7a57a3500662fbe2
+
+COCOAPODS: 1.0.0
