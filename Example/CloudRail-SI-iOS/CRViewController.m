@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  self.dropbox = [[Dropbox alloc] initWithClientId:@"vldp75lnn5w6rqp" clientSecret:@"01xqekp4h69ymtm"];
+  self.dropbox = [[Dropbox alloc] initWithClientId:@"IDENTIFIER" clientSecret:@"SECRET"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

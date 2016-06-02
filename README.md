@@ -16,7 +16,7 @@ CloudRail-SI-iOS is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
 ````ruby
-pod "CloudRail-SI-iOS"
+pod "cloudrail-si-ios-sdk"
 ````
 
 # CloudRail - Integrate Mulitple Services With Just One API
