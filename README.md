@@ -129,6 +129,10 @@ To keep updated with CloudRail, including any new providers that are added, just
 
 CloudRail is free to use. For all projects; commercial and non-commercial. We want APIs to be accessible to all developers. We want APIs to be easier to manage. This is only possible if there are free, powerful tools out there to do this.
 
+## Other Platforms
+
+CloudRail is also available for other platforms like Android and Java. You can find all libraries on https://cloudrail.github.io
+
 ## Questions?
 
 Get in touch at any time by emailing us: support@cloudrail.com
