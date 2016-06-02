@@ -118,9 +118,6 @@ More interfaces like payment and messaging are coming soon.
 
 * No Maintenance Times: The CloudRail Libraries are updated when a provider changes their API.
 
-## Maven
-coming soon
-
 ## Get Updates
 
 To keep updated with CloudRail, including any new providers that are added, just add your email address to https://cloudrail.com/updates/.
