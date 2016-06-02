@@ -110,7 +110,7 @@ CloudRail is free to use. For all projects; commercial and non-commercial. We wa
 
 ## Other Platforms
 
-CloudRail is also available for other platforms like iOS and Java. You can find all libraries on https://cloudrail.github.io
+CloudRail is also available for other platforms like Android and Java. You can find all libraries on https://cloudrail.github.io
 
 ## Questions?
 
