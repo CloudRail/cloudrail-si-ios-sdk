@@ -12,7 +12,7 @@ With CloudRail, you can easily integrate external APIs into your application. Cl
 
 ## Integrate Into Existing projects
 
-Simply frag an drop the Framework file to the "Embedded Binaries" of the iOS project, check "copy files" if needed. Import the framework on the desired class ( Code Sample Below), and have fun!
+Simply drag an drop the Framework file to the "Embedded Binaries" of the iOS project, check "copy files" if needed. Import the framework on the desired class ( Code Sample Below), and have fun!
 
 ## Code Sample
 ```` objective-c
