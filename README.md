@@ -9,7 +9,9 @@
 <!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
 <!---->
 <!--## Requirements-->
-
+<p align="center">
+  <img width="200px" src="http://cloudrail.github.io/img/cloudrail_logo_github.png"/>
+</p>
 ## Installation
 
 CloudRail-SI-iOS is available through [CocoaPods](http://cocoapods.org). To install
