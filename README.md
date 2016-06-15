@@ -21,7 +21,8 @@ it, simply add the following line to your Podfile:
 pod "cloudrail-si-ios-sdk"
 ````
 
-# CloudRail - Integrate Mulitple Services With Just One API
+# CloudRail SI for iOS
+Integrate Mulitple Services With Just One API
 
 <p align="center">
 <img width="500px" src="http://cloudrail.github.io/img/cloudrail_si_github.png"/>
@@ -91,6 +92,8 @@ NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudki
 * Get profile information, including full names, emails, genders, date of birth, and locales.
 * Retrieve profile pictures.
 * Login using the Social Network.
+
+---
 
 ### Cloud Storage:
 
