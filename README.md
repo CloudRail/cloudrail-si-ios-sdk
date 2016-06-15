@@ -25,10 +25,15 @@ pod "cloudrail-si-ios-sdk"
 Integrate Mulitple Services With Just One API
 
 <p align="center">
-<img width="500px" src="http://cloudrail.github.io/img/cloudrail_si_github.png"/>
+<img width="300px" src="http://cloudrail.github.io/img/cloudrail_si_github.png"/>
 </p>
 
 CloudRail is a free software library which abstracts multiple APIs from different providers into a single and universal interface.
+
+**Current Interfaces:**
+<p align="center">
+  <img width="255px" src="http://cloudrail.github.io/img/available_interfaces_ios.png"/>
+</p>
 
 Full documentation can be found at https://docs.cloudrail.com/
 
