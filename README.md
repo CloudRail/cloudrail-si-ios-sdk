@@ -18,7 +18,7 @@ Run `Pod install` again.
 
 1. add a new __Objective-C__ File (any file will do) to your project and Xcode will prompt if you want to configure your project with a bridging header (`PROJECTNAME-Bridging-Header.h`), press __YES__ on the prompt.
 2. Drag an drop the Framework file to the __"Embedded Binaries"__ of the iOS project, check __"copy files"__ if needed.
-3. Xcode will generate and configure the file for you, on the file you have to import ( in a Objective-C way the framework) with `#import <CloudRail_ServiceCode/CloudRail_ServiceCode.h>`.
+3. Xcode will generate and configure the file for you, on the file you have to import ( in a Objective-C way) with `#import <CloudRail_ServiceCode/CloudRail_ServiceCode.h>`.
 3. Make an AWESOME APP!!!
 
 ### Objective-C
