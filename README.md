@@ -1,25 +1,29 @@
-<!--# CloudRail-SI-iOS-->
-<!---->
-<!--[![CI Status](http://img.shields.io/travis/Felipe Cesar/CloudRail-SI-iOS.svg?style=flat)](https://travis-ci.org/Felipe Cesar/CloudRail-SI-iOS)-->
-<!--[![Version](https://img.shields.io/cocoapods/v/CloudRail-SI-iOS.svg?style=flat)](http://cocoapods.org/pods/CloudRail-SI-iOS)-->
-<!--[![Platform](https://img.shields.io/cocoapods/p/CloudRail-SI-iOS.svg?style=flat)](http://cocoapods.org/pods/CloudRail-SI-iOS)-->
-<!---->
-<!--## Example-->
-<!---->
-<!--To run the example project, clone the repo, and run `pod install` from the Example directory first.-->
-<!---->
-<!--## Requirements-->
 <p align="center">
   <img width="200px" src="http://cloudrail.github.io/img/cloudrail_logo_github.png"/>
+  
 </p>
-## Installation
+[![Version](https://img.shields.io/cocoapods/v/cloudrail-si-ios-sdk.svg?style=flat)](http://cocoapods.org/pods/cloudrail-si-ios-sdk)
+[![Platform](https://img.shields.io/cocoapods/p/cloudrail-si-ios-sdk.svg?style=flat)](http://cocoapods.org/pods/cloudrail-si-ios-sdk)
+## Integrate With Cocoapods (Swift & Objective-C)
 
 CloudRail-SI-iOS is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
+it, simply add the following line to your Podfile (remember to put the `use_frameworks!` flag on top of the `Podfile`):
 ````ruby
 pod "cloudrail-si-ios-sdk"
 ````
+Run `Pod install` again.
+
+## Integrate Into Projects Without Cocoapods
+### Swift
+
+1. add a new __Objective-C__ File (any file will do) to your project and Xcode will prompt if you want to configure your project with a bridging header (`PROJECTNAME-Bridging-Header.h`), press __YES__ on the prompt.
+2. Drag an drop the Framework file to the __"Embedded Binaries"__ of the iOS project, check __"copy files"__ if needed.
+3. Xcode will generate and configure the file for you, on the file you have to import ( in a Objective-C way the framework) with `#import <CloudRail_ServiceCode/CloudRail_ServiceCode.h>`.
+3. Make an AWESOME APP!!!
+
+### Objective-C
+
+Simply drag an drop the Framework file to the __"Embedded Binaries"__ of the iOS project, check __"copy files"__ if needed. Import the framework on the desired class with `#import <CloudRail_ServiceCode/CloudRail_ServiceCode.h>`, and have fun!
 
 # CloudRail SI for iOS
 Integrate Mulitple Services With Just One API
@@ -39,11 +43,18 @@ Full documentation can be found at https://docs.cloudrail.com/
 
 With CloudRail, you can easily integrate external APIs into your application. CloudRail is an abstracted interface that takes several services and then gives a developer-friendly API that uses common functions between all providers. This means that, for example, upload() works in exactly the same way for Dropbox as it does for Google Drive, OneDrive, and other Cloud Storage Services, and getEmail() works similarly the same way across all social networks.
 
-## Integrate Into Existing projects
-
-Simply drag an drop the Framework file to the "Embedded Binaries" of the iOS project, check "copy files" if needed. Import the framework on the desired class (Code Sample Below), and have fun!
-
 ## Code Sample
+### Swift
+
+```` swift
+override func viewDidAppear(animated: Bool) {
+    let dropbox: Dropbox = Dropbox.init(clientId: "DROPBOX_ID", clientSecret: "DROPBOX_SECRET")
+    let inputstream =  dropbox.downloadWithFilePath("/futurama.jpg")
+    //READ FROM THE INPUT STREAM 
+  }
+````
+
+### Objective C
 ```` objective-c
 #import <CloudRail_ServiceCode/CloudRail_ServiceCode.h>
 
