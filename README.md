@@ -98,6 +98,7 @@ NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudki
 * Retrieve profile pictures.
 * Login using the Social Network.
 
+[Full Documentation](https://docs.cloudrail.com/docs/profile)
 ---
 
 ### Cloud Storage Interface:
@@ -114,6 +115,7 @@ NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudki
 * Get Meta Data of files, folders and perform all standard operations (copy, move, etc) with them.
 * Retrieve user information.
 
+[Full Documentation](https://docs.cloudrail.com/docs/cloud-storage)
 More interfaces like payment and messaging are coming soon.
 
 ## Advantages of Using CloudRail
