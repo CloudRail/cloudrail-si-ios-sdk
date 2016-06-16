@@ -79,9 +79,9 @@ NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudki
 @end
 ````
 
-## Current Services
+## Current Interfaces:
 
-### Social Media Profiles:
+### Social Media Profiles Interface:
 
 * Facebook
 * Github
@@ -100,7 +100,7 @@ NSInputStream * streamToDownloadedFile = [self.dropbox downloadWithPath:@"/mudki
 
 ---
 
-### Cloud Storage:
+### Cloud Storage Interface:
 
 * Dropbox
 * Box
@@ -134,7 +134,7 @@ To keep updated with CloudRail, including any new providers that are added, just
 
 ## Pricing
 
-CloudRail is free to use. For all projects; commercial and non-commercial. We want APIs to be accessible to all developers. We want APIs to be easier to manage. This is only possible if there are free, powerful tools out there to do this.
+CloudRail is free to use. For all projects; commercial and non-commercial. We want APIs to be accessible to all developers. We want APIs to be easier to manage. This is only possible if there are free, powerful tools out there to do this. The only favor we are asking for, is to spread the word about this library. Thank you!
 
 ## Other Platforms
 
