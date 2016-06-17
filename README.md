@@ -74,7 +74,7 @@ override func viewDidAppear(animated: Bool) {
 [super viewDidLoad];
 self.dropbox = [[Dropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
 
-self.dropbox = [[GoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
+self.googleDrive = [[GoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
 
 
 }
