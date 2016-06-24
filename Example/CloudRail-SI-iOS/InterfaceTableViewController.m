@@ -21,7 +21,7 @@
   
   self.sourceInterfaces = [@[] mutableCopy];
   
-//  [self.sourceInterfaces addObject:@"CloudStorage"];
+  [self.sourceInterfaces addObject:@"CloudStorage"];
   
   [self.sourceInterfaces addObject:@"Profile"];
 

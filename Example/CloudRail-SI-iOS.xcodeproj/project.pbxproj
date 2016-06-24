@@ -14,6 +14,8 @@
 		557C01301D00AA2F001AE539 /* ProvidersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C012B1D00AA2F001AE539 /* ProvidersTableViewController.m */; };
 		557C01311D00AA2F001AE539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557C012C1D00AA2F001AE539 /* Main.storyboard */; };
 		557C01331D00AADF001AE539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557C01321D00AADF001AE539 /* LaunchScreen.storyboard */; };
+		55E132EB1D11908B007E9868 /* CloudStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E132EA1D11908B007E9868 /* CloudStorageViewController.m */; };
+		55E132ED1D11B0C0007E9868 /* futurama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E132EC1D11B0C0007E9868 /* futurama.jpg */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -52,6 +54,9 @@
 		557C012B1D00AA2F001AE539 /* ProvidersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvidersTableViewController.m; sourceTree = "<group>"; };
 		557C012C1D00AA2F001AE539 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		557C01321D00AADF001AE539 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55E132E91D11908B007E9868 /* CloudStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudStorageViewController.h; sourceTree = "<group>"; };
+		55E132EA1D11908B007E9868 /* CloudStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudStorageViewController.m; sourceTree = "<group>"; };
+		55E132EC1D11B0C0007E9868 /* futurama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = futurama.jpg; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CloudRail-SI-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CloudRail-SI-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,10 +148,13 @@
 				6003F59D195388D20070C39A /* CRAppDelegate.m */,
 				557C01261D00AA2F001AE539 /* ProfileViewController.h */,
 				557C01271D00AA2F001AE539 /* ProfileViewController.m */,
+				55E132E91D11908B007E9868 /* CloudStorageViewController.h */,
+				55E132EA1D11908B007E9868 /* CloudStorageViewController.m */,
 				557C01281D00AA2F001AE539 /* InterfaceTableViewController.h */,
 				557C01291D00AA2F001AE539 /* InterfaceTableViewController.m */,
 				557C012A1D00AA2F001AE539 /* ProvidersTableViewController.h */,
 				557C012B1D00AA2F001AE539 /* ProvidersTableViewController.m */,
+				55E132EC1D11B0C0007E9868 /* futurama.jpg */,
 				557C012C1D00AA2F001AE539 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				557C01321D00AADF001AE539 /* LaunchScreen.storyboard */,
@@ -261,6 +269,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Felipe Cesar";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2MB69CCJ6Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -294,6 +305,7 @@
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				557C01231D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec in Resources */,
 				557C01331D00AADF001AE539 /* LaunchScreen.storyboard in Resources */,
+				55E132ED1D11B0C0007E9868 /* futurama.jpg in Resources */,
 				557C01311D00AA2F001AE539 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +422,7 @@
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
 				557C012F1D00AA2F001AE539 /* InterfaceTableViewController.m in Sources */,
 				557C012E1D00AA2F001AE539 /* ProfileViewController.m in Sources */,
+				55E132EB1D11908B007E9868 /* CloudStorageViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudRail-SI-iOS/CloudRail-SI-iOS-Prefix.pch";
 				INFOPLIST_FILE = "CloudRail-SI-iOS/CloudRail-SI-iOS-Info.plist";
@@ -548,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudRail-SI-iOS/CloudRail-SI-iOS-Prefix.pch";
 				INFOPLIST_FILE = "CloudRail-SI-iOS/CloudRail-SI-iOS-Info.plist";

@@ -12,13 +12,11 @@
 
 @property (nonatomic) NSNumber * kelvin;
 
-
-
-
 - (instancetype)initWithKelvin:(NSNumber*) kelvin;
 -(NSNumber *) fahrenheit;
 -(void) setFahrenheit:(NSNumber*) fahrenheit;
 -(NSNumber*) celcius;
 -(void) setCelcius:(NSNumber*) number;
 -(BOOL) isValid;
+
 @end

@@ -12,4 +12,5 @@
 
 @property (nonatomic) NSNumber * metersPerSec;
 - (instancetype)initWithMetersPerSec:(NSNumber*) number;
+
 @end

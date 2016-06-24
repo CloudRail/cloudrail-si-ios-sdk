@@ -11,11 +11,8 @@
 @interface CloudMetaData : SandboxObject
 
 @property (nonatomic) NSString * path;
-
 @property (nonatomic) NSString * name;
-
 @property (nonatomic) NSNumber * size;
-
 @property (nonatomic) NSNumber * folder;
 
 @end

@@ -14,7 +14,8 @@
 @protocol CloudStorageProtocol <AuthenticatingProtocol,PersistableProtocol>
 
 
-
+-(void) initializeServiceCode;
+-(instancetype)initWithClientId:(NSString *) clientId clientSecret:(NSString *) clientSecret;
 /**
  * @brief Downloads a file from a cloud storage
  * @param filePath The path to the file from the root folder and including the name, e.g /myFolder/myFile.jpg

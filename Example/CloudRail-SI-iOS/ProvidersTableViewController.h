@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ProvidersTableViewController : UITableViewController
+
 @property (nonatomic) NSString * currentInterface;
 @end

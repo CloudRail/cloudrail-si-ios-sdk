@@ -10,9 +10,7 @@
 
 @interface SandboxObject : NSObject
 
-
 -(id) get:(NSString*) key;
-
 -(void) setObject:(id) object forKey:(NSString*) key;
 
 @end

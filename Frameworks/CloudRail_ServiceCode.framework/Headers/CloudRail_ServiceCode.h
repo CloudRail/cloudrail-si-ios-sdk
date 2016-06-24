@@ -32,13 +32,45 @@ FOUNDATION_EXPORT const unsigned char CloudRail_ServiceCodeVersionString[];
 #import <CloudRail_ServiceCode/Slack.h>
 #import <CloudRail_ServiceCode/Twitter.h>
 #import <CloudRail_ServiceCode/Yahoo.h>
+#import <CloudRail_ServiceCode/Instagram.h>
 
 
+#pragma mark - PointsOfInterestInterface
+
+#import <CloudRail_ServiceCode/Foursquare.h>
+#import <CloudRail_ServiceCode/GooglePlaces.h>
+#import <CloudRail_ServiceCode/Yelp.h>
+
+
+#pragma mark - PaymentInterface
+
+#import <CloudRail_ServiceCode/PayPal.h>
+#import <CloudRail_ServiceCode/Stripe.h>
+
+#pragma mark - SMSInterface
+
+#import <CloudRail_ServiceCode/Nexmo.h>
+#import <CloudRail_ServiceCode/Twilio.h>
+
+
+#pragma mark - Email
+#import <CloudRail_ServiceCode/SendGrid.h>
+#import <CloudRail_ServiceCode/MailJet.h>
+
+
+
+
+
+#pragma mark - Protocols
 #import <CloudRail_ServiceCode/CloudMetaData.h>
 #import <CloudRail_ServiceCode/CloudStorageProtocol.h>
 #import <CloudRail_ServiceCode/ProfileProtocol.h>
 #import <CloudRail_ServiceCode/AuthenticatingProtocol.h>
 #import <CloudRail_ServiceCode/PersistableProtocol.h>
+#import <CloudRail_ServiceCode/PointsOfInterestProtocol.h>
+#import <CloudRail_ServiceCode/SMSProtocol.h>
+#import <CloudRail_ServiceCode/EmailProtocol.h>
+#import <CloudRail_ServiceCode/PaymentProtocol.h>
 
 
 #pragma mark - ClourRail types
@@ -56,3 +88,10 @@ FOUNDATION_EXPORT const unsigned char CloudRail_ServiceCodeVersionString[];
 #import <CloudRail_ServiceCode/UserInfo.h>
 #import <CloudRail_ServiceCode/Velocity.h>
 #import <CloudRail_ServiceCode/WeatherInfo.h>
+
+#import <CloudRail_ServiceCode/Charge.h>
+#import <CloudRail_ServiceCode/CreditCard.h>
+#import <CloudRail_ServiceCode/Subscription.h>
+#import <CloudRail_ServiceCode/SubscriptionPlan.h>
+#import <CloudRail_ServiceCode/Refund.h>
+

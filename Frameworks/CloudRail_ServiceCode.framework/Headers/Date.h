@@ -13,7 +13,6 @@
 
 @property (nonatomic) NSDate * internalDate;// normal Objc Date ( seconds based)
 @property (nonatomic) NSNumber * timeInternal;// long time interval in Miliseconds
-
 @property (nonatomic) NSNumber * time;
 
 @end

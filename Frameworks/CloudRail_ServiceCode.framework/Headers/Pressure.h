@@ -14,4 +14,5 @@
 
 -(void) setBar:(NSNumber*) bar;
 -(void) setPsi:(NSNumber*) psi;
+
 @end

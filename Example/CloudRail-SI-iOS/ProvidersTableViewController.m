@@ -73,8 +73,20 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-  self.selectedInterface = self.sourceInterfaces[indexPath.row];
-  [self performSegueWithIdentifier:@"toService" sender:self];
+  
+  if ([self.currentInterface isEqualToString:@"Profile"]) {
+    
+    
+    self.selectedInterface = self.sourceInterfaces[indexPath.row];
+    [self performSegueWithIdentifier:@"toService" sender:self];
+    
+  } else if([self.currentInterface isEqualToString:@"CloudStorage"]){
+
+    
+    self.selectedInterface = self.sourceInterfaces[indexPath.row];
+    [self performSegueWithIdentifier:@"toStorage" sender:self];
+  }
+
 }
 
 
