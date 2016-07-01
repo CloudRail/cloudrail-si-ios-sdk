@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'cloudrail-si-ios-sdk'
-  s.version          = '2.4.0'
+  s.version          = '3.0.0'
   s.summary          = 'CloudRail is a free software library which abstracts multiple APIs from different providers into a single and universal interface.'
 
 
@@ -22,7 +22,6 @@ With CloudRail, you can easily integrate external APIs into your application. Cl
   s.social_media_url = 'https://twitter.com/CloudRail'
 
   s.ios.deployment_target = '8.0'
-  s.vendored_frameworks = 'Frameworks/CloudRail_ServiceCode.framework'
   
-  s.frameworks = 'UIKit', 'MapKit', 'CloudRail_ServiceCode'
+  s.frameworks = 'UIKit', 'MapKit', 'CloudrailSI'
 end

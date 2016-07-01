@@ -8,11 +8,12 @@
 
 //#import "ViewController.h"
 
-#import <CloudRail_ServiceCode/CloudRail_ServiceCode.h>
+#import <CloudRailSI/CloudRailSI.h>
+
 @interface ProfileViewController : UIViewController
 @property (nonatomic) NSString * serviceName;
 
 @property (nonatomic) NSString * clientId;
 @property (nonatomic) NSString * clientSecret;
-@property (nonatomic) id<ProfileProtocol> service;
+@property (nonatomic) id<CRProfileProtocol> service;
 @end

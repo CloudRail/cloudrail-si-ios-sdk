@@ -42,8 +42,9 @@
   NSString * key = [[self.serviceName lowercaseString] stringByAppendingString:@"Key"];
   NSString * secret = [[self.serviceName lowercaseString] stringByAppendingString:@"Secret"];
   
+  self.serviceName = [@"CR" stringByAppendingString:self.serviceName];
   Class cl = NSClassFromString(self.serviceName);
-  self.service = [(id<CloudStorageProtocol>)[cl alloc] initWithClientId:authDic[key] clientSecret:authDic[secret]];
+  self.service = [(id<CRCloudStorageProtocol>)[cl alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"CR123"];
   
 }
 
@@ -59,8 +60,7 @@
   
   NSData * imageData = UIImageJPEGRepresentation(image, 1);
   NSInputStream * inputStream = [NSInputStream inputStreamWithData:imageData];
-  [self.service uploadWithFilePath:@"/futurama.jpg" stream:inputStream size:imageData.length overwrite:YES];
-  
+  [self.service uploadFileToPath:@"/futurama.jpg" withStream:inputStream size:imageData.length overwrite:YES];
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker
@@ -75,7 +75,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
       
       NSData * imageData = UIImageJPEGRepresentation(image, 1);
       NSInputStream * inputStream = [NSInputStream inputStreamWithData:imageData];
-      [self.service uploadWithFilePath:@"/futurama.jpg" stream:inputStream size:imageData.length overwrite:YES];
+      [self.service uploadFileToPath:@"/futurama.jpg" withStream:inputStream size:imageData.length overwrite:YES];
 
     });
     
