@@ -133,12 +133,12 @@ NSLog(@"Sub plan %@", subPlan);
 self.service = [[CRSendGrid alloc]initWithUsername:key password:secret];
 
 [self.service sendEmailFromAddress:@"cloudrail@cloudrail.com"
-                          fromName:@"Bob"
-                       toAddresses:[@[@"foo@gmail.com",@"bar@gmail.com"] mutableCopy]
-                           subject:@"Mailjet and SendGrid"
-                          textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!"
-                          htmlBody:@""
-                       ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
+fromName:@"Bob"
+toAddresses:[@[@"foo@gmail.com",@"bar@gmail.com"] mutableCopy]
+subject:@"Mailjet and SendGrid"
+textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!"
+htmlBody:@""
+ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 ````
 
 ---
