@@ -3,9 +3,6 @@
 
 #import "CRProfileProtocol.h"
 
-#import "CRSocialProtocol.h"
-
-
 
 
 @interface CRFacebook : NSObject <CRProfileProtocol>
