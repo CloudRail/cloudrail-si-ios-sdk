@@ -14,5 +14,5 @@
 @property (nonatomic) NSString * name;
 @property (nonatomic) NSNumber * size;
 @property (nonatomic) NSNumber * folder;
-
+@property (nonatomic) NSNumber * modifiedAt;
 @end

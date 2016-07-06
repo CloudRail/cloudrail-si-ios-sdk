@@ -10,6 +10,7 @@
 #import "CRCloudMetaData.h"
 #import "CRAuthenticatingProtocol.h"
 #import "CRPersistableProtocol.h"
+#import "CRSpaceAllocation.h"
 
 @protocol CRCloudStorageProtocol <CRAuthenticatingProtocol,CRPersistableProtocol>
 
@@ -77,4 +78,17 @@
  */
 -(nonnull NSMutableArray<CRCloudMetaData *> *)childrenOfFolderWithPath:(nonnull NSString *)folderPath;
 
+/**
+ * Creates a share link and the permission is only to 'view' and download the file/folder
+ *
+ * @param path the path to the file/folder which the link to will be created
+ * @return The url as a String
+ */
+-(nonnull NSString *) shareLinkForFileWithPath:(nonnull NSString *) path;
+
+/**
+ *
+ * @return The total space in bytes and the used space
+ */
+-(nonnull CRSpaceAllocation *) spaceAllocation;
 @end
