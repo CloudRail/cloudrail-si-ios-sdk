@@ -15,15 +15,16 @@
 
 /**
  * Creates a new post/update to the currently logged in user's wall/stream/etc.
- * Throws an exception if the content is too long for the service instance.
  * @param content The post's content
  */
-//void postUpdate(String content);
+-(void) postUpdateWithContent:(nonnull NSString *) content;
 
 /**
  * Retrieves a list of connection/friend/etc. IDs.
  * The IDs are compatible with those returned by Profile.getIdentifier().
  * @return A (possibly empty) list of IDs
  */
-//List<String> getConnections();
+-(nonnull NSArray<NSString *>*) connections;
+
+
 @end

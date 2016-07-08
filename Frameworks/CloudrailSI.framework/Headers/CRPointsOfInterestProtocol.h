@@ -24,13 +24,6 @@
  * @param searchTerm Optional search term that has to be matched.
  * @param categories Optional list of categories. Available categories can be found in the main documentation.
  * @return A list of POIs for the target location.
- * @throws IllegalArgumentException Is thrown if latitude, longitude or radius is null, latitude or
- *                                  longitude is invalid, radius is greater than 40,000 metres or
- *                                  one of the passed categories is unknown.
- * @throws AuthenticationException  Is thrown if the passed credentials are invalid or authorization
- *                                  fails for whatever reason.
- * @throws HttpException            Is thrown if the communication with a services fails.
- *                                  More detail is provided in the error message.
  */
 -(nonnull NSMutableArray<CRPOI *> *) nearbyPoisWithLatitude:(nonnull NSNumber *)latitude
                                                   longitude:(nonnull NSNumber *)longitude

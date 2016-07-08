@@ -19,4 +19,12 @@
 @property (nonatomic) NSString * status;
 
 @property (nonatomic) NSNumber * refunded;
+
+-(void) initWithAmount:(NSNumber *) amount
+               created:(NSNumber *) created
+              currency:(NSString *) currency
+            identifier:(NSString *) identifier
+              refunded:(NSNumber*)refunded
+                source:(CRCreditCard*) source
+                status:(NSString *) status;
 @end
