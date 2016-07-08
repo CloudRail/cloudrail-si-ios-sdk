@@ -29,4 +29,14 @@
 // Can have the following values: visa, mastercard, discover, amex
 @property (nonatomic) NSString * type;
 
+
+-(void)initWithCvc:(NSString *) cvc
+       expireMonth:(NSNumber*) expire_month
+        expireYear:(NSNumber*) expire_year
+            number:(NSString *) number
+              type:(NSString *) type
+         firstName:(NSString *) firstName
+          lastName:(NSString *) lastName
+           address:(CRAddress*) address;
+
 @end

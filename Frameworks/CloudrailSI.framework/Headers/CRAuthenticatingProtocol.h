@@ -1,4 +1,4 @@
-//
+
 //  AuthenticatingProtocol.h
 //  CloudRail_ServiceCode
 //
@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+/**
+ *  common interface for services that allow logging in and out actions.
+ */
 @protocol CRAuthenticatingProtocol <NSObject>
 
 
 
 /**
- * @brief Optional!!! Explicitly triggers user authentication.
+ * (Optional) Explicitly triggers user authentication.
  * Allows better control over the authentication process.
  * Optional because all methods that require prior authentication will trigger it automatically,
  * unless this method has been called before.
@@ -21,7 +23,7 @@
 -(void) login;
 
 /**
- * @brief Optional!!! Revokes the current authentication.
+ * (Optional) Revokes the current authentication.
  */
 -(void) logout;
 

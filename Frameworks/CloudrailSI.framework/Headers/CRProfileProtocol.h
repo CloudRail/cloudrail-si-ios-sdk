@@ -10,10 +10,22 @@
 #import "CRAuthenticatingProtocol.h"
 #import "CRDateOfBirth.h"
 #import "CRPersistableProtocol.h"
-
+/**
+ * An interface that provides access to a diverse range of services that provide user data. They all have in common, that they allow you to get a unique identifier for a logged in user, so it can be used for "Login with ..." scenarios. All the other information might be present or not, depending on the service and how much information the user has filled out with the respective service. To avoid unnecessary requests, information is cached up to one minute.
+ */
 @protocol CRProfileProtocol <CRAuthenticatingProtocol,CRPersistableProtocol>
 
 
+/**
+ *  Basic contructor method for any CRProfileProtocol conforming class
+ *
+ *  @param clientId     The client identifier (or key) of the corresponding service.
+ *  @param clientSecret The client secret (or secret) of the corresponding service.
+ *  @param redirectUri  The redirect url used to capture the response from the service.
+ *  @param state        Value used to identify diferent states on the server side. Unused in iOS version of CloudRail SDK
+ *
+ *  @return instancetype  id<CRProfileProtocol> Initialized instance of a CRProfile service using the values from the parameters.
+ */
 -(nonnull instancetype)initWithClientId:(nonnull NSString *)clientId
                            clientSecret:(nonnull NSString *)clientSecret
                             redirectUri:(nonnull NSString *)redirectUri

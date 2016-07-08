@@ -15,7 +15,7 @@
 
 
 /**
- * @brief Generated a NSDate from the properties: year, month, day
+ *  Generated a NSDate from the properties: year, month, day
  *
  * @return NSDate the date object
  */

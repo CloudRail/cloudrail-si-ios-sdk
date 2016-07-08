@@ -26,28 +26,18 @@
  * @param currency A three-letter ISO code for currency.
  * @param source The credit card to be charged.
  * @return A charge resource representing the newly created payment.
- * @throws IllegalArgumentException Is thrown if any of the parameters is null, amount is
- *      less than 0 or currency is not a valid three-letter currency code.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
 -(nonnull CRCharge *)createChargeWithAmount:(nonnull NSNumber *)amount
                                    currency:(nonnull NSString *)currency
-                                     source:(nonnull CRCreditCard *)source ;
+                                     source:(nonnull CRCreditCard *)source;
 /**
  * Returns information about an existing charge. Mostly used to get an update
  * on the status of the charge.
  *
  * @param id The ID of the charge.
  * @return A charge resource for the provided ID.
- * @throws IllegalArgumentException Is thrown if id is null.
- * @throws NotFoundException Is thrown if there is now charge with that ID.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
--(nonnull CRCharge *)chargeWithIdentifier:(nonnull NSString *)id;
+-(nonnull CRCharge *)chargeWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Receive a list of charges within a specified timeframe.
@@ -56,11 +46,6 @@
  * @param to Timestamp representing the end date for the list.
  * @param creditCard Optionally the credit card information so it can be listed all the charges of this specific credit card.
  * @return List of charge resources.
- * @throws IllegalArgumentException Is thrown if from or to is null, from or to is less than 0, from
- *      is greater than to or to is greater than the current date.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
 -(nonnull NSMutableArray<CRCharge *> *)listChargesFrom:(nonnull NSNumber *)from
                                                     to:(nonnull NSNumber *)to
@@ -70,13 +55,8 @@
  *
  * @param id The ID of the charge to be refunded.
  * @return A refund resource.
- * @throws IllegalArgumentException Is thrown if id is null.
- * @throws NotFoundException Is thrown if there is now charge with that ID.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
--(nonnull CRRefund *)refundChargeWithIdentifier:(nonnull NSString *)id;
+-(nonnull CRRefund *)refundChargeWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Refund a specified amount from a previously made charge.
@@ -84,13 +64,8 @@
  * @param id The ID of the charge to be refunded.
  * @param amount The amount that shall be refunded.
  * @return A refund resource.
- * @throws IllegalArgumentException Is thrown if any of the parameters is null or lower/equals than 0.
- * @throws NotFoundException Is thrown if there is now charge with that ID.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
--(nonnull CRRefund *)partiallyRefundChargeWithIdentifier:(nonnull NSString *)id
+-(nonnull CRRefund *)partiallyRefundChargeWithIdentifier:(nonnull NSString *)identifier
                                                   amount:(nonnull NSNumber *)amount;
 /**
  * Returns information about an existing refund. Mostly used to get an update
@@ -98,25 +73,16 @@
  *
  * @param id The ID of the refund.
  * @return A refund resource for the provided ID.
- * @throws IllegalArgumentException Is thrown if id is null.
- * @throws NotFoundException Is thrown if there is now refund with that ID.
- *      More detail is provided in the error message.
  */
--(nonnull NSMutableArray<CRRefund *> *)refundsForChargeWithIdentifier:(nonnull NSString *)id;
+-(nonnull NSMutableArray<CRRefund *> *)refundsForChargeWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Returns information about the refunds for a specific charge.
  *
  * @param id The ID of the charge.
  * @return A refund resource for the provided charge.
- * @throws IllegalArgumentException Is thrown if id is null.
- * @throws NotFoundException Is thrown if there is now charge with that ID or the charge has not
- *      been refunded.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
--(nonnull CRRefund *)refundWithIdentifier:(nonnull NSString *)id;
+-(nonnull CRRefund *)refundWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Creates a subscription plan which is required to use subscription based payments.
@@ -134,13 +100,6 @@
  *      For example:interval_count = 2 and interval = "week" -> Billed every
  *      two weeks.
  * @return Returns the newly created subscription plan resource.
- * @throws IllegalArgumentException Is thrown if any of the parameters is null
- *      or lower/equal than 0, currency is not a three-letter
- *      currency code, interval is not one of the allowed values or amount is
- *      less/equal than 0.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
 -(nonnull CRSubscriptionPlan *)createSubscriptionPlanWithName:(nonnull NSString *)name
                                                        amount:(nonnull NSNumber *)amount
@@ -168,13 +127,6 @@
  * @param description A description for the subscription.
  * @param creditCard The customer that shall be subscribed.
  * @return The newly created subscription resource.
- * @throws IllegalArgumentException Is thrown if planID, name, description or
- *      payer is null.
- * @throws NotFoundException Is thrown if there is no subscription plan with
- *      the passed ID.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
 -(nonnull CRSubscription *)createSubscriptionWithPlanID:(nonnull NSString *)planID
                                                    name:(nonnull NSString *)name
@@ -185,14 +137,8 @@
  * Cancel an active subscription.
  *
  * @param id ID of the subscription that should be canceled.
- * @throws IllegalArgumentException Is thrown if id is null.
- * @throws NotFoundException Is thrown if there is no subscription with the
- *      provided ID.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
--(void)cancelSubscriptionWithIdentifier:(nonnull NSString *)id;
+-(void)cancelSubscriptionWithIdentifier:(nonnull NSString *)identifier;
 
 
 @end

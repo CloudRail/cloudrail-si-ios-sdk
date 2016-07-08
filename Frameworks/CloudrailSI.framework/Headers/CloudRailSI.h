@@ -77,6 +77,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 
 #import <CloudRailSI/CRAddress.h>
 #import <CloudRailSI/CRCloudMetaData.h>
+#import <CloudRailSI/CRDate.h>
 #import <CloudRailSI/CRDateOfBirth.h>
 #import <CloudRailSI/CRLocation.h>
 #import <CloudRailSI/CRSandboxObject.h>

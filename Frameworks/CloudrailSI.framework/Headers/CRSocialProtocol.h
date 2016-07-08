@@ -15,7 +15,6 @@
 
 /**
  * Creates a new post/update to the currently logged in user's wall/stream/etc.
- * Throws an exception if the content is too long for the service instance.
  * @param content The post's content
  */
 -(void) postUpdateWithContent:(nonnull NSString *) content;
