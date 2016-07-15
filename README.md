@@ -24,10 +24,12 @@ Interface | Included Services
 --- | --- 
 Cloud Storage | Dropbox, Google Drive, OneDrive, Box
 Social Profiles | Facebook, GitHub, Google+, LinkedIn, Slack, Twitter, Windows Live, Yahoo, Instagram
+Social | Facebook, Twitter
 Payment | PayPal, Stripe
 Email | Maljet, Sendgrid
 SMS | Twilio, Nexmo
 Point of Interest | Google Places, Foursquare, Yelp
+
 ---
 ### Cloud Storage Interface:
 
@@ -89,6 +91,27 @@ NSInputStream * object = [self.dropbox downloadFileWithPath:@"/mudkip.jpg"];
 self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
 NSString * fullName = [self.service fullName];
+````
+
+---
+
+### Social Media Interaction Interface:
+
+* Facebook
+* Twitter
+
+#### Features
+
+* Get a list of connections.
+* Make a post for the user.
+
+[Full Documentation](https://docs.cloudrail.com/docs/profile)
+#### Code Sample
+
+```` objective-c
+
+self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+[self.service postUpdateWithContent:@"Using Cloudrail sdk!"];
 ````
 
 ---
