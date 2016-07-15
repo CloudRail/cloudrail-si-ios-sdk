@@ -20,8 +20,8 @@
   
   NSDictionary * authDic = @{
                    
-                   @"dropboxKey" : @"7plpwqxycoz8kne",
-                   @"dropboxSecret" : @"jdn2cy6bt6hhmzo",
+                   @"dropboxKey" : @"38nu3lwdvyaqs78",
+                   @"dropboxSecret" : @"c95g0wfkdv6ua2d",
                    
                    @"googledriveKey" : @"871545970580-rsfohjd4g7ge0j3bmue6vc3t1t4if22c.apps.googleusercontent.com",
                    @"googledriveSecret" : @"MpVwm1MK2lgKQCP2T6BjVn8c",
@@ -35,7 +35,6 @@
                    
                    @"facebookKey" : @"636472443170383",
                    @"facebookSecret" : @"572d1e670d481820e6de7525cfec757f",
-                   
                    
                    };
   

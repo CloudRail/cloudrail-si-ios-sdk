@@ -103,4 +103,18 @@
  * @return The total space in bytes and the used space
  */
 -(nonnull CRSpaceAllocation *) spaceAllocation;
+
+/**
+ *  Method to retrieve a user's login (name/email address/...)
+ *
+ *  @return NSString the user login.
+ */
+-(nonnull NSString *) userLogin;
+
+/**
+ *  Method to retrieve a user's name
+ *
+ *  @return NSString the user name.
+ */
+-(nonnull NSString *) userName;
 @end
