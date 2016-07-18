@@ -54,7 +54,7 @@ Point of Interest | Google Places, Foursquare, Yelp
 //   self.service = [[CRBox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
 self.service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-NSInputStream * object = [self.dropbox downloadFileWithPath:@"/mudkip.jpg"];
+NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 
 //READ FROM STREAM
 ````
