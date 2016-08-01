@@ -113,9 +113,6 @@
  * Returns a list of all existing subscription plans.
  *
  * @return List of subscription plans.
- * @throws AuthenticationException Is thrown if the provided credentials are invalid.
- * @throws HttpException Is thrown if the communication with a services fails.
- *      More detail is provided in the error message.
  */
 -(nonnull NSMutableArray<CRSubscriptionPlan *> *)listSubscriptionPlans;
 
@@ -132,7 +129,6 @@
                                                    name:(nonnull NSString *)name
                                             description:(nonnull NSString *)description
                                                  source:(nonnull CRCreditCard *)source;
-
 
 /**
  * Cancel an active subscription.

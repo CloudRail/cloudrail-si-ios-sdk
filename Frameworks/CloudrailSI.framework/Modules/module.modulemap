@@ -4,3 +4,7 @@ framework module CloudrailSI {
   export *
   module * { export * }
 }
+
+module CloudrailSI.Swift {
+    header "CloudrailSI-Swift.h"
+}

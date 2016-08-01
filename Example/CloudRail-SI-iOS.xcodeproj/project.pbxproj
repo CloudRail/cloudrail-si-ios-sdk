@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4EAD2C391E03AA8C16932C6E /* Pods_CloudRail_SI_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEA91121D7CD7ED096D7F2E /* Pods_CloudRail_SI_iOS_Tests.framework */; };
+		557A05481D48E91E00207B36 /* TestingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A05471D48E91E00207B36 /* TestingClass.swift */; };
 		557C01231D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 557C01221D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec */; };
 		557C012E1D00AA2F001AE539 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C01271D00AA2F001AE539 /* ProfileViewController.m */; };
 		557C012F1D00AA2F001AE539 /* InterfaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C01291D00AA2F001AE539 /* InterfaceTableViewController.m */; };
@@ -45,6 +46,8 @@
 		246770CB7872D031DF2DE6FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4EA649E99E604C3DD78C6F37 /* Pods-CloudRail-SI-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudRail-SI-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudRail-SI-iOS_Example/Pods-CloudRail-SI-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEA91121D7CD7ED096D7F2E /* Pods_CloudRail_SI_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudRail_SI_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557A05461D48E91E00207B36 /* CloudRail-SI-iOS_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudRail-SI-iOS_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		557A05471D48E91E00207B36 /* TestingClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingClass.swift; sourceTree = "<group>"; };
 		557C01221D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cloudrail-si-ios-sdk.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		557C01261D00AA2F001AE539 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		557C01271D00AA2F001AE539 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 		6003F593195388D20070C39A /* Example for CloudRail-SI-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				557A05471D48E91E00207B36 /* TestingClass.swift */,
 				6003F59C195388D20070C39A /* CRAppDelegate.h */,
 				6003F59D195388D20070C39A /* CRAppDelegate.m */,
 				557C01261D00AA2F001AE539 /* ProfileViewController.h */,
@@ -159,6 +163,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				557C01321D00AADF001AE539 /* LaunchScreen.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				557A05461D48E91E00207B36 /* CloudRail-SI-iOS_Example-Bridging-Header.h */,
 			);
 			name = "Example for CloudRail-SI-iOS";
 			path = "CloudRail-SI-iOS";
@@ -266,6 +271,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CR;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Felipe Cesar";
 				TargetAttributes = {
@@ -422,6 +428,7 @@
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
 				557C012F1D00AA2F001AE539 /* InterfaceTableViewController.m in Sources */,
 				557C012E1D00AA2F001AE539 /* ProfileViewController.m in Sources */,
+				557A05481D48E91E00207B36 /* TestingClass.swift in Sources */,
 				55E132EB1D11908B007E9868 /* CloudStorageViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -544,14 +551,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudRail-SI-iOS/CloudRail-SI-iOS-Prefix.pch";
 				INFOPLIST_FILE = "CloudRail-SI-iOS/CloudRail-SI-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudRail-SI-iOS/CloudRail-SI-iOS_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -562,14 +573,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudRail-SI-iOS/CloudRail-SI-iOS-Prefix.pch";
 				INFOPLIST_FILE = "CloudRail-SI-iOS/CloudRail-SI-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudRail-SI-iOS/CloudRail-SI-iOS_Example-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

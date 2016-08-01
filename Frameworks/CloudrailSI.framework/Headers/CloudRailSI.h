@@ -87,4 +87,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRRefund.h>
 #import <CloudRailSI/CRSpaceAllocation.h>
 
+#import <CloudRailSI/CRCloudrail.h>
 
+
+#import <CloudRailSI/CRError.h>
+#import <CloudRailSI/CRExceptionHandler.h>

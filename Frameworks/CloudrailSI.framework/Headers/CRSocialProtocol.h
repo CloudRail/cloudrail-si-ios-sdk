@@ -11,7 +11,7 @@
 /**
  * Interface for interaction with social networks
  */
-@protocol CRSocialProtocol <NSObject>
+@protocol CRSocialProtocol <NSObject,CRPersistableProtocol>
 
 /**
  * Creates a new post/update to the currently logged in user's wall/stream/etc.

@@ -84,6 +84,15 @@
 -(nonnull CRCloudMetaData *)metadataOfFileWithPath:(nonnull NSString *)filePath;
 
 /**
+ *  Checks the existance of a File or Folder
+ *
+ *  @param path Path to the file on cloud.
+ *
+ *  @return BOOL YES if the file exist at a given path
+ */
+-(BOOL) fileExistsAtPath:(nonnull NSString *) path;
+
+/**
  *  Gets the metadata of this folder's children
  * @param folderPath The path to the file from the root folder and including the name
  * @return A container for metadata
@@ -117,4 +126,5 @@
  *  @return NSString the user name.
  */
 -(nonnull NSString *) userName;
+
 @end

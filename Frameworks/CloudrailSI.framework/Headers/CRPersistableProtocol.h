@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
 /**
  * An interface for services that keep persistent data.
  */
 @protocol CRPersistableProtocol <NSObject>
-
 
 /**
  *  A method to retrieve the data from a service that is intended for persistent storage
@@ -23,7 +21,6 @@
 /**
  *  Loads/restores data saved by saveAsString method into the service
  * @param savedState The persistent data that was stored
- * @throws P arseException
  */
 -(void) loadAsString:(nonnull NSString*) savedState;
 
