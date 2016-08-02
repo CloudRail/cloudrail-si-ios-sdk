@@ -24,7 +24,7 @@
 /**
  *  Set the current appKey
  *
- * @param NSString  The app key to be set.
+ * @param key The app key to be set.
  */
 +(void) setAppKey:(NSString *) key;
 @end

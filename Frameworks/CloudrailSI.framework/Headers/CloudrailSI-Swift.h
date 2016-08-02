@@ -124,9 +124,11 @@ SWIFT_CLASS("_TtC11CloudrailSI3Box")
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
 @end
 
+@class CRDropbox;
 
 SWIFT_CLASS("_TtC11CloudrailSI7Dropbox")
 @interface Dropbox : NSObject
+@property (nonatomic, strong) CRDropbox * _Nonnull crDropbox;
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (NSInputStream * _Nullable)downloadFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Null_unspecified)error;
