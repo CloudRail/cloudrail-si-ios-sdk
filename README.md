@@ -24,7 +24,7 @@ Interface | Included Services
 --- | --- 
 Cloud Storage | Dropbox, Google Drive, OneDrive, Box
 Social Profiles | Facebook, GitHub, Google+, LinkedIn, Slack, Twitter, Windows Live, Yahoo, Instagram
-Social | Facebook, Twitter
+Social Interaction | Facebook, Twitter
 Payment | PayPal, Stripe
 Email | Maljet, Sendgrid
 SMS | Twilio, Nexmo
