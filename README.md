@@ -17,7 +17,15 @@ CloudRail is a free software library which abstracts multiple APIs from differen
 <img width="800px" src="http://cloudrail.github.io/img/available_interfaces_v2.png"/>
 </p>
 
-Full documentation can be found at https://docs.cloudrail.com/
+---
+---
+
+Full documentation can be found at our [wiki](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki).
+
+Learn more about CloudRail on https://cloudrail.com
+
+---
+---
 
 With CloudRail, you can easily integrate external APIs into your application. CloudRail is an abstracted interface that takes several services and then gives a developer-friendly API that uses common functions between all providers. This means that, for example, upload() works in exactly the same way for Dropbox as it does for Google Drive, OneDrive, and other Cloud Storage Services, and getEmail() works similarly the same way across all social networks.
 
@@ -48,8 +56,8 @@ Point of Interest | Google Places, Foursquare, Yelp
 * Retrieve user and quota information.
 * Generate share links for files and folders.
 
-[Full Documentation](https://docs.cloudrail.com/docs/cloud-storage)
 #### Code Sample - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-cloudstorage)
 ```` objective-c
 //   self.service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -60,6 +68,7 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 //READ FROM STREAM
 ````
 #### Code Sample - Swift
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-cloudstorage)
 ```` swift
 //let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
 //let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
@@ -92,8 +101,8 @@ do{
 * Retrieve profile pictures.
 * Login using the Social Network.
 
-[Full Documentation](https://docs.cloudrail.com/docs/profile)
 #### Code Sample - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-profile)
 
 ```` objective-c
 //  self.service = [[CRGitHub alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -107,7 +116,7 @@ NSString * fullName = [self.service fullName];
 ````
 
 #### Code Sample - Swift
-
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-profile)
 ```` swift
 // let profile = GitHub(clientID: "[clientID]", clientSecret: "[clientSecret]")
 // let profile = GooglePlus(clientID: "[clientID]", clientSecret: "[clientSecret]")
@@ -134,8 +143,9 @@ do{
 * Get a list of connections.
 * Make a post for the user.
 
-[Full Documentation](https://docs.cloudrail.com/docs/profile)
+
 #### Code Sample - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-social)
 
 ```` objective-c
 
@@ -143,6 +153,7 @@ self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSe
 [self.service postUpdateWithContent:@"Using Cloudrail sdk!"];
 ````
 #### Code Sample - Swift
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-social)
 
 ```` swift
 // let social = Twitter(clientID: "[clientID]", clientSecret: "[clientSecret]")
@@ -166,8 +177,8 @@ do{
 * Refund previously made charges
 * Manage subscriptions
 
-[Full Documentation](https://docs.cloudrail.com/docs/payment)
 #### Code Sample - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-payment)
 
 ```` objective-c
 //  self.service = [[CRPayPal alloc] initWithUseSandbox:YES clientId:key clientSecret:secret];
@@ -179,6 +190,7 @@ NSLog(@"Sub plan %@", subPlan);
 ````
 
 #### Code Sample - Swift
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-payment)
 
 ```` swift
 let payment = PayPal(useSandbox: [true/false], clientId: "[clientID]")
@@ -200,8 +212,8 @@ do{
 
 * Send Email
 
-[Full Documentation](https://docs.cloudrail.com/docs/email)
 #### Code Sample - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-email)
 
 ````objective-c
 //  self.service = [[CRMailJet alloc] initWithClientId:key clientSecret:secret];
@@ -216,6 +228,7 @@ htmlBody:@""
 ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 ````
 #### Code Sample - Swift
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-email)
 
 ````swift
 let email: EmailProtocol = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
@@ -236,8 +249,8 @@ do{
 
 * Send SMS
 
-[Full Documentation](https://docs.cloudrail.com/docs/sms)
 #### Code Sample - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-sms)
 
 ````objective-c
 self.service = [[CRNexmo alloc] initWithClientId:key clientSecret:secret];
@@ -246,6 +259,7 @@ self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
 [self.service sendSmsFromName:@"from Code" toNumber:@"+12323423423" content:@"Testing message"];
 ````
 #### Code Sample - Swift
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-sms)
 
 ````swift
 // let sms = Nexmo(accountSid: "[clientID]", authToken: "[authToken]")
@@ -270,8 +284,8 @@ do{
 * Get a list of POIs nearby
 * Filter by categories or search term
 
-[Full Documentation](https://docs.cloudrail.com/docs/points-of-interest)
 #### Code Example - Objective-C
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-pointsofinterest)
 
 ```` objective-c
 //  self.service = [[CRYelp alloc] initWithConsumerKey:@"key" consumerSecret:@"secret" token:@"token"  tokenSecret:@"tokensecret"];
@@ -282,6 +296,7 @@ NSMutableArray<POI*>* pois =  [self.service nearbyPoisWithLatitude:@49.483927 lo
 NSLog(@"%@", pois);
 ````
 #### Code Example - Swift
+[Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-pointsofinterest)
 
 ```` swift
 // let points = GooglePlaces(apiKey: "[secretKey]")
