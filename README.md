@@ -49,7 +49,7 @@ Point of Interest | Google Places, Foursquare, Yelp
 * Generate share links for files and folders.
 
 [Full Documentation](https://docs.cloudrail.com/docs/cloud-storage)
-#### Code Sample
+#### Code Sample - Objective-C
 ```` objective-c
 //   self.service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -57,10 +57,21 @@ Point of Interest | Google Places, Foursquare, Yelp
 
 self.service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
-
 //READ FROM STREAM
 ````
-
+#### Code Sample - Swift
+```` swift
+//let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
+//let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+//let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
+do{
+  let inputStream = try cloudStorage.downloadFileWithPath("/TestFolder/Data.csv")
+} catch let error{
+  print("An error: \(error)")
+}
+//READ FROM STREAM
+````
 ---
 
 ### Social Media Profiles Interface:
@@ -82,7 +93,7 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 * Login using the Social Network.
 
 [Full Documentation](https://docs.cloudrail.com/docs/profile)
-#### Code Sample
+#### Code Sample - Objective-C
 
 ```` objective-c
 //  self.service = [[CRGitHub alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -93,6 +104,22 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
 NSString * fullName = [self.service fullName];
+````
+
+#### Code Sample - Swift
+
+```` swift
+// let profile = GitHub(clientID: "[clientID]", clientSecret: "[clientSecret]")
+// let profile = GooglePlus(clientID: "[clientID]", clientSecret: "[clientSecret]")
+// let profile = Instagram(clientID: "[clientID]", clientSecret: "[clientSecret]")
+// let profile = Slack(clientID: "[clientID]", clientSecret: "[clientSecret]")
+
+let profile = Facebook(clientID: "[clientID]", clientSecret: "[clientSecret]")
+do{
+  let fullName = try profile.fullName()
+} catch let error{
+  print("An error: \(error)")
+}
 ````
 
 ---
@@ -108,14 +135,24 @@ NSString * fullName = [self.service fullName];
 * Make a post for the user.
 
 [Full Documentation](https://docs.cloudrail.com/docs/profile)
-#### Code Sample
+#### Code Sample - Objective-C
 
 ```` objective-c
 
 self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 [self.service postUpdateWithContent:@"Using Cloudrail sdk!"];
 ````
+#### Code Sample - Swift
 
+```` swift
+// let social = Twitter(clientID: "[clientID]", clientSecret: "[clientSecret]")
+let social = Facebook(clientID: "[clientID]", clientSecret: "[clientSecret]")
+do{
+  try social.postUpdateWithContent("CloudRail is awesome!!!")
+} catch let error{
+  print("An error: \(error)")
+}
+````
 ---
 
 ### Payment Interface:
@@ -130,7 +167,7 @@ self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSe
 * Manage subscriptions
 
 [Full Documentation](https://docs.cloudrail.com/docs/payment)
-#### Code Sample
+#### Code Sample - Objective-C
 
 ```` objective-c
 //  self.service = [[CRPayPal alloc] initWithUseSandbox:YES clientId:key clientSecret:secret];
@@ -139,6 +176,18 @@ self.service = [[CRStripe alloc] initWithSecretKey:key];
 SubscriptionPlan * subPlan = [self.service createSubscriptionPlanWithName:@"Plan name" amount:@2000 currency:@"USD" description:@"description" Longerval:@"day" Longerval_count:@7];
 
 NSLog(@"Sub plan %@", subPlan);
+````
+
+#### Code Sample - Swift
+
+```` swift
+let payment = PayPal(useSandbox: [true/false], clientId: "[clientID]")
+do{
+  let subscriptionPlan : CRSubscriptionPlan = try payment.createSubscriptionPlanWithName("My subscription", amount: 500, currency: "USD", description: "myDescription", interval: "week", intervalCount: 2)
+} catch let error{
+  print("An error: \(error)")
+}
+
 ````
 ---
 
@@ -152,7 +201,7 @@ NSLog(@"Sub plan %@", subPlan);
 * Send Email
 
 [Full Documentation](https://docs.cloudrail.com/docs/email)
-#### Code Sample
+#### Code Sample - Objective-C
 
 ````objective-c
 //  self.service = [[CRMailJet alloc] initWithClientId:key clientSecret:secret];
@@ -166,7 +215,16 @@ textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!"
 htmlBody:@""
 ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 ````
+#### Code Sample - Swift
 
+````swift
+let email: EmailProtocol = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
+do{
+  try email.sendEmailFromAddress("info@cloudrail.com", fromName: "CloudRail", toAddresses:NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), subject: "my subject", textBody: "text body", htmlBody: "Html body", ccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), bccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]))
+} catch let error{
+  print("An error: \(error)")
+}
+````
 ---
 
 ### SMS Interface:
@@ -179,13 +237,24 @@ ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 * Send SMS
 
 [Full Documentation](https://docs.cloudrail.com/docs/sms)
-#### Code Sample
+#### Code Sample - Objective-C
 
 ````objective-c
 self.service = [[CRNexmo alloc] initWithClientId:key clientSecret:secret];
 self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
 
 [self.service sendSmsFromName:@"from Code" toNumber:@"+12323423423" content:@"Testing message"];
+````
+#### Code Sample - Swift
+
+````swift
+// let sms = Nexmo(accountSid: "[clientID]", authToken: "[authToken]")
+let sms = Twilio(accountSid: "[clientID]", authToken: "[authToken]")
+do{
+  try sms.sendSmsFromName("CloudRail", toNumber: "+491234567890", content: "Hello from CloudRail")
+} catch let error{
+  print("An error: \(error)")
+}
 ````
 
 ---
@@ -202,7 +271,7 @@ self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
 * Filter by categories or search term
 
 [Full Documentation](https://docs.cloudrail.com/docs/points-of-interest)
-#### Code Example
+#### Code Example - Objective-C
 
 ```` objective-c
 //  self.service = [[CRYelp alloc] initWithConsumerKey:@"key" consumerSecret:@"secret" token:@"token"  tokenSecret:@"tokensecret"];
@@ -212,7 +281,18 @@ NSMutableArray<POI*>* pois =  [self.service nearbyPoisWithLatitude:@49.483927 lo
 
 NSLog(@"%@", pois);
 ````
+#### Code Example - Swift
 
+```` swift
+// let points = GooglePlaces(apiKey: "[secretKey]")
+let points = Foursquare(clientID: "[cientID]", clientSecret: "[clientSecret]")
+do{
+  //Mannheim : 49.483927, 8.473272
+  var points = try places.nearbyPoisWithLatitude(49.483927, longitude: 8.473272, radius: 3000, searchTerm: "Restaurant", categories: [])
+} catch let error{
+  print("An error: \(error)")
+}
+````
 ---
 
 
