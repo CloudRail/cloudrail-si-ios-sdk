@@ -1,7 +1,9 @@
 <p align="center">
 <img width="200px" src="http://cloudrail.github.io/img/cloudrail_logo_github.png"/>
 </p>
+
 # CloudRail SI for iOS
+
 Integrate Multiple Services With Just One API
 
 <p align="center">
@@ -20,8 +22,8 @@ Full documentation can be found at https://docs.cloudrail.com/
 With CloudRail, you can easily integrate external APIs into your application. CloudRail is an abstracted interface that takes several services and then gives a developer-friendly API that uses common functions between all providers. This means that, for example, upload() works in exactly the same way for Dropbox as it does for Google Drive, OneDrive, and other Cloud Storage Services, and getEmail() works similarly the same way across all social networks.
 
 ## Current Interfaces:
-Interface | Included Services 
---- | --- 
+Interface | Included Services
+--- | ---
 Cloud Storage | Dropbox, Google Drive, OneDrive, Box
 Social Profiles | Facebook, GitHub, Google+, LinkedIn, Slack, Twitter, Windows Live, Yahoo, Instagram
 Social Interaction | Facebook, Twitter
@@ -238,27 +240,48 @@ it, simply add the following line to your Podfile (remember to put the `use_fram
 pod "cloudrail-si-ios-sdk"
 ````
 Run `Pod install` again.
-
-## Integrate Into Projects Without Cocoapods
 ### Swift
 
-1. add a new __Objective-C__ File (any file will do) to your project and Xcode will prompt if you want to configure your project with a bridging header (`PROJECTNAME-Bridging-Header.h`), press __YES__ on the prompt.
+* Import the module with `import CloudrailSI` on swift files (Classes, Protocols. etc...).
+
+
+### Objective-C
+
+* Import the framework on the desired class with `#import <CloudRailSI/CloudRailSI.h>`.
+
+## Integrate Into Projects Without Cocoapods
+
+### Swift (use Swift interface)
+
+1. Drag an drop the Framework file to the __"Embedded Binaries"__ of the iOS project, check __"copy files"__ if needed.
+2. You can import the module with `import CloudrailSI` on swift files (Classes, Protocols. etc...).
+
+
+### Swift (use ObjC interface)
+
+1. add a new __Objective-C__ File (any file will do) to your project and Xcode will prompt if you want to configure your project with a bridging header (`PROJECTNAME-Bridging-Header.h`), press __YES__ on the prompt. (In case you can not add a bridging header use [this](http://www.learnswiftonline.com/getting-started/adding-swift-bridging-header/) guide)
 2. Drag an drop the Framework file to the __"Embedded Binaries"__ of the iOS project, check __"copy files"__ if needed.
 3. Xcode will generate and configure the file for you, on the file you have to import ( in a Objective-C way) with `#import <CloudRailSI/CloudRailSI.h>`.
-3. Make an AWESOME APP!!!
 
 ### Objective-C
 
 Simply drag an drop the Framework file to the __"Embedded Binaries"__ of the iOS project, check __"copy files"__ if needed. Import the framework on the desired class with `#import <CloudRailSI/CloudRailSI.h>`, and have fun!
 
+# Start implementing
+
+Now that you are all set up, you can learn how to use CloudRail by heading over to [[Usage]] or [[Usage-(Swift)]]
 ## Other Code Samples
 ### Swift
 
 ```` swift
-override func viewDidAppear(animated: Bool) {
-let dropbox: CRDropbox = CRDropbox.init(clientId: "DROPBOX_ID", clientSecret: "DROPBOX_SECRET", redirectUri:"https://www.cloudrailauth.com/auth", state:"CRSTATE")
-let inputstream =  dropbox.downloadFileWithPath("/futurama.jpg")
-//READ FROM THE INPUT STREAM 
+//let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
+//let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+//let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
+do{
+  let inputStream = try cloudStorage.downloadFileWithPath("/TestFolder/Data.csv")
+} catch let error{
+  print("An error: \(error)")
 }
 ````
 
