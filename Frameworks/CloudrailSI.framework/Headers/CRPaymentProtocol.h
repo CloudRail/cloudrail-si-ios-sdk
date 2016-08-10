@@ -34,7 +34,7 @@
  * Returns information about an existing charge. Mostly used to get an update
  * on the status of the charge.
  *
- * @param id The ID of the charge.
+ * @param identifier The ID of the charge.
  * @return A charge resource for the provided ID.
  */
 -(nonnull CRCharge *)chargeWithIdentifier:(nonnull NSString *)identifier;
@@ -53,7 +53,7 @@
 /**
  * Refund a previously made charge.
  *
- * @param id The ID of the charge to be refunded.
+ * @param identifier The ID of the charge to be refunded.
  * @return A refund resource.
  */
 -(nonnull CRRefund *)refundChargeWithIdentifier:(nonnull NSString *)identifier;
@@ -61,7 +61,7 @@
 /**
  * Refund a specified amount from a previously made charge.
  *
- * @param id The ID of the charge to be refunded.
+ * @param identifier The ID of the charge to be refunded.
  * @param amount The amount that shall be refunded.
  * @return A refund resource.
  */
@@ -71,7 +71,7 @@
  * Returns information about an existing refund. Mostly used to get an update
  * on the status of the refund.
  *
- * @param id The ID of the refund.
+ * @param identifier The ID of the refund.
  * @return A refund resource for the provided ID.
  */
 -(nonnull NSMutableArray<CRRefund *> *)refundsForChargeWithIdentifier:(nonnull NSString *)identifier;
@@ -79,7 +79,7 @@
 /**
  * Returns information about the refunds for a specific charge.
  *
- * @param id The ID of the charge.
+ * @param identifier The ID of the charge.
  * @return A refund resource for the provided charge.
  */
 -(nonnull CRRefund *)refundWithIdentifier:(nonnull NSString *)identifier;
@@ -105,8 +105,8 @@
                                                        amount:(nonnull NSNumber *)amount
                                                      currency:(nonnull NSString *)currency
                                                   description:(nonnull NSString *)description
-                                                     interval:(nonnull NSString *)Longerval
-                                                intervalCount:(nonnull NSNumber *)Longerval_count;
+                                                     interval:(nonnull NSString *)interval
+                                                intervalCount:(nonnull NSNumber *)interval_count;
 
 
 /**
@@ -122,7 +122,7 @@
  * @param planID The ID of the subscription plan.
  * @param name A name for the subscription.
  * @param description A description for the subscription.
- * @param creditCard The customer that shall be subscribed.
+ * @param source The customer that shall be subscribed.
  * @return The newly created subscription resource.
  */
 -(nonnull CRSubscription *)createSubscriptionWithPlanID:(nonnull NSString *)planID
@@ -133,7 +133,7 @@
 /**
  * Cancel an active subscription.
  *
- * @param id ID of the subscription that should be canceled.
+ * @param identifier ID of the subscription that should be canceled.
  */
 -(void)cancelSubscriptionWithIdentifier:(nonnull NSString *)identifier;
 
