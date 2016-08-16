@@ -16,9 +16,19 @@ CloudRail is a free software library which abstracts multiple APIs from differen
 <p align="center">
 <img width="800px" src="http://cloudrail.github.io/img/available_interfaces_v2.png"/>
 </p>
+---
+---
 
----
----
+[![CocoaPods](https://img.shields.io/cocoapods/v/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()
+[![CocoaPods](https://img.shields.io/cocoapods/p/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()
+<!--[![CocoaPods](https://img.shields.io/cocoapods/l/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
+<!--[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
+<!--[![CocoaPods](https://img.shields.io/cocoapods/aw/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
+<!--[![CocoaPods](https://img.shields.io/cocoapods/at/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
+<!--asdas-->
+<!--[![CocoaPods](https://img.shields.io/cocoapods/dw/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
+<!--[![CocoaPods](https://img.shields.io/cocoapods/dm/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
+<!--[![CocoaPods](https://img.shields.io/cocoapods/dt/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
 
 Full documentation can be found at our [wiki](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki).
 
