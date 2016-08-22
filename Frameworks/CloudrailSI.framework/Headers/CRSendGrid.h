@@ -4,7 +4,7 @@
 
 @interface CRSendGrid : NSObject <CREmailProtocol>
 
--(instancetype)initWithUsername:(NSString *)username password:(NSString *)password;
+-(instancetype)initWithApiKey:(NSString *)apiKey;
 
 
 

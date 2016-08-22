@@ -357,7 +357,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6PayPal")
 
 SWIFT_CLASS("_TtC11CloudrailSI8SendGrid")
 @interface SendGrid : NSObject
-- (nonnull instancetype)initWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses error:(NSError * _Nullable * _Null_unspecified)error;
 @end
 
