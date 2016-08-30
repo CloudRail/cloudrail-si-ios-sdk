@@ -19,8 +19,8 @@ CloudRail is a free software library which abstracts multiple APIs from differen
 ---
 ---
 
-[![CocoaPods](https://img.shields.io/cocoapods/v/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()
-[![CocoaPods](https://img.shields.io/cocoapods/p/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/cloudrail-si-ios-sdk.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/p/cloudrail-si-ios-sdk.svg)]()
 <!--[![CocoaPods](https://img.shields.io/cocoapods/l/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
 <!--[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
 <!--[![CocoaPods](https://img.shields.io/cocoapods/aw/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
