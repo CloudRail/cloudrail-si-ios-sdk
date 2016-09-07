@@ -122,6 +122,7 @@ SWIFT_CLASS("_TtC11CloudrailSI3Box")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -145,6 +146,7 @@ SWIFT_CLASS("_TtC11CloudrailSI7Dropbox")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 @class CRDateOfBirth;
@@ -166,6 +168,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8Facebook")
 - (NSMutableArray * _Nullable)connectionsAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -173,6 +176,7 @@ SWIFT_CLASS("_TtC11CloudrailSI10Foursquare")
 @interface Foursquare : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (NSMutableArray * _Nullable)nearbyPoisWithLatitude:(double)latitude longitude:(double)longitude radius:(NSInteger)radius searchTerm:(NSString * _Nonnull)searchTerm categories:(NSMutableArray * _Nonnull)categories error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -191,6 +195,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6GitHub")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -214,6 +219,7 @@ SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -221,6 +227,7 @@ SWIFT_CLASS("_TtC11CloudrailSI12GooglePlaces")
 @interface GooglePlaces : NSObject
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 - (NSMutableArray * _Nullable)nearbyPoisWithLatitude:(double)latitude longitude:(double)longitude radius:(NSInteger)radius searchTerm:(NSString * _Nonnull)searchTerm categories:(NSMutableArray * _Nonnull)categories error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -239,6 +246,7 @@ SWIFT_CLASS("_TtC11CloudrailSI10GooglePlus")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -257,6 +265,7 @@ SWIFT_CLASS("_TtC11CloudrailSI9Instagram")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -275,6 +284,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8LinkedIn")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -282,6 +292,7 @@ SWIFT_CLASS("_TtC11CloudrailSI7MailJet")
 @interface MailJet : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -300,6 +311,7 @@ SWIFT_CLASS("_TtC11CloudrailSI13MicrosoftLive")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -307,6 +319,7 @@ SWIFT_CLASS("_TtC11CloudrailSI5Nexmo")
 @interface Nexmo : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)sendSmsFromName:(NSString * _Nonnull)fromName toNumber:(NSString * _Nonnull)toNumber content:(NSString * _Nonnull)content error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -330,6 +343,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8OneDrive")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 @class CRCreditCard;
@@ -352,6 +366,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6PayPal")
 - (NSMutableArray * _Nullable)listSubscriptionPlansAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (CRSubscription * _Nullable)createSubscriptionWithPlanID:(NSString * _Nonnull)planID name:(NSString * _Nonnull)name description:(NSString * _Nonnull)description source:(CRCreditCard * _Nonnull)source error:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)cancelSubscriptionWithIdentifier:(NSString * _Nonnull)id error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -359,6 +374,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8SendGrid")
 @interface SendGrid : NSObject
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -377,6 +393,7 @@ SWIFT_CLASS("_TtC11CloudrailSI5Slack")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -394,6 +411,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Stripe")
 - (NSMutableArray * _Nullable)listSubscriptionPlansAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (CRSubscription * _Nullable)createSubscriptionWithPlanID:(NSString * _Nonnull)planID name:(NSString * _Nonnull)name description:(NSString * _Nonnull)description source:(CRCreditCard * _Nonnull)source error:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)cancelSubscriptionWithIdentifier:(NSString * _Nonnull)id error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -401,6 +419,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Twilio")
 @interface Twilio : NSObject
 - (nonnull instancetype)initWithAccountSid:(NSString * _Nonnull)accountSid authToken:(NSString * _Nonnull)authToken OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)sendSmsFromName:(NSString * _Nonnull)fromName toNumber:(NSString * _Nonnull)toNumber content:(NSString * _Nonnull)content error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -421,6 +440,7 @@ SWIFT_CLASS("_TtC11CloudrailSI7Twitter")
 - (NSMutableArray * _Nullable)connectionsAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -439,6 +459,7 @@ SWIFT_CLASS("_TtC11CloudrailSI5Yahoo")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 
@@ -446,6 +467,7 @@ SWIFT_CLASS("_TtC11CloudrailSI4Yelp")
 @interface Yelp : NSObject
 - (nonnull instancetype)initWithConsumerKey:(NSString * _Nonnull)consumerKey consumerSecret:(NSString * _Nonnull)consumerSecret token:(NSString * _Nonnull)token tokenSecret:(NSString * _Nonnull)tokenSecret OBJC_DESIGNATED_INITIALIZER;
 - (NSMutableArray * _Nullable)nearbyPoisWithLatitude:(double)latitude longitude:(double)longitude radius:(NSInteger)radius searchTerm:(NSString * _Nonnull)searchTerm categories:(NSMutableArray * _Nonnull)categories error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
 @end
 
 #pragma clang diagnostic pop
