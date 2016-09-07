@@ -12,8 +12,9 @@
  */
 @protocol CRAuthenticatingProtocol <NSObject>
 
+//@property (weak, nonatomic) id target;
 
-
+//@property (weak, nonatomic) UIViewController * presentViewController;
 /**
  * (Optional) Explicitly triggers user authentication.
  * Allows better control over the authentication process.
