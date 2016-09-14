@@ -10,7 +10,7 @@ Integrate Multiple Services With Just One API
 <img width="300px" src="http://cloudrail.github.io/img/cloudrail_si_github.png"/>
 </p>
 
-CloudRail is a free software library which abstracts multiple APIs from different providers into a single and universal interface.
+CloudRail is an API integration solution which abstracts multiple APIs from different providers into a single and universal interface.
 
 **Current Interfaces:**
 <p align="center">
@@ -37,7 +37,9 @@ Learn more about CloudRail on https://cloudrail.com
 ---
 ---
 
-With CloudRail, you can easily integrate external APIs into your application. CloudRail is an abstracted interface that takes several services and then gives a developer-friendly API that uses common functions between all providers. This means that, for example, upload() works in exactly the same way for Dropbox as it does for Google Drive, OneDrive, and other Cloud Storage Services, and getEmail() works similarly the same way across all social networks.
+With CloudRail, you can easily integrate external APIs into your application. 
+CloudRail provides abstracted interfaces that take several services and then exposes a developer-friendly API that uses common functions between all providers. 
+This means that, for example, upload() works in exactly the same way for Dropbox as it does for Google Drive, OneDrive, and other Cloud Storage Services, and getEmail() works similarly the same way across all social networks.
 
 ## Current Interfaces:
 Interface | Included Services
@@ -72,7 +74,7 @@ Point of Interest | Google Places, Foursquare, Yelp
 //   self.service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   self.service = [[CRBox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
 self.service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 //READ FROM STREAM
@@ -83,6 +85,8 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 //let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
 //let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
 //let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
 do{
   let inputStream = try cloudStorage.downloadFileWithPath("/TestFolder/Data.csv")
@@ -120,6 +124,8 @@ do{
 //  self.service = [[CRSlack alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //  self.service = [[CRGooglePlus alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+
 self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
 NSString * fullName = [self.service fullName];
@@ -132,6 +138,8 @@ NSString * fullName = [self.service fullName];
 // let profile = GooglePlus(clientID: "[clientID]", clientSecret: "[clientSecret]")
 // let profile = Instagram(clientID: "[clientID]", clientSecret: "[clientSecret]")
 // let profile = Slack(clientID: "[clientID]", clientSecret: "[clientSecret]")
+
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
 let profile = Facebook(clientID: "[clientID]", clientSecret: "[clientSecret]")
 do{
@@ -159,6 +167,7 @@ do{
 
 ```` objective-c
 
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
 self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 [self.service postUpdateWithContent:@"Using Cloudrail sdk!"];
 ````
@@ -167,6 +176,9 @@ self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSe
 
 ```` swift
 // let social = Twitter(clientID: "[clientID]", clientSecret: "[clientSecret]")
+
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
+
 let social = Facebook(clientID: "[clientID]", clientSecret: "[clientSecret]")
 do{
   try social.postUpdateWithContent("CloudRail is awesome!!!")
@@ -192,6 +204,9 @@ do{
 
 ```` objective-c
 //  self.service = [[CRPayPal alloc] initWithUseSandbox:YES clientId:key clientSecret:secret];
+
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+
 self.service = [[CRStripe alloc] initWithSecretKey:key];
 
 SubscriptionPlan * subPlan = [self.service createSubscriptionPlanWithName:@"Plan name" amount:@2000 currency:@"USD" description:@"description" Longerval:@"day" Longerval_count:@7];
@@ -203,6 +218,8 @@ NSLog(@"Sub plan %@", subPlan);
 [Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-payment)
 
 ```` swift
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
+
 let payment = PayPal(useSandbox: [true/false], clientId: "[clientID]")
 do{
   let subscriptionPlan : CRSubscriptionPlan = try payment.createSubscriptionPlanWithName("My subscription", amount: 500, currency: "USD", description: "myDescription", interval: "week", intervalCount: 2)
@@ -227,6 +244,9 @@ do{
 
 ````objective-c
 //  self.service = [[CRMailJet alloc] initWithClientId:key clientSecret:secret];
+
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+
 self.service = [[CRSendGrid alloc]initWithUsername:key password:secret];
 
 [self.service sendEmailFromAddress:@"cloudrail@cloudrail.com"
@@ -241,6 +261,8 @@ ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 [Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage-(Swift)#interfaces-email)
 
 ````swift
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
+
 let email: EmailProtocol = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
 do{
   try email.sendEmailFromAddress("info@cloudrail.com", fromName: "CloudRail", toAddresses:NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), subject: "my subject", textBody: "text body", htmlBody: "Html body", ccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), bccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]))
@@ -263,6 +285,8 @@ do{
 [Full Documentation](https://github.com/CloudRail/cloudrail-si-ios-sdk/wiki/Usage#interfaces-sms)
 
 ````objective-c
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+
 self.service = [[CRNexmo alloc] initWithClientId:key clientSecret:secret];
 self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
 
@@ -273,6 +297,8 @@ self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
 
 ````swift
 // let sms = Nexmo(accountSid: "[clientID]", authToken: "[authToken]")
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
+
 let sms = Twilio(accountSid: "[clientID]", authToken: "[authToken]")
 do{
   try sms.sendSmsFromName("CloudRail", toNumber: "+491234567890", content: "Hello from CloudRail")
@@ -300,6 +326,9 @@ do{
 ```` objective-c
 //  self.service = [[CRYelp alloc] initWithConsumerKey:@"key" consumerSecret:@"secret" token:@"token"  tokenSecret:@"tokensecret"];
 //  self.service = [[CRGooglePlaces alloc] initWithApiKey:@"apiKey"];
+
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+
 self.service = [[CRFoursquare alloc] initWithClientId:key clientSecret:secret];
 NSMutableArray<POI*>* pois =  [self.service nearbyPoisWithLatitude:@49.483927 longitude:@8.473272 radius:@300 searchTerm:[NSNull null] categories:[NSNull null]];
 
@@ -310,6 +339,8 @@ NSLog(@"%@", pois);
 
 ```` swift
 // let points = GooglePlaces(apiKey: "[secretKey]")
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
+
 let points = Foursquare(clientID: "[cientID]", clientSecret: "[clientSecret]")
 do{
   //Mannheim : 49.483927, 8.473272
@@ -383,6 +414,8 @@ Now that you are all set up, you can learn how to use CloudRail by heading over 
 //let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
 //let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
 let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
+CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
+
 do{
   let inputStream = try cloudStorage.downloadFileWithPath("/TestFolder/Data.csv")
 } catch let error{
@@ -406,6 +439,8 @@ do{
 - (void)viewDidLoad
 {
 [super viewDidLoad];
+[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+
 self.dropbox = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"https://www.cloudrailauth.com/auth" //example state:@"CRSTATE"];
 
 self.googleDrive = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"https://www.cloudrailauth.com/auth" //example state:@"CRSTATE"];
@@ -425,9 +460,13 @@ NSInputStream * streamToDownloadedFile = [self.dropbox downloadFileWithPath:@"/m
 @end
 ````
 
-## Get Updates
+## License Key
 
-To keep updated with CloudRail, including any new providers that are added, just add your email address to https://cloudrail.com/updates/.
+CloudRail provides a developer portal which offers usage insights for the SDKs and allows you to generate license keys.
+
+It's free to sign up and generate a key.
+
+Head over to https://developers.cloudrail.com
 
 ## Pricing
 
@@ -437,7 +476,7 @@ CloudRail also has enterprise licensing options. Please contact us for more info
 
 ## Other Platforms
 
-CloudRail is also available for other platforms like Java and Android. You can find all libraries on https://cloudrail.github.io
+CloudRail is also available for other platforms like Node,Java and Android. You can find all libraries on https://cloudrail.github.io
 
 ## Questions?
 
