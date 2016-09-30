@@ -127,4 +127,13 @@
  */
 -(nonnull NSString *) userName;
 
+/**
+ *  Gets a thumbnail of the image at the path. The path must resolve into an image.
+ *
+ *  @param path path to the image
+ *
+ *  @return NSIntputStream Stream that points to the image thumbnail
+ */
+-(nonnull  NSInputStream *) thumbnail: (nonnull NSString *) path;
+
 @end

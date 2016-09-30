@@ -7,12 +7,14 @@
 //
 
 #import "CRAppDelegate.h"
+#import <CloudRailSI/CloudRailSI.h>
 
 @implementation CRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+  [CRCloudRail setAppKey:@"57ee7ece76b9451e63110ed9"];
     return YES;
 }
 

@@ -72,7 +72,6 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRPaymentProtocol.h>
 #import <CloudRailSI/CRSocialProtocol.h>
 
-
 #pragma mark - ClourRail types
 
 #import <CloudRailSI/CRAddress.h>
@@ -86,6 +85,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRSubscriptionPlan.h>
 #import <CloudRailSI/CRRefund.h>
 #import <CloudRailSI/CRSpaceAllocation.h>
+#import <CloudRailSI/CRImageMetaData.h>
+
 
 #import <CloudRailSI/CRCloudrail.h>
 
