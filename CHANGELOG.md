@@ -1,26 +1,26 @@
 # Change Log
 
-## [4.1.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-08-22)
+## [4.1.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-09-302)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.0.0...4.1.0)
 * The services in the CloudStorage interface now have an additional method to get thumbnails
 * The CloudMetaData objects now have additional dimension information for images
 
-## [4.0.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-08-22)
+## [4.0.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-09-14)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/3.3.1...4.0.0)
 * BREAKING: License key is now mandatory
 * Fixed Bug when authenticating through OAuth2
 * Fixed Issue of bundle getting rejected on AppStore
 
-## [3.3.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.3.1) (2016-08-22)
+## [3.3.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.3.1) (2016-09-12)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/3.3.0...3.3.1)
 * Fixed code signing issue
 
-## [3.3.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.3.0) (2016-08-22)
+## [3.3.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.3.0) (2016-09-07)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/3.2.5...3.3.0)
 * Fixed bug that app locks during authentication popup.
 * Implemented feature that enable user to specify the viewController that authentication will be presented. (target property)
 
-## [3.2.5](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.2.5) (2016-08-22)
+## [3.2.5](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.2.5) (2016-09-07)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/3.2.4...3.2.5)
 * Minor bug fixes
 * Added CHANGELOG file.
