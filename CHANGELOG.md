@@ -1,6 +1,6 @@
 # Change Log
 
-## [4.1.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-09-302)
+## [4.1.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-09-30)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.0.0...4.1.0)
 * The services in the CloudStorage interface now have an additional method to get thumbnails
 * The CloudMetaData objects now have additional dimension information for images
