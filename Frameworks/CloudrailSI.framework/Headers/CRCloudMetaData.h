@@ -22,7 +22,7 @@
 @property (nonatomic) NSString * name;
 
 /**
- *  The size of the file (in bytes)
+ *  The size of the file (in bytes), derived from long type.
  */
 @property (nonatomic) NSNumber * size;
 
@@ -30,8 +30,9 @@
  *  A number describing if the file is a folder or not. Zero value representss false (NO) and positive 1 represents True (YES)
  */
 @property (nonatomic) NSNumber * folder;
+ 
 /**
- *  Timestamp that describest the last time the file was modified.
+ *  Timestamp that describest the last time the file was modified, derived from long type.
  */
 @property (nonatomic) NSNumber * modifiedAt;
 

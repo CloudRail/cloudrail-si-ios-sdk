@@ -21,6 +21,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRBox.h>
 #import <CloudRailSI/CRGoogleDrive.h>
 #import <CloudRailSI/CROneDrive.h>
+#import <CloudRailSI/CREgnyte.h>
 
 
 #pragma mark - ProfileInterface
@@ -58,9 +59,6 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRMailJet.h>
 
 
-
-
-
 #pragma mark - Protocols
 #import <CloudRailSI/CRCloudStorageProtocol.h>
 #import <CloudRailSI/CRProfileProtocol.h>
@@ -86,6 +84,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRRefund.h>
 #import <CloudRailSI/CRSpaceAllocation.h>
 #import <CloudRailSI/CRImageMetaData.h>
+
+
 
 
 #import <CloudRailSI/CRCloudrail.h>

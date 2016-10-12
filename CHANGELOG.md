@@ -1,5 +1,14 @@
 # Change Log
 
+## [4.2.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.2.0) (2016-10-12)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.1.0...4.2.0)
+* New CloudStorage interface added, **Egnyte**
+* Method `thumbnail:` on CloudStorage interface renamed to thumbnailOfFileWithPath:
+* Disabled CodeSigning
+* Update CRCLoudMetadata code documentaton
+* Bug fixes on GoogleDrive and OneDrive
+* Internal bug fixes and improvements
+
 ## [4.1.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.0.0) (2016-09-30)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.0.0...4.1.0)
 * The services in the CloudStorage interface now have an additional method to get thumbnails

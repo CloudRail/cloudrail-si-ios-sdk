@@ -118,6 +118,7 @@ SWIFT_CLASS("_TtC11CloudrailSI3Box")
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
@@ -142,6 +143,32 @@ SWIFT_CLASS("_TtC11CloudrailSI7Dropbox")
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Null_unspecified)error;
+- (void)setTarget:(id _Null_unspecified)target;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI6Egnyte")
+@interface Egnyte : NSObject
+- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
+- (NSInputStream * _Nullable)downloadFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)uploadFileToPath:(NSString * _Nonnull)filePath stream:(NSInputStream * _Nonnull)stream size:(long)size overwrite:(BOOL)overwrite error:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)moveFileFromPath:(NSString * _Nonnull)sourcePath destinationPath:(NSString * _Nonnull)destinationPath error:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)deleteFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)copyFileFromPath:(NSString * _Nonnull)sourcePath destinationPath:(NSString * _Nonnull)destinationPath error:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Null_unspecified)error;
+- (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Null_unspecified)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Null_unspecified)error;
+- (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
+- (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
@@ -215,6 +242,7 @@ SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
@@ -339,6 +367,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8OneDrive")
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Null_unspecified)error;

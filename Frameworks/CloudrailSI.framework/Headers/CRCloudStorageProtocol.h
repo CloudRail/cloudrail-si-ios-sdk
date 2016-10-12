@@ -18,20 +18,6 @@
 @protocol CRCloudStorageProtocol <CRAuthenticatingProtocol,CRPersistableProtocol>
 
 /**
- *  Basic contructor method for any CRCloudStorageProtocol conforming class
- *
- *  @param clientId     The client identifier (or key) of the corresponding service.
- *  @param clientSecret The client secret (or secret) of the corresponding service.
- *  @param redirectUri  The redirect url used to capture the response from the service.
- *  @param state        Value used to identify diferent states on the server side. Unused in iOS version of CloudRail SDK
- *
- *  @return instancetype  id<CRCloudStorageProtocol> Initialized instance of a CRCloudStorage service using the values from the parameters.
- */
--(nonnull instancetype)initWithClientId:(nonnull NSString *)clientId
-                           clientSecret:(nonnull NSString *)clientSecret
-                            redirectUri:(nonnull NSString *)redirectUri
-                                  state:(nonnull NSString *)state;
-/**
  *  Downloads a file from a cloud storage
  * @param filePath The path to the file from the root folder and including the name, e.g /myFolder/myFile.jpg
  * @return A stream from which the file can be read
@@ -134,6 +120,22 @@
  *
  *  @return NSIntputStream Stream that points to the image thumbnail
  */
--(nonnull  NSInputStream *) thumbnail: (nonnull NSString *) path;
+-(nonnull  NSInputStream *) thumbnailOfFileWithPath: (nonnull NSString *) path;
 
+
+@optional
+/**
+ *  Basic contructor method for any CRCloudStorageProtocol conforming class
+ *
+ *  @param clientId     The client identifier (or key) of the corresponding service.
+ *  @param clientSecret The client secret (or secret) of the corresponding service.
+ *  @param redirectUri  The redirect url used to capture the response from the service.
+ *  @param state        Value used to identify diferent states on the server side. Unused in iOS version of CloudRail SDK
+ *
+ *  @return instancetype  id<CRCloudStorageProtocol> Initialized instance of a CRCloudStorage service using the values from the parameters.
+ */
+-(nonnull instancetype)initWithClientId:(nonnull NSString *)clientId
+                           clientSecret:(nonnull NSString *)clientSecret
+                            redirectUri:(nonnull NSString *)redirectUri
+                                  state:(nonnull NSString *)state __attribute__((deprecated));
 @end
