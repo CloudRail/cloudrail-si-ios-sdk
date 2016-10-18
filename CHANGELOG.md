@@ -1,5 +1,10 @@
 # Change Log
 
+
+## [5.0.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.0.0) (2016-10-17)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.2.0...5.0.0)
+* Changed to swift 3
+
 ## [4.2.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/4.2.0) (2016-10-12)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.1.0...4.2.0)
 * New CloudStorage interface added, **Egnyte**
