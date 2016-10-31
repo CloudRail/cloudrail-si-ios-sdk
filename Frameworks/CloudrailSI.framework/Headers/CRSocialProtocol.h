@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRPersistableProtocol.h"
 
 /**
  * Interface for interaction with social networks
