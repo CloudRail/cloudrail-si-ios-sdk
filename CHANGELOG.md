@@ -1,5 +1,11 @@
 # Change Log
+## [5.0.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.0.2) (2016-11-2)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.0.1...5.0.2)
+* Using Swift 3.0.1
 
+## [5.0.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.0.1) (2016-10-31)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.0.0...5.0.1)
+* Fixed bug where couldnt download files with special characters in Dropbox interface.
 
 ## [5.0.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.0.0) (2016-10-17)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/4.2.0...5.0.0)
