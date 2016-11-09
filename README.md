@@ -158,7 +158,7 @@ do{
   print("An error: \(error)")
 }
 ```
-
+---
 ### Social Media Profiles Interface:
 
 * Facebook
