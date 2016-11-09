@@ -536,7 +536,7 @@ CloudRail is free to use as long as your app is free as well. Learn more about o
 
 ## Other Platforms
 
-CloudRail is also available for other platforms like Node,Java and Android. You can find all libraries on https://cloudrail.com
+CloudRail is also available for other platforms like Node.js, Java and Android. You can find all libraries on https://cloudrail.com
 
 ## Questions?
 
