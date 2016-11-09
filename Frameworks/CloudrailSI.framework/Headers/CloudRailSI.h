@@ -23,6 +23,11 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CROneDrive.h>
 #import <CloudRailSI/CREgnyte.h>
 
+#pragma mark - CloudStorage
+#import <CloudRailSI/CRAmazonS3.h>
+#import <CloudRailSI/CRBackblaze.h>
+#import <CloudRailSI/CRRackspace.h>
+#import <CloudRailSI/CRMicrosoftAzure.h>
 
 #pragma mark - ProfileInterface
 #import <CloudRailSI/CRFacebook.h>
@@ -84,6 +89,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRRefund.h>
 #import <CloudRailSI/CRSpaceAllocation.h>
 #import <CloudRailSI/CRImageMetaData.h>
+#import <CloudRailSI/CRBucket.h>
+#import <CloudRailSI/CRBusinessFileMetaData.h>
 
 
 

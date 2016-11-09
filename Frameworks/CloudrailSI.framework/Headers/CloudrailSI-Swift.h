@@ -120,9 +120,43 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class NSInputStream;
-@class CRCloudMetaData;
+@class CRBucket;
 @class NSMutableArray;
+@class CRBusinessFileMetaData;
+@class NSInputStream;
+
+SWIFT_CLASS("_TtC11CloudrailSI8AmazonS3")
+@interface AmazonS3 : NSObject
+- (nonnull instancetype)initWithAccessKeyId:(NSString * _Nonnull)accessKeyId secretAccessKey:(NSString * _Nonnull)secretAccessKey region:(NSString * _Nonnull)region OBJC_DESIGNATED_INITIALIZER;
+- (CRBucket * _Nullable)createBucket:(NSString * _Nonnull)bucketName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listBucketsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteBucketWithID:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (CRBusinessFileMetaData * _Nullable)metadataOfFileWithPath:(CRBucket * _Nonnull)bucket fileName:(NSString * _Nonnull)fileName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listFilesInBucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)uploadFileToBucket:(CRBucket * _Nonnull)bucket name:(NSString * _Nonnull)name stream:(NSInputStream * _Nonnull)stream size:(long)size error:(NSError * _Nullable * _Nullable)error;
+- (NSInputStream * _Nullable)downloadFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI9Backblaze")
+@interface Backblaze : NSObject
+- (nonnull instancetype)initWithAccountID:(NSString * _Nonnull)accountID appKey:(NSString * _Nonnull)appKey OBJC_DESIGNATED_INITIALIZER;
+- (CRBucket * _Nullable)createBucket:(NSString * _Nonnull)bucketName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listBucketsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteBucketWithID:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (CRBusinessFileMetaData * _Nullable)metadataOfFileWithPath:(CRBucket * _Nonnull)bucket fileName:(NSString * _Nonnull)fileName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listFilesInBucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)uploadFileToBucket:(CRBucket * _Nonnull)bucket name:(NSString * _Nonnull)name stream:(NSInputStream * _Nonnull)stream size:(long)size error:(NSError * _Nullable * _Nullable)error;
+- (NSInputStream * _Nullable)downloadFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class CRCloudMetaData;
 @class CRSpaceAllocation;
 
 SWIFT_CLASS("_TtC11CloudrailSI3Box")
@@ -359,6 +393,22 @@ SWIFT_CLASS("_TtC11CloudrailSI7MailJet")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI14MicrosoftAzure")
+@interface MicrosoftAzure : NSObject
+- (nonnull instancetype)initWithAccountName:(NSString * _Nonnull)accountName accessKey:(NSString * _Nonnull)accessKey OBJC_DESIGNATED_INITIALIZER;
+- (CRBucket * _Nullable)createBucket:(NSString * _Nonnull)bucketName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listBucketsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteBucketWithID:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (CRBusinessFileMetaData * _Nullable)metadataOfFileWithPath:(CRBucket * _Nonnull)bucket fileName:(NSString * _Nonnull)fileName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listFilesInBucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)uploadFileToBucket:(CRBucket * _Nonnull)bucket name:(NSString * _Nonnull)name stream:(NSInputStream * _Nonnull)stream size:(long)size error:(NSError * _Nullable * _Nullable)error;
+- (NSInputStream * _Nullable)downloadFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI13MicrosoftLive")
 @interface MicrosoftLive : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
@@ -433,6 +483,22 @@ SWIFT_CLASS("_TtC11CloudrailSI6PayPal")
 - (NSMutableArray * _Nullable)listSubscriptionPlansAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRSubscription * _Nullable)createSubscriptionWithPlanID:(NSString * _Nonnull)planID name:(NSString * _Nonnull)name description:(NSString * _Nonnull)description source:(CRCreditCard * _Nonnull)source error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)cancelSubscriptionWithIdentifier:(NSString * _Nonnull)id error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI9Rackspace")
+@interface Rackspace : NSObject
+- (nonnull instancetype)initWithUsername:(NSString * _Nonnull)username apiKey:(NSString * _Nonnull)apiKey region:(NSString * _Nonnull)region OBJC_DESIGNATED_INITIALIZER;
+- (CRBucket * _Nullable)createBucket:(NSString * _Nonnull)bucketName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listBucketsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteBucketWithID:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (CRBusinessFileMetaData * _Nullable)metadataOfFileWithPath:(CRBucket * _Nonnull)bucket fileName:(NSString * _Nonnull)fileName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listFilesInBucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)uploadFileToBucket:(CRBucket * _Nonnull)bucket name:(NSString * _Nonnull)name stream:(NSInputStream * _Nonnull)stream size:(long)size error:(NSError * _Nullable * _Nullable)error;
+- (NSInputStream * _Nullable)downloadFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end

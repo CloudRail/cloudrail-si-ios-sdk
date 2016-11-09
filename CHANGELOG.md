@@ -1,4 +1,9 @@
 # Change Log
+
+## [5.1.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.2) (2016-11-9)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.0.2...5.1.2)
+* Added new interface - CRBusinessCloudStorage
+
 ## [5.0.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.0.2) (2016-11-2)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.0.1...5.0.2)
 * Using Swift 3.0.1
