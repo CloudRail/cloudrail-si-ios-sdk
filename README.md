@@ -45,6 +45,7 @@ This means that, for example, upload() works in exactly the same way for Dropbox
 Interface | Included Services
 --- | ---
 Cloud Storage | Dropbox, Google Drive, OneDrive, Box
+Business Cloud Storage | Amazon S3, Microsoft Azure, Rackspace, Backblaze
 Social Profiles | Facebook, GitHub, Google+, LinkedIn, Slack, Twitter, Windows Live, Yahoo, Instagram
 Social Interaction | Facebook, Twitter
 Payment | PayPal, Stripe
@@ -96,6 +97,69 @@ do{
 //READ FROM STREAM
 ````
 ---
+### Business/Bucket Cloud Storage Interface:
+
+* Amazon Web Services S3
+* Microsoft Azure
+* Rackspace
+* Backblaze
+
+#### Features
+
+* Create, delete and list buckets
+* Upload files
+* Download files
+* List files in a bucket and delete files
+* Get file metadata (last modified, size, etc.)
+
+
+#### Code Sample - Objective-C
+[Full Documentation](https://documentation.cloudrail.com/nodejs/nodejs/Usage#interfaces-businesscloudstorage)
+
+```objective-c
+
+// self.service = [[CRMicrosoftAzure alloc] initWithAccountName:@"[account_name]" accessKey:@"[access_key]"];
+// self.service = [[CRAmazonS3 alloc] initWithAccessKeyId:@"[clientID]" secretAccessKey:@"[client_Secret]" region:@"[region]"];
+// self.service = [[CRRackspace alloc] initWithUsername:@"[username]" apiKey:@"[api_key]" region:@"[region]"];
+self.service = [[CRBackblaze alloc] initWithAccountID:@"[account_init]" appKey:@"[app_key]"];
+
+CRBucket * bucket = [[CRBucket alloc] init];
+bucket.name = @"[bucket_name]";
+bucket.identifier = @"[bucket_id]";
+
+NSData * data = //data source;
+NSInputStream * inputStream = [NSInputStream inputStreamWithData:data];
+@try {
+  [self.currentService uploadFileToBucket:bucket name:@"[file_name]" withStream:inputStream size:data.length];
+} @catch (NSException *exception) {
+  //handle exception
+}
+
+```
+#### Code Sample - Swift
+[Full Documentation](https://documentation.cloudrail.com/nodejs/nodejs/Usage-(Swift)#interfaces-businesscloudstorage)
+```` swift
+//let cloudStorage : BusinessCloudStorageProtocol = Backblaze.init(accountID: "[account_id]", appKey: "[app_key]")
+//let cloudStorage : BusinessCloudStorageProtocol = Rackspace.init(username: "[username]", apiKey: "[api_key]", region: "[region]")
+//let cloudStorage : BusinessCloudStorageProtocol = MicrosoftAzure.init(accountName: "[account_name]", accessKey: "access_key")
+let cloudStorage : BusinessCloudStorageProtocol = AmazonS3.init(accessKeyId: "[access_key]", secretAccessKey: "[secret_key]", region: "[region]")
+
+let bucket : CRBucket = CRBucket.init()
+bucket.name = "[bucketName]";
+bucket.identifier = "[identifier]"
+
+let path = Bundle.main.path(forResource: "UserData", ofType: "csv")!
+let fileAttributes = try! FileManager.default.attributesOfItem(atPath: path)
+let fileSize: UInt64 = fileAttributes[FileAttributeKey.size] as! UInt64
+let stream = InputStream.init(fileAtPath: path)!
+
+
+do{
+  try cloudStorage.uploadFileToBucket(bucket, name: "[fileName]", stream: stream, size:fileSize)
+} catch let error{
+  print("An error: \(error)")
+}
+````
 
 ### Social Media Profiles Interface:
 
