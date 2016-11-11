@@ -18,11 +18,11 @@
  * Optional because all methods that require prior authentication will trigger it automatically,
  * unless this method has been called before.
  */
--(void) login;
+- (void)login;
 
 /**
  * (Optional) Revokes the current authentication.
  */
--(void) logout;
+- (void)logout;
 
 @end

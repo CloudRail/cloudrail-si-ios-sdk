@@ -10,7 +10,7 @@
 
 @interface CRSandboxObject : NSObject
 
--(id) get:(NSString*) key;
--(void) setObject:(id) object forKey:(NSString*) key;
+- (id) get:(NSString*) key;
+- (void) setObject:(id) object forKey:(NSString*) key;
 
 @end

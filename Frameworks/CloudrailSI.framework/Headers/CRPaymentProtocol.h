@@ -27,7 +27,7 @@
  * @param source The credit card to be charged.
  * @return A charge resource representing the newly created payment.
  */
--(nonnull CRCharge *)createChargeWithAmount:(nonnull NSNumber *)amount
+- (nonnull CRCharge *)createChargeWithAmount:(nonnull NSNumber *)amount
                                    currency:(nonnull NSString *)currency
                                      source:(nonnull CRCreditCard *)source;
 /**
@@ -37,7 +37,7 @@
  * @param identifier The ID of the charge.
  * @return A charge resource for the provided ID.
  */
--(nonnull CRCharge *)chargeWithIdentifier:(nonnull NSString *)identifier;
+- (nonnull CRCharge *)chargeWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Receive a list of charges within a specified timeframe.
@@ -47,7 +47,7 @@
  * @param creditCard Optionally the credit card information so it can be listed all the charges of this specific credit card.
  * @return List of charge resources.
  */
--(nonnull NSMutableArray<CRCharge *> *)listChargesFrom:(nonnull NSNumber *)from
+- (nonnull NSMutableArray<CRCharge *> *)listChargesFrom:(nonnull NSNumber *)from
                                                     to:(nonnull NSNumber *)to
                                             creditCard:(nonnull CRCreditCard *)creditCard;
 /**
@@ -56,7 +56,7 @@
  * @param identifier The ID of the charge to be refunded.
  * @return A refund resource.
  */
--(nonnull CRRefund *)refundChargeWithIdentifier:(nonnull NSString *)identifier;
+- (nonnull CRRefund *)refundChargeWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Refund a specified amount from a previously made charge.
@@ -65,7 +65,7 @@
  * @param amount The amount that shall be refunded.
  * @return A refund resource.
  */
--(nonnull CRRefund *)partiallyRefundChargeWithIdentifier:(nonnull NSString *)identifier
+- (nonnull CRRefund *)partiallyRefundChargeWithIdentifier:(nonnull NSString *)identifier
                                                   amount:(nonnull NSNumber *)amount;
 /**
  * Returns information about an existing refund. Mostly used to get an update
@@ -74,7 +74,7 @@
  * @param identifier The ID of the refund.
  * @return A refund resource for the provided ID.
  */
--(nonnull NSMutableArray<CRRefund *> *)refundsForChargeWithIdentifier:(nonnull NSString *)identifier;
+- (nonnull NSMutableArray<CRRefund *> *)refundsForChargeWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Returns information about the refunds for a specific charge.
@@ -82,7 +82,7 @@
  * @param identifier The ID of the charge.
  * @return A refund resource for the provided charge.
  */
--(nonnull CRRefund *)refundWithIdentifier:(nonnull NSString *)identifier;
+- (nonnull CRRefund *)refundWithIdentifier:(nonnull NSString *)identifier;
 
 /**
  * Creates a subscription plan which is required to use subscription based payments.
@@ -101,7 +101,7 @@
  *      two weeks.
  * @return Returns the newly created subscription plan resource.
  */
--(nonnull CRSubscriptionPlan *)createSubscriptionPlanWithName:(nonnull NSString *)name
+- (nonnull CRSubscriptionPlan *)createSubscriptionPlanWithName:(nonnull NSString *)name
                                                        amount:(nonnull NSNumber *)amount
                                                      currency:(nonnull NSString *)currency
                                                   description:(nonnull NSString *)description
@@ -114,7 +114,7 @@
  *
  * @return List of subscription plans.
  */
--(nonnull NSMutableArray<CRSubscriptionPlan *> *)listSubscriptionPlans;
+- (nonnull NSMutableArray<CRSubscriptionPlan *> *)listSubscriptionPlans;
 
 /**
  * Subscribes a new customer to an existing subscription plan.
@@ -125,7 +125,7 @@
  * @param source The customer that shall be subscribed.
  * @return The newly created subscription resource.
  */
--(nonnull CRSubscription *)createSubscriptionWithPlanID:(nonnull NSString *)planID
+- (nonnull CRSubscription *)createSubscriptionWithPlanID:(nonnull NSString *)planID
                                                    name:(nonnull NSString *)name
                                             description:(nonnull NSString *)description
                                                  source:(nonnull CRCreditCard *)source;
@@ -135,7 +135,7 @@
  *
  * @param identifier ID of the subscription that should be canceled.
  */
--(void)cancelSubscriptionWithIdentifier:(nonnull NSString *)identifier;
+- (void)cancelSubscriptionWithIdentifier:(nonnull NSString *)identifier;
 
 
 @end

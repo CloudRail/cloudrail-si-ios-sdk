@@ -25,7 +25,7 @@
  * @param categories Optional list of categories. Available categories can be found in the main documentation.
  * @return A list of POIs for the target location.
  */
--(nonnull NSMutableArray<CRPOI *> *) nearbyPoisWithLatitude:(nonnull NSNumber *)latitude
+- (nonnull NSMutableArray<CRPOI *> *) nearbyPoisWithLatitude:(nonnull NSNumber *)latitude
                                                   longitude:(nonnull NSNumber *)longitude
                                                      radius:(nonnull NSNumber *)radius
                                                  searchTerm:(nullable NSString *)searchTerm

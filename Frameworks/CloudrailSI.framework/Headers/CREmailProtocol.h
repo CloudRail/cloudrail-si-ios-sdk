@@ -26,14 +26,14 @@
  * @param ccAddresses Optional. A list of CC recipient email addresses.
  * @param bccAddresses Optional. A list of BCC recipient email addresses.
  */
--(void)sendEmailFromAddress:(NSString *)fromAddress
-         fromName:(NSString *)fromName
-      toAddresses:(NSMutableArray<NSString *> *)toAddresses
-          subject:(NSString *)subject
-         textBody:(NSString *)textBody
-         htmlBody:(NSString *)htmlBody
-      ccAddresses:(NSMutableArray<NSString *> *)ccAddresses
-     bccAddresses:(NSMutableArray<NSString *> *)bccAddresses;
+- (void)sendEmailFromAddress:(NSString *)fromAddress
+                   fromName:(NSString *)fromName
+                toAddresses:(NSMutableArray<NSString *> *)toAddresses
+                    subject:(NSString *)subject
+                   textBody:(NSString *)textBody
+                   htmlBody:(NSString *)htmlBody
+                ccAddresses:(NSMutableArray<NSString *> *)ccAddresses
+               bccAddresses:(NSMutableArray<NSString *> *)bccAddresses;
 
 
 @end

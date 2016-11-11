@@ -16,7 +16,6 @@
 @property (nonatomic) long fileSize;
 @property (nonatomic) long lastModifiedTimestamp;
 
-
 @property (nonatomic) NSNumber * size;
 @property (nonatomic) NSNumber * lastModified;
 

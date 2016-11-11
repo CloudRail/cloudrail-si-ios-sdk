@@ -19,5 +19,5 @@
  *
  * @return NSDate the date object
  */
--(NSDate *) date;
+- (NSDate *) date;
 @end

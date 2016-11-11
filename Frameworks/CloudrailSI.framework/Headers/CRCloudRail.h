@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 /**
  * This static class saves the app key provided by the developer.
  */

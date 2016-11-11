@@ -22,7 +22,7 @@
  * @param filePath The path to the file from the root folder and including the name, e.g /myFolder/myFile.jpg
  * @return A stream from which the file can be read
  */
--(nonnull NSInputStream *)downloadFileWithPath:(nonnull NSString *)filePath;
+- (nonnull NSInputStream *)downloadFileWithPath:(nonnull NSString *) filePath;
 
 /**
  *  Uploads a file to a cloud storage
@@ -30,44 +30,44 @@
  * @param stream A stream from which the file can bwe read
  * @param size The size in bytes of the data that can be read from the stream
  */
--(void) uploadFileToPath:(nonnull NSString *)filePath
-              withStream:(nonnull NSInputStream *)stream
-                    size:(long)size
-               overwrite:(BOOL)overwrite;
+- (void)uploadFileToPath:(nonnull NSString *) filePath
+              withStream:(nonnull NSInputStream *) stream
+                    size:(long) size
+               overwrite:(BOOL) overwrite;
 /**
  *  Moves a file in the cloud storage
  * @param sourcePath The path to the file which should be moved from the root folder and including the name
  * @param destinationPath The path to move the file to from the root folder and including the name
  */
--(void)moveFileFromPath:(nonnull NSString *)sourcePath
-      toDestinationPath:(nonnull NSString *)destinationPath;
+- (void)moveFileFromPath:(nonnull NSString *) sourcePath
+      toDestinationPath:(nonnull NSString *) destinationPath;
 
 /**
  *  Deletes a file from the cloud storage
  * @param filePath The path to the file to be deleted from the root folder and including the name
  */
--(void)deleteFileWithPath:(nonnull NSString *)filePath;
+- (void)deleteFileWithPath:(nonnull NSString *) filePath;
 
 /**
  *  Copies a file from one path in the cloud storage to another
  * @param sourcePath The path of the origin file from the root folder and including the name
  * @param destinationPath The path of the destination file from the root folder and including the name
  */
--(void)copyFileFromPath:(nonnull NSString *)sourcePath
-      toDestinationPath:(nonnull NSString *)destinationPath;
+- (void)copyFileFromPath:(nonnull NSString *) sourcePath
+       toDestinationPath:(nonnull NSString *) destinationPath;
 
 /**
  *  Creates a folder at the given path
  * @param folderPath The path to the folder from the root folder and including the name, e.g. /myNewFolder
  */
--(void)createFolderWithPath:(nonnull NSString*)folderPath;
+- (void)createFolderWithPath:(nonnull NSString*) folderPath;
 
 /**
  *  Gets metadata about the file/folder
  * @param filePath The path to the file from the root folder and including the name
  * @return A container for metadata
  */
--(nonnull CRCloudMetaData *)metadataOfFileWithPath:(nonnull NSString *)filePath;
+- (nonnull CRCloudMetaData *)metadataOfFileWithPath:(nonnull NSString *) filePath;
 
 /**
  *  Checks the existance of a File or Folder
@@ -76,14 +76,14 @@
  *
  *  @return BOOL YES if the file exist at a given path
  */
--(BOOL) fileExistsAtPath:(nonnull NSString *) path;
+- (BOOL) fileExistsAtPath:(nonnull NSString *) path;
 
 /**
  *  Gets the metadata of this folder's children
  * @param folderPath The path to the file from the root folder and including the name
  * @return A container for metadata
  */
--(nonnull NSMutableArray<CRCloudMetaData *> *)childrenOfFolderWithPath:(nonnull NSString *)folderPath;
+- (nonnull NSMutableArray<CRCloudMetaData *> *)childrenOfFolderWithPath:(nonnull NSString *) folderPath;
 
 /**
  * Creates a share link and the permission is only to 'view' and download the file/folder
@@ -91,27 +91,27 @@
  * @param path the path to the file/folder which the link to will be created
  * @return The url as a String
  */
--(nonnull NSString *) shareLinkForFileWithPath:(nonnull NSString *) path;
+- (nonnull NSString *) shareLinkForFileWithPath:(nonnull NSString *) path;
 
 /**
  *
  * @return The total space in bytes and the used space
  */
--(nonnull CRSpaceAllocation *) spaceAllocation;
+- (nonnull CRSpaceAllocation *) spaceAllocation;
 
 /**
  *  Method to retrieve a user's login (name/email address/...)
  *
  *  @return NSString the user login.
  */
--(nonnull NSString *) userLogin;
+- (nonnull NSString *) userLogin;
 
 /**
  *  Method to retrieve a user's name
  *
  *  @return NSString the user name.
  */
--(nonnull NSString *) userName;
+- (nonnull NSString *) userName;
 
 /**
  *  Gets a thumbnail of the image at the path. The path must resolve into an image.
@@ -120,8 +120,7 @@
  *
  *  @return NSIntputStream Stream that points to the image thumbnail
  */
--(nonnull  NSInputStream *) thumbnailOfFileWithPath: (nonnull NSString *) path;
-
+- (nonnull  NSInputStream *) thumbnailOfFileWithPath: (nonnull NSString *) path;
 
 @optional
 /**
@@ -134,8 +133,8 @@
  *
  *  @return instancetype  id<CRCloudStorageProtocol> Initialized instance of a CRCloudStorage service using the values from the parameters.
  */
--(nonnull instancetype)initWithClientId:(nonnull NSString *)clientId
-                           clientSecret:(nonnull NSString *)clientSecret
-                            redirectUri:(nonnull NSString *)redirectUri
-                                  state:(nonnull NSString *)state __attribute__((deprecated));
+- (nonnull instancetype)initWithClientId:(nonnull NSString *) clientId
+                           clientSecret:(nonnull NSString *) clientSecret
+                            redirectUri:(nonnull NSString *) redirectUri
+                                  state:(nonnull NSString *) state __attribute__((deprecated));
 @end

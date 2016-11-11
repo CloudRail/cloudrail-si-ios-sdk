@@ -5,7 +5,7 @@
 @interface CRSendGrid : NSObject <CREmailProtocol>
 @property (weak, nonatomic) id target;
 
--(instancetype)initWithApiKey:(NSString *)apiKey;
+- (instancetype)initWithApiKey:(NSString *)apiKey;
 
 
 

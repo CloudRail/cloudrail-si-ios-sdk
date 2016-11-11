@@ -30,7 +30,7 @@
 @property (nonatomic) NSString * type;
 
 
--(void)initWithCvc:(NSString *) cvc
+- (void)initWithCvc:(NSString *) cvc
        expireMonth:(NSNumber*) expire_month
         expireYear:(NSNumber*) expire_year
             number:(NSString *) number

@@ -20,7 +20,7 @@
 
 @property (nonatomic) NSNumber * refunded;
 
--(void) initWithAmount:(NSNumber *) amount
+- (void) initWithAmount:(NSNumber *) amount
                created:(NSNumber *) created
               currency:(NSString *) currency
             identifier:(NSString *) identifier

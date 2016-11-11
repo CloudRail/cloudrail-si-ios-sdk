@@ -26,49 +26,49 @@
  *
  *  @return instancetype  id<CRProfileProtocol> Initialized instance of a CRProfile service using the values from the parameters.
  */
--(nonnull instancetype)initWithClientId:(nonnull NSString *)clientId
-                           clientSecret:(nonnull NSString *)clientSecret
-                            redirectUri:(nonnull NSString *)redirectUri
-                                  state:(nonnull NSString *)state;
+- (nonnull instancetype)initWithClientId:(nonnull NSString *) clientId
+                           clientSecret:(nonnull NSString *) clientSecret
+                            redirectUri:(nonnull NSString *) redirectUri
+                                  state:(nonnull NSString *) state;
 
 /**
  * @return A unique identifier for the authenticated user. All services provide this value. Useful for "Login with ...". Prefixed with the lowercased service name and a minus.
  */
--(nonnull NSString *)identifier;
+- (nonnull NSString *)identifier;
 
 /**
  * @return The user's full name or null if not present
  */
--(nullable NSString *)fullName;
+- (nullable NSString *)fullName;
 
 /**
  * @return The user's email address or null if not present
  */
--(nullable NSString *)email;
+- (nullable NSString *)email;
 
 /**
  * @return The user's gender, normalized to be one of "female", "male", "other" or null if not present
  */
--(nullable NSString *)gender;
+- (nullable NSString *)gender;
 
 /**
  * @return The description the user has given themselves or null if not present
  */
--(nullable NSString *)profileDescription;
+- (nullable NSString *)profileDescription;
 
 /**
  * @return The date of birth in a special format, see {@link com.cloudrail.si.types.DateOfBirth DateOfBirth}
  */
--(nullable CRDateOfBirth *)dateOfBirth;
+- (nullable CRDateOfBirth *)dateOfBirth;
 
 /**
  * @return The locale/language setting of the user, e.g. "en", "de" or null if not present
  */
--(nullable NSString *)locale;
+- (nullable NSString *)locale;
 
 /**
  * @return The URL of the user's profile picture or null if not present
  */
--(nonnull NSString *)pictureURL;
+- (nonnull NSString *)pictureURL;
 
 @end

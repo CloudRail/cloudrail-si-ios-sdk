@@ -1,5 +1,16 @@
 # Change Log
 
+## [5.1.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.3) (2016-11-11)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.1.2...5.1.3)
+
+* Fixed Bug of AmazonS3 instability when performing multiple operations
+* Updated documentation for BusinessCloudStorage (BCS)
+* Fixed method names (BCS) to conform with Apple style guide
+
+## [5.1.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.2) (2016-11-9)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.0.2...5.1.2)
+* Added new interface - CRBusinessCloudStorage
+
 ## [5.1.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.2) (2016-11-9)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.0.2...5.1.2)
 * Added new interface - CRBusinessCloudStorage

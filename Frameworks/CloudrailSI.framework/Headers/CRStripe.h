@@ -5,7 +5,7 @@
 @interface CRStripe : NSObject <CRPaymentProtocol>
 @property (weak, nonatomic) id target;
 
--(instancetype)initWithSecretKey:(NSString *)secretKey;
+- (instancetype)initWithSecretKey:(NSString *)secretKey;
 
 
 

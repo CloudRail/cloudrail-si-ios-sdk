@@ -15,6 +15,7 @@ FOUNDATION_EXPORT double CloudRailSIVersionNumber;
 FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 
 // To use the framework just do #import <CloudRailSI/CloudRailSI.h>
+#import <CloudRailSI/CRCloudrail.h>
 
 #pragma mark - CloudStorage
 #import <CloudRailSI/CRDropbox.h>
@@ -23,7 +24,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CROneDrive.h>
 #import <CloudRailSI/CREgnyte.h>
 
-#pragma mark - CloudStorage
+#pragma mark - BusinessCloudStorage
 #import <CloudRailSI/CRAmazonS3.h>
 #import <CloudRailSI/CRBackblaze.h>
 #import <CloudRailSI/CRRackspace.h>
@@ -42,19 +43,16 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 
 
 #pragma mark - PointsOfInterestInterface
-
 #import <CloudRailSI/CRFoursquare.h>
 #import <CloudRailSI/CRGooglePlaces.h>
 #import <CloudRailSI/CRYelp.h>
 
 
 #pragma mark - PaymentInterface
-
 #import <CloudRailSI/CRPayPal.h>
 #import <CloudRailSI/CRStripe.h>
 
 #pragma mark - SMSInterface
-
 #import <CloudRailSI/CRNexmo.h>
 #import <CloudRailSI/CRTwilio.h>
 
@@ -74,9 +72,9 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CREmailProtocol.h>
 #import <CloudRailSI/CRPaymentProtocol.h>
 #import <CloudRailSI/CRSocialProtocol.h>
+#import <CloudRailSI/CRBusinessCloudStorageProtocol.h>
 
 #pragma mark - ClourRail types
-
 #import <CloudRailSI/CRAddress.h>
 #import <CloudRailSI/CRCloudMetaData.h>
 #import <CloudRailSI/CRDateOfBirth.h>
@@ -92,11 +90,6 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRBucket.h>
 #import <CloudRailSI/CRBusinessFileMetaData.h>
 
-
-
-
-#import <CloudRailSI/CRCloudrail.h>
-
-
+#pragma mark - Swift Helpers
 #import <CloudRailSI/CRError.h>
 #import <CloudRailSI/CRExceptionHandler.h>

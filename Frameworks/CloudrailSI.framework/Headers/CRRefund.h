@@ -17,7 +17,7 @@
 @property (nonatomic) NSString * chargeID;
 @property (nonatomic) NSString * state;
 
--(void)initWithAmount:(NSNumber *) amount
+- (void)initWithAmount:(NSNumber *) amount
              chargeId:(NSString *) chargeID
               created:(NSNumber *) created
            identifier:(NSString *) identifier

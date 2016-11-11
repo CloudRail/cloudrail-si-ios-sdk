@@ -21,7 +21,7 @@
  * @param toNumber The recipients phone number in E.164 format, e.g. +4912345678.
  * @param content The message content. Limited to 1600 characters, messages > 160 characters are sent and charged as multiple messages.
  */
--(void) sendSmsFromName:(nonnull NSString *)fromName
+- (void) sendSmsFromName:(nonnull NSString *)fromName
                toNumber:(nonnull NSString *)toNumber
                 content:(nonnull NSString *)content;
 // Dev hints: Thoroughly verify user input for validity

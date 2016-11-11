@@ -18,14 +18,14 @@
  * Creates a new post/update to the currently logged in user's wall/stream/etc.
  * @param content The post's content
  */
--(void) postUpdateWithContent:(nonnull NSString *) content;
+- (void) postUpdateWithContent:(nonnull NSString *) content;
 
 /**
  * Retrieves a list of connection/friend/etc. IDs.
  * The IDs are compatible with those returned by Profile.getIdentifier().
  * @return A (possibly empty) list of IDs
  */
--(nonnull NSArray<NSString *>*) connections;
+- (nonnull NSArray<NSString *>*) connections;
 
 
 @end

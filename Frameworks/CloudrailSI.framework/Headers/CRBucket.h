@@ -13,7 +13,6 @@
 @property (nonatomic) NSString * identifier;
 @property (nonatomic) NSString * name;
 
--(instancetype) initWithName:(NSString *) name identifier:(NSString *) identifier;
-- (instancetype)initWithValue:(id) value;
+- (instancetype) initWithName:(NSString *) name identifier:(NSString *) identifier;
 
 @end

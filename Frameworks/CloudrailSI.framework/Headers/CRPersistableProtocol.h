@@ -16,12 +16,12 @@
  *  A method to retrieve the data from a service that is intended for persistent storage
  * @return The data of the service that should be stored persistently, e.g. access credentials
  */
--(nonnull NSString *) saveAsString;
+- (nonnull NSString *)saveAsString;
 
 /**
  *  Loads/restores data saved by saveAsString method into the service
  * @param savedState The persistent data that was stored
  */
--(void) loadAsString:(nonnull NSString*) savedState;
+- (void)loadAsString:(nonnull NSString*) savedState;
 
 @end
