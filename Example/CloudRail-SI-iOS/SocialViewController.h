@@ -1,16 +1,18 @@
 //
-//  ProfileViewController.h
-//  CloudRail_ServiceCode
+//  SocialViewController.h
+//  CloudrailSI
 //
-//  Created by Felipe Cesar on 31/05/16.
+//  Created by Felipe Cesar on 04/07/16.
 //  Copyright © 2016 CloudRail. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <CloudRailSI/CloudRailSI.h>
-@interface ProfileViewController : UIViewController
+
+@interface SocialViewController : UIViewController
 @property (nonatomic) NSString * serviceName;
 
 @property (nonatomic) NSString * clientId;
 @property (nonatomic) NSString * clientSecret;
-@property (nonatomic) id<CRProfileProtocol> service;
+@property (nonatomic) id<CRSocialProtocol> service;
 @end

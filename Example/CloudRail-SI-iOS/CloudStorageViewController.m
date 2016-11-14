@@ -8,58 +8,137 @@
 
 #import "CloudStorageViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+
+#define kIMG_URL @"https://imgflip.com/s/meme/Futurama-Fry.jpg"
+#define kUPLOAD_PATH @"/futurama.jpg"
+
 @interface CloudStorageViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIPopoverControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
 @implementation CloudStorageViewController
 
+
+#pragma mark - LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+  [self initializeService];
   
+  //Downloading and set imageView
+  NSURL *url = [NSURL URLWithString:kIMG_URL];
+  NSData *data = [NSData dataWithContentsOfURL:url];
+  UIImage *image = [UIImage imageWithData:data];
+  self.imageView.image = image;
+}
+
+-(void) initializeService{
   NSDictionary * authDic = @{
-                   
-                   @"dropboxKey" : @"38nu3lwdvyaqs78",
-                   @"dropboxSecret" : @"c95g0wfkdv6ua2d",
-                   
-                   @"googledriveKey" : @"871545970580-rsfohjd4g7ge0j3bmue6vc3t1t4if22c.apps.googleusercontent.com",
-                   @"googledriveSecret" : @"MpVwm1MK2lgKQCP2T6BjVn8c",
-                   
-                   @"boxKey" : @"qnskodzvd2naq16xowc40t43fug2848n",
-                   @"boxSecret" : @"cQE7Sf9DzZqChjvCTxIMTp3ye6hynhTd",
-                   
-                   @"onedriveKey" : @"000000004018F12F",
-                   @"onedriveSecret" : @"lGQPubehDO6eklir1GQmIuCPFfzwihMo",
-                   
-                   
-                   @"facebookKey" : @"636472443170383",
-                   @"facebookSecret" : @"572d1e670d481820e6de7525cfec757f",
-                   
-                   };
+                             
+                             @"dropboxKey" : @"38nu3lwdvyaqs78",
+                             @"dropboxSecret" : @"c95g0wfkdv6ua2d",
+                             @"googledriveKey" : @"871545970580-rsfohjd4g7ge0j3bmue6vc3t1t4if22c.apps.googleusercontent.com",
+                             @"googledriveSecret" : @"MpVwm1MK2lgKQCP2T6BjVn8c",
+                             @"boxKey" : @"qnskodzvd2naq16xowc40t43fug2848n",
+                             @"boxSecret" : @"cQE7Sf9DzZqChjvCTxIMTp3ye6hynhTd",
+                             @"onedriveKey" : @"000000004018F12F",
+                             @"onedriveSecret" : @"lGQPubehDO6eklir1GQmIuCPFfzwihMo",
+                             @"egnyteKey" : @"k9y879bha2kmsyyqx4urtnaz",
+                             @"egnyteSecret" : @"TsgByd2YZqsJPyYMDhEB6ctAYQ6kP35qYTnEG9urPKq2eNNXRF",
+                             @"egnyteDomain" : @"cloudrailcloudtest"
+                             };
   
   NSString * key = [[self.serviceName lowercaseString] stringByAppendingString:@"Key"];
   NSString * secret = [[self.serviceName lowercaseString] stringByAppendingString:@"Secret"];
   
   self.serviceName = [@"CR" stringByAppendingString:self.serviceName];
-  Class cl = NSClassFromString(self.serviceName);
-  self.service = [(id<CRCloudStorageProtocol>)[cl alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"CR123"];
+ 
+  if ([self.serviceName isEqualToString:@"CRDropbox"]) {
+    self.service = [[CRDropbox alloc] initWithClientId:authDic[key] clientSecret:authDic[secret]];
+  }else
+  if ([self.serviceName isEqualToString:@"CRGoogleDrive"]) {
+    self.service = [[CRGoogleDrive alloc]initWithClientId:authDic[key] clientSecret:authDic[secret]];
+  }else
+  if ([self.serviceName isEqualToString:@"CRBox"]) {
+    self.service = [[CRBox alloc] initWithClientId:authDic[key] clientSecret:authDic[secret]];
+  }else
+  if ([self.serviceName isEqualToString:@"CROneDrive"]) {
+    self.service = [[CROneDrive alloc] initWithClientId:authDic[key] clientSecret:authDic[secret]];
+  }else
+  if ([self.serviceName isEqualToString:@"CREgnyte"]) {
+    self.service = [[CREgnyte alloc] initWithDomain:authDic[@"egnyteDomain"] clientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"STATE"];
+  }
+}
+#pragma mark - IBActions
+
+- (IBAction)createShareLink:(id)sender {
+  NSString * link = [self.service shareLinkForFileWithPath:@"/Shared/testing/futurama.jpg"];
+  NSString * userName = [self.service userName];
+  NSString * userLogin = [self.service userLogin];
   
+  
+  
+  
+  
+  NSString * message = [NSString stringWithFormat:@"Username: %@\n Login: %@\n Share Link:%@", userName , userLogin, link];
+  
+  
+  
+  
+  //Presenting Alert View
+  UIAlertController * alert = [UIAlertController
+                               alertControllerWithTitle:@"Share Link"
+                               message:message
+                               preferredStyle:UIAlertControllerStyleAlert];
+  
+  UIAlertAction* yesButton = [UIAlertAction
+                              actionWithTitle:@"Copy Link"
+                              style:UIAlertActionStyleDefault
+                              handler:^(UIAlertAction * action) {
+                                UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+                                pasteboard.string = link;
+                              }];
+  
+
+  
+  [alert addAction:yesButton];
+  
+  [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)spaceAllocationAction:(id)sender {
+  
+  CRSpaceAllocation * spaceAllocation = [self.service spaceAllocation];
+  
+  //Presenting Alert View
+  UIAlertController * alert = [UIAlertController
+                               alertControllerWithTitle:@"Space Allocation"
+                               message:spaceAllocation.description
+                               preferredStyle:UIAlertControllerStyleAlert];
+  
+
+  
+  UIAlertAction* noButton = [UIAlertAction
+                             actionWithTitle:@"close"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action) {
+                               //Handle no, thanks button
+                               [alert dismissViewControllerAnimated:YES completion:nil];
+                             }];
+  
+  [alert addAction:noButton];
+  
+  [self presentViewController:alert animated:YES completion:nil];
 }
-
-
 
 - (IBAction)uploadDefault:(id)sender {
-  UIImage * image = [UIImage imageNamed:@"futurama.jpg"];
+  UIImage * image = self.imageView.image;
   
   NSData * imageData = UIImageJPEGRepresentation(image, 1);
   NSInputStream * inputStream = [NSInputStream inputStreamWithData:imageData];
-  [self.service uploadFileToPath:@"/futurama.jpg" withStream:inputStream size:imageData.length overwrite:YES];
+  [self.service uploadFileToPath:kUPLOAD_PATH withStream:inputStream size:imageData.length overwrite:YES];
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker
@@ -74,7 +153,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
       
       NSData * imageData = UIImageJPEGRepresentation(image, 1);
       NSInputStream * inputStream = [NSInputStream inputStreamWithData:imageData];
-      [self.service uploadFileToPath:@"/futurama.jpg" withStream:inputStream size:imageData.length overwrite:YES];
+      [self.service uploadFileToPath:kUPLOAD_PATH withStream:inputStream size:imageData.length overwrite:YES];
 
     });
     
@@ -82,15 +161,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
   
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)uploadFromCamera:(id)sender {
   
@@ -115,9 +185,9 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
   }
 }
-- (IBAction)uploadFromCameraRoll:(id)sender {
 
-  
+
+- (IBAction)uploadFromCameraRoll:(id)sender {
   
   UIImagePickerController *picker = [[UIImagePickerController alloc] init];
   picker.delegate = self;
@@ -127,5 +197,26 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
   [self presentViewController:picker animated:YES completion:NULL];
 }
 
+#pragma mark - Helper Methods
++(NSData*) dataWithInputStream:(NSInputStream*) stream {
+  
+  NSMutableData * data = [NSMutableData data];
+  [stream open];
+  NSInteger result;
+  uint8_t buffer[1024]; // BUFFER_LEN can be any positive integer
+  
+  while((result = [stream read:buffer maxLength:1024]) != 0) {
+    if(result > 0) {
+      // buffer contains result bytes of data to be handled
+      [data appendBytes:buffer length:result];
+    } else {
+      // The stream had an error. You can get an NSError object using [iStream streamError]
+      if (result<0) {
+        [NSException raise:@"STREAM_ERROR" format:@"%@", [stream streamError]];
+      }
+    }
+  }
+  return data;
+}
 
 @end

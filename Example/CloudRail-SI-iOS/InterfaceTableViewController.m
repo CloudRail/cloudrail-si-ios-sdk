@@ -17,47 +17,44 @@
 @implementation InterfaceTableViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  
+  [super viewDidLoad];
   
   self.sourceInterfaces = [@[] mutableCopy];
   
   [self.sourceInterfaces addObject:@"CloudStorage"];
-  
   [self.sourceInterfaces addObject:@"Profile"];
-
+  [self.sourceInterfaces addObject:@"PointsOfInterest"];
+  [self.sourceInterfaces addObject:@"Email"];
+  [self.sourceInterfaces addObject:@"Payment"];
+  [self.sourceInterfaces addObject:@"SMS"];
+  [self.sourceInterfaces addObject:@"Social"];
+  
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.sourceInterfaces count];
+  return [self.sourceInterfaces count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
   
   cell.textLabel.text = self.sourceInterfaces[indexPath.row];
-    // Configure the cell...
   
-  
-    return cell;
+  return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   self.selectedService = [self sourceInterfaces][indexPath.row];
   [self performSegueWithIdentifier:@"toProviders" sender:self];
-
+  
 }
 
 #pragma mark - Navigation
@@ -66,6 +63,5 @@
 
   [(ProvidersTableViewController*)segue.destinationViewController setCurrentInterface:self.selectedService];
 }
-
 
 @end

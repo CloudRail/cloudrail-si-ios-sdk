@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4EAD2C391E03AA8C16932C6E /* Pods_CloudRail_SI_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEA91121D7CD7ED096D7F2E /* Pods_CloudRail_SI_iOS_Tests.framework */; };
-		557A05481D48E91E00207B36 /* TestingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A05471D48E91E00207B36 /* TestingClass.swift */; };
 		557C01231D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 557C01221D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec */; };
-		557C012E1D00AA2F001AE539 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C01271D00AA2F001AE539 /* ProfileViewController.m */; };
 		557C012F1D00AA2F001AE539 /* InterfaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C01291D00AA2F001AE539 /* InterfaceTableViewController.m */; };
 		557C01301D00AA2F001AE539 /* ProvidersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C012B1D00AA2F001AE539 /* ProvidersTableViewController.m */; };
-		557C01311D00AA2F001AE539 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557C012C1D00AA2F001AE539 /* Main.storyboard */; };
 		557C01331D00AADF001AE539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557C01321D00AADF001AE539 /* LaunchScreen.storyboard */; };
-		55E132EB1D11908B007E9868 /* CloudStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E132EA1D11908B007E9868 /* CloudStorageViewController.m */; };
+		55A9AF731DD9CB550076D7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A9AF721DD9CB550076D7CB /* Main.storyboard */; };
+		55A9AF821DD9D2A60076D7CB /* CloudStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF751DD9D2A60076D7CB /* CloudStorageViewController.m */; };
+		55A9AF831DD9D2A60076D7CB /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF771DD9D2A60076D7CB /* SocialViewController.m */; };
+		55A9AF841DD9D2A60076D7CB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF791DD9D2A60076D7CB /* ProfileViewController.m */; };
+		55A9AF851DD9D2A60076D7CB /* PoiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF7B1DD9D2A60076D7CB /* PoiViewController.m */; };
+		55A9AF861DD9D2A60076D7CB /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF7D1DD9D2A60076D7CB /* EmailViewController.m */; };
+		55A9AF871DD9D2A60076D7CB /* SMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF7F1DD9D2A60076D7CB /* SMSViewController.m */; };
+		55A9AF881DD9D2A60076D7CB /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A9AF811DD9D2A60076D7CB /* PaymentViewController.m */; };
 		55E132ED1D11B0C0007E9868 /* futurama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E132EC1D11B0C0007E9868 /* futurama.jpg */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -47,18 +51,27 @@
 		4EA649E99E604C3DD78C6F37 /* Pods-CloudRail-SI-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudRail-SI-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudRail-SI-iOS_Example/Pods-CloudRail-SI-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEA91121D7CD7ED096D7F2E /* Pods_CloudRail_SI_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudRail_SI_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		557A05461D48E91E00207B36 /* CloudRail-SI-iOS_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudRail-SI-iOS_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		557A05471D48E91E00207B36 /* TestingClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingClass.swift; sourceTree = "<group>"; };
 		557C01221D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cloudrail-si-ios-sdk.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		557C01261D00AA2F001AE539 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		557C01271D00AA2F001AE539 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		557C01281D00AA2F001AE539 /* InterfaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceTableViewController.h; sourceTree = "<group>"; };
 		557C01291D00AA2F001AE539 /* InterfaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceTableViewController.m; sourceTree = "<group>"; };
 		557C012A1D00AA2F001AE539 /* ProvidersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvidersTableViewController.h; sourceTree = "<group>"; };
 		557C012B1D00AA2F001AE539 /* ProvidersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvidersTableViewController.m; sourceTree = "<group>"; };
-		557C012C1D00AA2F001AE539 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		557C01321D00AADF001AE539 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		55E132E91D11908B007E9868 /* CloudStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudStorageViewController.h; sourceTree = "<group>"; };
-		55E132EA1D11908B007E9868 /* CloudStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudStorageViewController.m; sourceTree = "<group>"; };
+		55A9AF721DD9CB550076D7CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		55A9AF741DD9D2A60076D7CB /* CloudStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudStorageViewController.h; sourceTree = "<group>"; };
+		55A9AF751DD9D2A60076D7CB /* CloudStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudStorageViewController.m; sourceTree = "<group>"; };
+		55A9AF761DD9D2A60076D7CB /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		55A9AF771DD9D2A60076D7CB /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		55A9AF781DD9D2A60076D7CB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		55A9AF791DD9D2A60076D7CB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		55A9AF7A1DD9D2A60076D7CB /* PoiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiViewController.h; sourceTree = "<group>"; };
+		55A9AF7B1DD9D2A60076D7CB /* PoiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiViewController.m; sourceTree = "<group>"; };
+		55A9AF7C1DD9D2A60076D7CB /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		55A9AF7D1DD9D2A60076D7CB /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		55A9AF7E1DD9D2A60076D7CB /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSViewController.h; sourceTree = "<group>"; };
+		55A9AF7F1DD9D2A60076D7CB /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSViewController.m; sourceTree = "<group>"; };
+		55A9AF801DD9D2A60076D7CB /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		55A9AF811DD9D2A60076D7CB /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		55E132EC1D11B0C0007E9868 /* futurama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = futurama.jpg; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CloudRail-SI-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CloudRail-SI-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +123,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55A9AF711DD9C8E70076D7CB /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				55A9AF741DD9D2A60076D7CB /* CloudStorageViewController.h */,
+				55A9AF751DD9D2A60076D7CB /* CloudStorageViewController.m */,
+				55A9AF761DD9D2A60076D7CB /* SocialViewController.h */,
+				55A9AF771DD9D2A60076D7CB /* SocialViewController.m */,
+				55A9AF781DD9D2A60076D7CB /* ProfileViewController.h */,
+				55A9AF791DD9D2A60076D7CB /* ProfileViewController.m */,
+				55A9AF7A1DD9D2A60076D7CB /* PoiViewController.h */,
+				55A9AF7B1DD9D2A60076D7CB /* PoiViewController.m */,
+				55A9AF7C1DD9D2A60076D7CB /* EmailViewController.h */,
+				55A9AF7D1DD9D2A60076D7CB /* EmailViewController.m */,
+				55A9AF7E1DD9D2A60076D7CB /* SMSViewController.h */,
+				55A9AF7F1DD9D2A60076D7CB /* SMSViewController.m */,
+				55A9AF801DD9D2A60076D7CB /* PaymentViewController.h */,
+				55A9AF811DD9D2A60076D7CB /* PaymentViewController.m */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -147,19 +181,15 @@
 		6003F593195388D20070C39A /* Example for CloudRail-SI-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				557A05471D48E91E00207B36 /* TestingClass.swift */,
 				6003F59C195388D20070C39A /* CRAppDelegate.h */,
 				6003F59D195388D20070C39A /* CRAppDelegate.m */,
-				557C01261D00AA2F001AE539 /* ProfileViewController.h */,
-				557C01271D00AA2F001AE539 /* ProfileViewController.m */,
-				55E132E91D11908B007E9868 /* CloudStorageViewController.h */,
-				55E132EA1D11908B007E9868 /* CloudStorageViewController.m */,
+				55A9AF711DD9C8E70076D7CB /* Interfaces */,
 				557C01281D00AA2F001AE539 /* InterfaceTableViewController.h */,
 				557C01291D00AA2F001AE539 /* InterfaceTableViewController.m */,
 				557C012A1D00AA2F001AE539 /* ProvidersTableViewController.h */,
 				557C012B1D00AA2F001AE539 /* ProvidersTableViewController.m */,
 				55E132EC1D11B0C0007E9868 /* futurama.jpg */,
-				557C012C1D00AA2F001AE539 /* Main.storyboard */,
+				55A9AF721DD9CB550076D7CB /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				557C01321D00AADF001AE539 /* LaunchScreen.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -227,12 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "CloudRail-SI-iOS_Example" */;
 			buildPhases = (
-				CAB2CD3F4F4723CA945581CE /* 📦 Check Pods Manifest.lock */,
+				CAB2CD3F4F4723CA945581CE /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				B5E61EEC4659B2178D68A690 /* 📦 Embed Pods Frameworks */,
-				CECF5564120DD42FCE866AA5 /* 📦 Copy Pods Resources */,
+				B5E61EEC4659B2178D68A690 /* [CP] Embed Pods Frameworks */,
+				CECF5564120DD42FCE866AA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,12 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CloudRail-SI-iOS_Tests" */;
 			buildPhases = (
-				FB3A8ACC761D639732DFC6BB /* 📦 Check Pods Manifest.lock */,
+				FB3A8ACC761D639732DFC6BB /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				3E5E66781613C9483B259B4F /* 📦 Embed Pods Frameworks */,
-				3F6281DE16D8197515B4A21F /* 📦 Copy Pods Resources */,
+				3E5E66781613C9483B259B4F /* [CP] Embed Pods Frameworks */,
+				3F6281DE16D8197515B4A21F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,9 +341,9 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				557C01231D00A31D001AE539 /* cloudrail-si-ios-sdk.podspec in Resources */,
+				55A9AF731DD9CB550076D7CB /* Main.storyboard in Resources */,
 				557C01331D00AADF001AE539 /* LaunchScreen.storyboard in Resources */,
 				55E132ED1D11B0C0007E9868 /* futurama.jpg in Resources */,
-				557C01311D00AA2F001AE539 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +358,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E5E66781613C9483B259B4F /* 📦 Embed Pods Frameworks */ = {
+		3E5E66781613C9483B259B4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,14 +373,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudRail-SI-iOS_Tests/Pods-CloudRail-SI-iOS_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3F6281DE16D8197515B4A21F /* 📦 Copy Pods Resources */ = {
+		3F6281DE16D8197515B4A21F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,14 +388,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudRail-SI-iOS_Tests/Pods-CloudRail-SI-iOS_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5E61EEC4659B2178D68A690 /* 📦 Embed Pods Frameworks */ = {
+		B5E61EEC4659B2178D68A690 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,29 +403,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudRail-SI-iOS_Example/Pods-CloudRail-SI-iOS_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CAB2CD3F4F4723CA945581CE /* 📦 Check Pods Manifest.lock */ = {
+		CAB2CD3F4F4723CA945581CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CECF5564120DD42FCE866AA5 /* 📦 Copy Pods Resources */ = {
+		CECF5564120DD42FCE866AA5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,19 +433,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudRail-SI-iOS_Example/Pods-CloudRail-SI-iOS_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB3A8ACC761D639732DFC6BB /* 📦 Check Pods Manifest.lock */ = {
+		FB3A8ACC761D639732DFC6BB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,10 +457,14 @@
 			files = (
 				557C01301D00AA2F001AE539 /* ProvidersTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
+				55A9AF841DD9D2A60076D7CB /* ProfileViewController.m in Sources */,
+				55A9AF881DD9D2A60076D7CB /* PaymentViewController.m in Sources */,
 				557C012F1D00AA2F001AE539 /* InterfaceTableViewController.m in Sources */,
-				557C012E1D00AA2F001AE539 /* ProfileViewController.m in Sources */,
-				557A05481D48E91E00207B36 /* TestingClass.swift in Sources */,
-				55E132EB1D11908B007E9868 /* CloudStorageViewController.m in Sources */,
+				55A9AF871DD9D2A60076D7CB /* SMSViewController.m in Sources */,
+				55A9AF851DD9D2A60076D7CB /* PoiViewController.m in Sources */,
+				55A9AF861DD9D2A60076D7CB /* EmailViewController.m in Sources */,
+				55A9AF831DD9D2A60076D7CB /* SocialViewController.m in Sources */,
+				55A9AF821DD9D2A60076D7CB /* CloudStorageViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
