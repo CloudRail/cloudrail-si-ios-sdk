@@ -1,5 +1,10 @@
 # Change Log
 
+## [5.1.4](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.4) (2016-11-11)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.1.3...5.1.4)
+
+* Fix for Google services authentication
+
 ## [5.1.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.3) (2016-11-11)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.1.2...5.1.3)
 

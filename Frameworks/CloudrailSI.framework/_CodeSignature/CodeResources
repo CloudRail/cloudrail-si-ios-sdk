@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/CRCloudRail.h</key>
 		<data>
-		8J9NrUnhDzY70bfxbgYoJ7gsxro=
+		+kG27bfrdOUCtMDyRohR1iH1m5Y=
 		</data>
 		<key>Headers/CRCloudStorageProtocol.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/CRGoogleDrive.h</key>
 		<data>
-		CKb7ksR7cFTUTcHw0mzUAT6h4Yk=
+		hZc1bXS4u9EXpNjdHCYgFgpV5vE=
 		</data>
 		<key>Headers/CRGooglePlaces.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/CRGooglePlus.h</key>
 		<data>
-		FW86AxjQcwUbAW8Mq9eXqtVbfiM=
+		tTDb+6GZIXJ5fZD8MI908SBDzNg=
 		</data>
 		<key>Headers/CRImageMetaData.h</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		TC62sDi04umaAXZZ7D8Pi25XCg0=
+		+/BedhWygN+GZt8fdr/HsRWTKZA=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
@@ -523,11 +523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8J9NrUnhDzY70bfxbgYoJ7gsxro=
+			+kG27bfrdOUCtMDyRohR1iH1m5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			ohzXpWIvjBPwZj3DfPBEAsCBqwQdukfJschwP3Aqw+c=
+			1X83xiYkls7aykC+o4rUSZdRtnKFuNDSyjuzdkdW5Tk=
 			</data>
 		</dict>
 		<key>Headers/CRCloudStorageProtocol.h</key>
@@ -655,11 +655,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CKb7ksR7cFTUTcHw0mzUAT6h4Yk=
+			hZc1bXS4u9EXpNjdHCYgFgpV5vE=
 			</data>
 			<key>hash2</key>
 			<data>
-			5BKsQwSXZqbpausEFUYhvbp+SxGeb7z7+9xWmatxaBg=
+			mLG4tPEDF6RIa7p0WZz7DasKuGlqgm7PirrhOCM6YCQ=
 			</data>
 		</dict>
 		<key>Headers/CRGooglePlaces.h</key>
@@ -677,11 +677,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FW86AxjQcwUbAW8Mq9eXqtVbfiM=
+			tTDb+6GZIXJ5fZD8MI908SBDzNg=
 			</data>
 			<key>hash2</key>
 			<data>
-			eqXJB2BkX+192avdqrv6PHcWQATKkuO2H4o6Lv6T000=
+			qTPGuhWtNbuj9F7dzUokU8f6b4OVKVZACYUMW6XYrmc=
 			</data>
 		</dict>
 		<key>Headers/CRImageMetaData.h</key>
@@ -1018,11 +1018,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TC62sDi04umaAXZZ7D8Pi25XCg0=
+			+/BedhWygN+GZt8fdr/HsRWTKZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			gzrRlA0Nug5I7W94AAXI7hqCSO3eebACVEf3FcqimoY=
+			CSoZbTarA5PmOFHUNIg0/2hz87aVBW06sfM7STZKMEU=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>

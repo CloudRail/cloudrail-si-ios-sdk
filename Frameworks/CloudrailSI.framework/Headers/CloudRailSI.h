@@ -6,7 +6,7 @@
 //  Copyright © 2016 CloudRail. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for CloudRailSI.
 FOUNDATION_EXPORT double CloudRailSIVersionNumber;
