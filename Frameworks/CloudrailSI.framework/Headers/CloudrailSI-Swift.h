@@ -171,6 +171,7 @@ SWIFT_CLASS("_TtC11CloudrailSI3Box")
 - (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
 - (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
@@ -197,6 +198,7 @@ SWIFT_CLASS("_TtC11CloudrailSI7Dropbox")
 - (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
 - (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
@@ -223,6 +225,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Egnyte")
 - (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
 - (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
@@ -301,6 +304,7 @@ SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 - (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
 - (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
@@ -326,6 +330,26 @@ SWIFT_CLASS("_TtC11CloudrailSI12GooglePlaces")
 
 SWIFT_CLASS("_TtC11CloudrailSI10GooglePlus")
 @interface GooglePlus : NSObject
+- (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (NSString * _Nullable)identifierAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)fullNameAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)emailAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)genderAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)profileDescriptionAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRDateOfBirth * _Nullable)dateOfBirthAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)localeAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI6Heroku")
+@interface Heroku : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nullable)identifierAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)fullNameAndReturnError:(NSError * _Nullable * _Nullable)error;
@@ -450,6 +474,34 @@ SWIFT_CLASS("_TtC11CloudrailSI8OneDrive")
 - (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
 - (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
+- (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI16OneDriveBusiness")
+@interface OneDriveBusiness : NSObject
+- (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
+- (NSInputStream * _Nullable)downloadFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)uploadFileToPath:(NSString * _Nonnull)filePath stream:(NSInputStream * _Nonnull)stream size:(long)size overwrite:(BOOL)overwrite error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)moveFileFromPath:(NSString * _Nonnull)sourcePath destinationPath:(NSString * _Nonnull)destinationPath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)copyFileFromPath:(NSString * _Nonnull)sourcePath destinationPath:(NSString * _Nonnull)destinationPath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;

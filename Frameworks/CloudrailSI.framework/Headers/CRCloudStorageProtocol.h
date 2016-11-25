@@ -86,6 +86,19 @@
 - (nonnull NSMutableArray<CRCloudMetaData *> *)childrenOfFolderWithPath:(nonnull NSString *) folderPath;
 
 /**
+ * Retrives metadata of files within the specified folder. Unlike {@link CloudStorage#getChildren(String)} the
+ * result of this function only returns a subset of the folders content.
+ *
+ * @param path The path to the file from the root folder and including the name.
+ * @param offset The first child to return metadata for.
+ * @param limit The maximum amount of children that should be returned.
+ * @return List of metadata entries for the children of the specified folder.
+ */
+- (nonnull NSMutableArray<CRCloudMetaData *> *)childrenOfFolderWithPath:(nonnull NSString *) folderPath
+                                                                 offset:(long) offset
+                                                                  limit:(long) limit;
+
+/**
  * Creates a share link and the permission is only to 'view' and download the file/folder
  *
  * @param path the path to the file/folder which the link to will be created

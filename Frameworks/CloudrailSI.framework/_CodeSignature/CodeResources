@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CRBox.h</key>
 		<data>
-		ZsyPfvMP6N5lXPpclXjEwAX2RTI=
+		B3VpL8Sdd6owKfyxMw/NgL8mGAg=
 		</data>
 		<key>Headers/CRBucket.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Headers/CRCloudRail.h</key>
 		<data>
-		+kG27bfrdOUCtMDyRohR1iH1m5Y=
+		8J9NrUnhDzY70bfxbgYoJ7gsxro=
 		</data>
 		<key>Headers/CRCloudStorageProtocol.h</key>
 		<data>
-		BRSfBtbIEjyQBrDCXPIiEWONgBg=
+		nKhVBofeIBGo12MafsH7nL6V0qY=
 		</data>
 		<key>Headers/CRCreditCard.h</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Headers/CRDropbox.h</key>
 		<data>
-		cF5kXvhPHIy4r2nly7nhoYPnw9Q=
+		XY43FxEcYEtem5RDHoF/Ss9kOSo=
 		</data>
 		<key>Headers/CREgnyte.h</key>
 		<data>
-		l+whDvBIXHUef3AoSJKrdfWB+i4=
+		tVX3sx07HHkWp/HmxalSQfLJeMg=
 		</data>
 		<key>Headers/CREmailProtocol.h</key>
 		<data>
@@ -102,7 +102,11 @@
 		</data>
 		<key>Headers/CRGooglePlus.h</key>
 		<data>
-		tTDb+6GZIXJ5fZD8MI908SBDzNg=
+		FW86AxjQcwUbAW8Mq9eXqtVbfiM=
+		</data>
+		<key>Headers/CRHeroku.h</key>
+		<data>
+		ROn3shrrNKoCfKE0gpJDlkJxLmI=
 		</data>
 		<key>Headers/CRImageMetaData.h</key>
 		<data>
@@ -138,7 +142,11 @@
 		</data>
 		<key>Headers/CROneDrive.h</key>
 		<data>
-		WlqoS5DO8ZmLUPauu2aQ836czWI=
+		fvmRL0zoaIhQVR5vRYxjq4bbG5s=
+		</data>
+		<key>Headers/CROneDriveBusiness.h</key>
+		<data>
+		HEdWMzm5uZxz3WTR8gUDyiBXXKI=
 		</data>
 		<key>Headers/CRPOI.h</key>
 		<data>
@@ -226,15 +234,15 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		+/BedhWygN+GZt8fdr/HsRWTKZA=
+		0AlZ32mpQdr99udpFwioJZqWRr8=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		367L2M3H2mAe5FO1xwd9jxGRLmg=
+		0jjfkvRt5LyWP7mPquBc9tOIrHg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u/1fT+dmyqCrOwWS1VG3UYyhe98=
+		hoDs8bKAJH/YdOqLVJzTWqjjQy0=
 		</data>
 		<key>MIMETypeMap</key>
 		<data>
@@ -246,7 +254,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		NEB5BGm8r/9dpZd3Am/ykO/bs4o=
+		EmnAvVvsDqrCRnySiLxVpYYVWGQ=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -254,158 +262,36 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NXVa8K7syCwXGcbwj2CBYqrc7U0=
+		G88/WvdM7i2vKIy2VjjY7ukb3/0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		BAjwwvj37YjCgz7vuWYFNQJMS68=
 		</data>
-		<key>SVWebViewController.bundle/SVWebViewControllerBack.png</key>
-		<data>
-		Qo9p+P3ZuXujwne8NoagFbSDDSw=
-		</data>
-		<key>SVWebViewController.bundle/SVWebViewControllerBack@2x.png</key>
-		<data>
-		9KpJ6zpBTyCf7QQzYt5YzT19lrE=
-		</data>
-		<key>SVWebViewController.bundle/SVWebViewControllerNext.png</key>
-		<data>
-		VL8xM5RGO7RMaSRcMxxMvC9X/Wo=
-		</data>
-		<key>SVWebViewController.bundle/SVWebViewControllerNext@2x.png</key>
-		<data>
-		fe+f+X4Ho1z5kJmISo+3YIUftUY=
-		</data>
 		<key>SVWebViewControllerActivityChrome-iPad.png</key>
 		<data>
-		XDRDQA9UpPh+Vkl04JhL1T0c0B4=
+		oBBU8SkV8UF1KWegja5ahErTXq4=
 		</data>
 		<key>SVWebViewControllerActivityChrome-iPad@2x.png</key>
 		<data>
-		2+xRe1U4KM2VfMBho/9ETHye+A0=
+		Pp9kBNSEIkK0z8dVa/C/WVjb4K0=
 		</data>
 		<key>SVWebViewControllerActivityChrome@2x.png</key>
 		<data>
-		8qLlTSxYN01dIsMGF7dPqiPVjIM=
+		2U3TCIqAj5ZUWmLUrQISa6x3VRQ=
 		</data>
 		<key>SVWebViewControllerActivitySafari-iPad.png</key>
 		<data>
-		/nc/UbN7wT6L7W/ae1/+CyiUues=
+		Z9h8iLJEVxUrRlXh9nqLR8X2RYQ=
 		</data>
 		<key>SVWebViewControllerActivitySafari-iPad@2x.png</key>
 		<data>
-		ikaosxDHBl536oVVqh+L+T2z/5Y=
+		y7hvK5OuNHJbmhRaW+H9b0/U3Qg=
 		</data>
 		<key>SVWebViewControllerActivitySafari@2x.png</key>
 		<data>
-		2LDnRy3UJH8fU8srpQI6ckm4ehk=
+		vETADKdOSfJz2ITNp2EKLNl3Q0A=
 		</data>
-		<key>SVWebViewControllerBack.png</key>
-		<data>
-		Qo9p+P3ZuXujwne8NoagFbSDDSw=
-		</data>
-		<key>SVWebViewControllerBack@2x.png</key>
-		<data>
-		9KpJ6zpBTyCf7QQzYt5YzT19lrE=
-		</data>
-		<key>SVWebViewControllerNext.png</key>
-		<data>
-		VL8xM5RGO7RMaSRcMxxMvC9X/Wo=
-		</data>
-		<key>SVWebViewControllerNext@2x.png</key>
-		<data>
-		fe+f+X4Ho1z5kJmISo+3YIUftUY=
-		</data>
-		<key>da.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			714plbrVDFa7IjtBfYh+m5gZa44=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>de.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kjcjCG4pJCKKO1MXLLc27I0I+Yw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cckl3unv4gE49QRRbgIvABMuung=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es-ES.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y3WXWxZW4ch+bcvk+tRT6LG4sJ4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y3WXWxZW4ch+bcvk+tRT6LG4sJ4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BhvKHGdY/Rfsss4C2yUX2PiAXzE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ja.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bMF6UfklHTHF8Jihq3rJPC2loq4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UH9rHex72EdOMYNqJdTY3bhIo5U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hans.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			l+mUo0L3DFpbcZLEmy0u2c66kRE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yMIOd0CeUzKFsbSrJyJzpc5ATTY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -457,11 +343,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZsyPfvMP6N5lXPpclXjEwAX2RTI=
+			B3VpL8Sdd6owKfyxMw/NgL8mGAg=
 			</data>
 			<key>hash2</key>
 			<data>
-			qc8l3xIVdbCZRcyDrYLbU1w0nuoBKU6Jmo7HoP9oysE=
+			dgIZhlKYY5m/TfTtEsO79uB9Z6w3RgTJDjQ6ShsyTMc=
 			</data>
 		</dict>
 		<key>Headers/CRBucket.h</key>
@@ -523,22 +409,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+kG27bfrdOUCtMDyRohR1iH1m5Y=
+			8J9NrUnhDzY70bfxbgYoJ7gsxro=
 			</data>
 			<key>hash2</key>
 			<data>
-			1X83xiYkls7aykC+o4rUSZdRtnKFuNDSyjuzdkdW5Tk=
+			ohzXpWIvjBPwZj3DfPBEAsCBqwQdukfJschwP3Aqw+c=
 			</data>
 		</dict>
 		<key>Headers/CRCloudStorageProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BRSfBtbIEjyQBrDCXPIiEWONgBg=
+			nKhVBofeIBGo12MafsH7nL6V0qY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHvasAWL/YEA55WVaxC44PYL3qHi9VCtVjVRNjxHdTU=
+			l/7MHU/VIw887xyaPrAk0pwFryZ525Xmg4luGzxP77g=
 			</data>
 		</dict>
 		<key>Headers/CRCreditCard.h</key>
@@ -567,22 +453,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cF5kXvhPHIy4r2nly7nhoYPnw9Q=
+			XY43FxEcYEtem5RDHoF/Ss9kOSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			RDq4O19MoH6e/QfXSlFEEqwqB22pLLBY7hXhYHUF6NM=
+			r7HwqWsT5I+gmheFHxE/Lmj1bnRU21XkNYgjkUM7e9Q=
 			</data>
 		</dict>
 		<key>Headers/CREgnyte.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l+whDvBIXHUef3AoSJKrdfWB+i4=
+			tVX3sx07HHkWp/HmxalSQfLJeMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			fAwltEzdVsb2YX09tBVDf0Dp2PwK/g/0Kn5f/3UNQN4=
+			BcYSCsNk2xpEEqX0xzePg1hxSB1F0w/bshsOxkaxSI8=
 			</data>
 		</dict>
 		<key>Headers/CREmailProtocol.h</key>
@@ -677,11 +563,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tTDb+6GZIXJ5fZD8MI908SBDzNg=
+			FW86AxjQcwUbAW8Mq9eXqtVbfiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			qTPGuhWtNbuj9F7dzUokU8f6b4OVKVZACYUMW6XYrmc=
+			eqXJB2BkX+192avdqrv6PHcWQATKkuO2H4o6Lv6T000=
+			</data>
+		</dict>
+		<key>Headers/CRHeroku.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ROn3shrrNKoCfKE0gpJDlkJxLmI=
+			</data>
+			<key>hash2</key>
+			<data>
+			x/ETZuz3eydzfb4FIh4gs5uJeDxw8dMt8b3TVDOmyQU=
 			</data>
 		</dict>
 		<key>Headers/CRImageMetaData.h</key>
@@ -776,11 +673,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WlqoS5DO8ZmLUPauu2aQ836czWI=
+			fvmRL0zoaIhQVR5vRYxjq4bbG5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			yCQwpgVYueqkUzPzE3assfrunS6Z55Iok6MsgW7Q2FI=
+			hG/lc4fgnheDYtJvzUFZKgHCtDtRLPS2Umot3aWtpWM=
+			</data>
+		</dict>
+		<key>Headers/CROneDriveBusiness.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HEdWMzm5uZxz3WTR8gUDyiBXXKI=
+			</data>
+			<key>hash2</key>
+			<data>
+			tpWkIGnG4tHjE2g5fstititlq/W0Ke0IphgagyNGW00=
 			</data>
 		</dict>
 		<key>Headers/CRPOI.h</key>
@@ -1018,22 +926,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+/BedhWygN+GZt8fdr/HsRWTKZA=
+			0AlZ32mpQdr99udpFwioJZqWRr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			CSoZbTarA5PmOFHUNIg0/2hz87aVBW06sfM7STZKMEU=
+			FILDk/ZJK8c00erqi81PEYCnaDKVQSASsZ22yReoQ+U=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			367L2M3H2mAe5FO1xwd9jxGRLmg=
+			0jjfkvRt5LyWP7mPquBc9tOIrHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			VKNn4fztgAoacDIIqX1jKzLIS/vqhNKYwSGLJEpSNwc=
+			WN1WEAEchpQGjvDQLScmE78gwRD4p4Sm/X9hXZX/rVw=
 			</data>
 		</dict>
 		<key>MIMETypeMap</key>
@@ -1062,11 +970,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NEB5BGm8r/9dpZd3Am/ykO/bs4o=
+			EmnAvVvsDqrCRnySiLxVpYYVWGQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			AH1Iahqh45C9gvEh8NqxUq0/mmS1CCziJ+neeWQgG5c=
+			w7RWl60lVDKyxdTCq58mejXGjys2inPZenQYkg1rBYo=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1084,11 +992,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NXVa8K7syCwXGcbwj2CBYqrc7U0=
+			G88/WvdM7i2vKIy2VjjY7ukb3/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QWOIJX7j4B/ROLXLgR/GgwxyK771gf/hoya/VY8VALA=
+			4uBOYRQ6a+Jwptqzt8FtsAhFuBfwC0jI9IzIWpR33h8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1102,289 +1010,71 @@
 			kBS1CYmfzpiPHmYrXx1CZZo0XwIsTAIYz/N61UBvJ3c=
 			</data>
 		</dict>
-		<key>SVWebViewController.bundle/SVWebViewControllerBack.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qo9p+P3ZuXujwne8NoagFbSDDSw=
-			</data>
-			<key>hash2</key>
-			<data>
-			uKxlEe1cora3dXeqNDZKrCbweyzePOGUUQcrM0TRmXA=
-			</data>
-		</dict>
-		<key>SVWebViewController.bundle/SVWebViewControllerBack@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9KpJ6zpBTyCf7QQzYt5YzT19lrE=
-			</data>
-			<key>hash2</key>
-			<data>
-			Y8GBQkVxhV3JisC7PB2YSoHEy6kMAFczXPLaNoRTEMU=
-			</data>
-		</dict>
-		<key>SVWebViewController.bundle/SVWebViewControllerNext.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VL8xM5RGO7RMaSRcMxxMvC9X/Wo=
-			</data>
-			<key>hash2</key>
-			<data>
-			YCuvJT6TgLdAwHzY8yVO7IUNdcOy5xwh1yHXWdLlJo4=
-			</data>
-		</dict>
-		<key>SVWebViewController.bundle/SVWebViewControllerNext@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fe+f+X4Ho1z5kJmISo+3YIUftUY=
-			</data>
-			<key>hash2</key>
-			<data>
-			W8FKFN7jjxgjxgWRvJbj5qUnouvNMrp14PyVpTmQZug=
-			</data>
-		</dict>
 		<key>SVWebViewControllerActivityChrome-iPad.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XDRDQA9UpPh+Vkl04JhL1T0c0B4=
+			oBBU8SkV8UF1KWegja5ahErTXq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			syCreOMb54oKzx9PuW75/9HEO+uUFLuH0ZgWcllY9mw=
+			ERiIYJiATxGVLYA785lDekpUy5MoIfNLVPhBb4Gl5VA=
 			</data>
 		</dict>
 		<key>SVWebViewControllerActivityChrome-iPad@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2+xRe1U4KM2VfMBho/9ETHye+A0=
+			Pp9kBNSEIkK0z8dVa/C/WVjb4K0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EuotobKZvTSfaWjb2XaV/1b2mrjZUyhjjq27LsOeQ98=
+			NiwunI6Rb8ym/CBVGYm0VxA+wHmEPMM/F5IRA6pn2DU=
 			</data>
 		</dict>
 		<key>SVWebViewControllerActivityChrome@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8qLlTSxYN01dIsMGF7dPqiPVjIM=
+			2U3TCIqAj5ZUWmLUrQISa6x3VRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jM7b2pmgepWb6M+MLlmKcsLD+ZFneqO+AgdPhYKI0sM=
+			FARgKf6Fa5AT+UVNv3vshE7j/sbidQ2Gm1yd/dmMQXU=
 			</data>
 		</dict>
 		<key>SVWebViewControllerActivitySafari-iPad.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/nc/UbN7wT6L7W/ae1/+CyiUues=
+			Z9h8iLJEVxUrRlXh9nqLR8X2RYQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rBIMOKWZzfVamkJ23OXLYl0xDo9EvncemSrRFiFBrB0=
+			01UjmBf+Mo1tvigOv9dk3KFAsZ2+T62FJe7PhVJeeGU=
 			</data>
 		</dict>
 		<key>SVWebViewControllerActivitySafari-iPad@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ikaosxDHBl536oVVqh+L+T2z/5Y=
+			y7hvK5OuNHJbmhRaW+H9b0/U3Qg=
 			</data>
 			<key>hash2</key>
 			<data>
-			QNQlrYNzJgYjsWDHJVLAaWSb5s+GJ+dRFabkKNzqqGc=
+			8mz8XYGEn26q7nH+DJgZ1FrfdblEKs8aIRJF/v21HMg=
 			</data>
 		</dict>
 		<key>SVWebViewControllerActivitySafari@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2LDnRy3UJH8fU8srpQI6ckm4ehk=
+			vETADKdOSfJz2ITNp2EKLNl3Q0A=
 			</data>
 			<key>hash2</key>
 			<data>
-			HmzAYVe3Qetq9QKWArwJxLJg5/jkr0SnDVx/lNkVzuQ=
+			Qyy4BaUOh0fPrpxQj8pKLMsIU++KKjTRBr/Bm5eS7Ec=
 			</data>
-		</dict>
-		<key>SVWebViewControllerBack.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qo9p+P3ZuXujwne8NoagFbSDDSw=
-			</data>
-			<key>hash2</key>
-			<data>
-			uKxlEe1cora3dXeqNDZKrCbweyzePOGUUQcrM0TRmXA=
-			</data>
-		</dict>
-		<key>SVWebViewControllerBack@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9KpJ6zpBTyCf7QQzYt5YzT19lrE=
-			</data>
-			<key>hash2</key>
-			<data>
-			Y8GBQkVxhV3JisC7PB2YSoHEy6kMAFczXPLaNoRTEMU=
-			</data>
-		</dict>
-		<key>SVWebViewControllerNext.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VL8xM5RGO7RMaSRcMxxMvC9X/Wo=
-			</data>
-			<key>hash2</key>
-			<data>
-			YCuvJT6TgLdAwHzY8yVO7IUNdcOy5xwh1yHXWdLlJo4=
-			</data>
-		</dict>
-		<key>SVWebViewControllerNext@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fe+f+X4Ho1z5kJmISo+3YIUftUY=
-			</data>
-			<key>hash2</key>
-			<data>
-			W8FKFN7jjxgjxgWRvJbj5qUnouvNMrp14PyVpTmQZug=
-			</data>
-		</dict>
-		<key>da.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			714plbrVDFa7IjtBfYh+m5gZa44=
-			</data>
-			<key>hash2</key>
-			<data>
-			gFSiXYlNJ0j6yrvgtrxzPoBNH08LfUzzwwV0UJU1PYI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>de.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kjcjCG4pJCKKO1MXLLc27I0I+Yw=
-			</data>
-			<key>hash2</key>
-			<data>
-			l1AiQcx/ESOqvL4aco/i+d9Aj+v2o4W9Wuu5CvbzItA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cckl3unv4gE49QRRbgIvABMuung=
-			</data>
-			<key>hash2</key>
-			<data>
-			0MJhOYd34+dtIC4NGjf+kCkeE91kTQx7iBzrSfGnjSk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es-ES.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y3WXWxZW4ch+bcvk+tRT6LG4sJ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			7LaJEzRd4VVG1UL/qWbVb3ca3IAXfO72RT4UG5sB5+U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y3WXWxZW4ch+bcvk+tRT6LG4sJ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			7LaJEzRd4VVG1UL/qWbVb3ca3IAXfO72RT4UG5sB5+U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BhvKHGdY/Rfsss4C2yUX2PiAXzE=
-			</data>
-			<key>hash2</key>
-			<data>
-			0aeQz458Not1WjkSmEPnQWuYQV2W9OCgJbwmZpQWcIw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ja.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bMF6UfklHTHF8Jihq3rJPC2loq4=
-			</data>
-			<key>hash2</key>
-			<data>
-			7nMj5YYolLp1sHdekUKPY++gNze7xctXPtoHjVmDYEk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UH9rHex72EdOMYNqJdTY3bhIo5U=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZiOBtr56ygGcbuVYUikfiHh4fJ1XIW8zmsV51t346xE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hans.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			l+mUo0L3DFpbcZLEmy0u2c66kRE=
-			</data>
-			<key>hash2</key>
-			<data>
-			es0ldlCR6tBYEcb9XqUcVWUwRtlDLl1r5Gwmkp4a6as=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/SVWebViewController.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yMIOd0CeUzKFsbSrJyJzpc5ATTY=
-			</data>
-			<key>hash2</key>
-			<data>
-			fc9HE3N7/DVOzpKAdbsW02T1F2Nmy9Z0o1qEtTanuw0=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

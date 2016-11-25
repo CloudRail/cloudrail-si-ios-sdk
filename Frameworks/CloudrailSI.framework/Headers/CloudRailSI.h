@@ -23,6 +23,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRGoogleDrive.h>
 #import <CloudRailSI/CROneDrive.h>
 #import <CloudRailSI/CREgnyte.h>
+#import <CloudRailSI/CROneDriveBusiness.h>
 
 #pragma mark - BusinessCloudStorage
 #import <CloudRailSI/CRAmazonS3.h>
@@ -40,6 +41,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRTwitter.h>
 #import <CloudRailSI/CRYahoo.h>
 #import <CloudRailSI/CRInstagram.h>
+#import <CloudRailSI/CRHeroku.h>
 
 
 #pragma mark - PointsOfInterestInterface
