@@ -1,5 +1,14 @@
 # Change Log
 
+## [5.2.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.2.0) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.1.4...5.2.0)
+
+* Added OneDrive for Business as a new service to the Cloud Storage interface
+* Fixed an issue where Box and GoogleDrive would return maximally 100 children of a folder
+* Added a function to retrieve children in chunks to all Cloud Storage services
+* Updated Google Drive from API version 2 to 3
+* Heroku has been added as a new service implementing Profile. It supports the retrieval of a unique ID, the full name and the email address. It is still in Beta and not officially listed or documented
+
 ## [5.1.4](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.1.4) (2016-11-11)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.1.3...5.1.4)
 
