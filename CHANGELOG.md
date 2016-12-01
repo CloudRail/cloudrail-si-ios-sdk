@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.2.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.2.1) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.2.0...5.2.1)
+
+* Fix for modified date returned by Box
+* Fix for shared links in Dropbox
+* Fix for special characters within the path
+
 ## [5.2.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.2.0) (2016-11-25)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.1.4...5.2.0)
 
