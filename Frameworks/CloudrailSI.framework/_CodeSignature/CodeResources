@@ -242,7 +242,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hoDs8bKAJH/YdOqLVJzTWqjjQy0=
+		lA+Z0wHzSrimZ9wYO6GloybAZ0Y=
 		</data>
 		<key>MIMETypeMap</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		EmnAvVvsDqrCRnySiLxVpYYVWGQ=
+		9y85kUPdJ6+WfCghXJMCPJLS39s=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		G88/WvdM7i2vKIy2VjjY7ukb3/0=
+		v5X/MEP/31NWNtnOIgIeGEK2RKk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -970,11 +970,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EmnAvVvsDqrCRnySiLxVpYYVWGQ=
+			9y85kUPdJ6+WfCghXJMCPJLS39s=
 			</data>
 			<key>hash2</key>
 			<data>
-			w7RWl60lVDKyxdTCq58mejXGjys2inPZenQYkg1rBYo=
+			J0pH5mozys21Z8KeKu0PwFbCA4+xa4XNt5MTGXs+o8c=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -992,11 +992,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G88/WvdM7i2vKIy2VjjY7ukb3/0=
+			v5X/MEP/31NWNtnOIgIeGEK2RKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4uBOYRQ6a+Jwptqzt8FtsAhFuBfwC0jI9IzIWpR33h8=
+			tBx6P492GZOFF+lzVQ9hQmuRSMqWmNWEThNXb6PuY3o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
