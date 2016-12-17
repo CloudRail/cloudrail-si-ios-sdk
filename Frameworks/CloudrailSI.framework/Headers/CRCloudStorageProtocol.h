@@ -11,11 +11,12 @@
 #import "CRAuthenticatingProtocol.h"
 #import "CRPersistableProtocol.h"
 #import "CRSpaceAllocation.h"
+#import "CRAdvancedRequestSupporterProtocol.h"
 
 /**
  * A common interface for cloud storage services, abstracts to the level of paths consistently for all services.
  */
-@protocol CRCloudStorageProtocol <CRAuthenticatingProtocol,CRPersistableProtocol>
+@protocol CRCloudStorageProtocol <CRAuthenticatingProtocol,CRPersistableProtocol,CRAdvancedRequestSupporterProtocol>
 
 /**
  *  Downloads a file from a cloud storage

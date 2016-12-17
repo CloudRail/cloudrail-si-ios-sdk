@@ -1,5 +1,13 @@
 # Change Log
 
+## [5.3.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.3.0) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.2.1...5.3.0)
+
+* Added a new function to make supported raw HTTP requests to the services implementing Cloud Storage (advanced request)
+* Added functions to post pictures and videos to a user's wall to the Social interface, Facebook and Twitter have been extended accordingly
+* Added FacebookPage as a new service to the Social interface. It allows posting updates/pictures/videos to a Facebook page
+* Google Cloud Platform added as a new integration in the Business Cloud Storage interface
+
 ## [5.2.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.2.1) (2016-11-25)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.2.0...5.2.1)
 

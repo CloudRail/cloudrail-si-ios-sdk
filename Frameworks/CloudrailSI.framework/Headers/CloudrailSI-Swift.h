@@ -158,6 +158,8 @@ SWIFT_CLASS("_TtC11CloudrailSI9Backblaze")
 
 @class CRCloudMetaData;
 @class CRSpaceAllocation;
+@class CRAdvancedRequestSpecification;
+@class CRAdvancedRequestResponse;
 
 SWIFT_CLASS("_TtC11CloudrailSI3Box")
 @interface Box : NSObject
@@ -179,6 +181,7 @@ SWIFT_CLASS("_TtC11CloudrailSI3Box")
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -206,6 +209,7 @@ SWIFT_CLASS("_TtC11CloudrailSI7Dropbox")
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -233,6 +237,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Egnyte")
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -256,6 +261,22 @@ SWIFT_CLASS("_TtC11CloudrailSI8Facebook")
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)postUpdateWithContent:(NSString * _Nonnull)content error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)connectionsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI12FacebookPage")
+@interface FacebookPage : NSObject
+- (nonnull instancetype)initWithPageName:(NSString * _Nonnull)pageName clientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)postUpdateWithContent:(NSString * _Nonnull)content error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)postImage:(NSString * _Nonnull)message image:(NSInputStream * _Nonnull)image error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)postVideo:(NSString * _Nonnull)message video:(NSInputStream * _Nonnull)video size:(long)size mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)connectionsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -292,6 +313,22 @@ SWIFT_CLASS("_TtC11CloudrailSI6GitHub")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI19GoogleCloudPlatform")
+@interface GoogleCloudPlatform : NSObject
+- (nonnull instancetype)initWithClientEmail:(NSString * _Nonnull)clientEmail privateKey:(NSString * _Nonnull)privateKey projectId:(NSString * _Nonnull)projectId OBJC_DESIGNATED_INITIALIZER;
+- (CRBucket * _Nullable)createBucket:(NSString * _Nonnull)bucketName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listBucketsAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteBucketWithID:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (CRBusinessFileMetaData * _Nullable)metadataOfFileWithPath:(CRBucket * _Nonnull)bucket fileName:(NSString * _Nonnull)fileName error:(NSError * _Nullable * _Nullable)error;
+- (NSMutableArray * _Nullable)listFilesInBucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)uploadFileToBucket:(CRBucket * _Nonnull)bucket name:(NSString * _Nonnull)name stream:(NSInputStream * _Nonnull)stream size:(long)size error:(NSError * _Nullable * _Nullable)error;
+- (NSInputStream * _Nullable)downloadFileWithName:(NSString * _Nonnull)fileName bucket:(CRBucket * _Nonnull)bucket error:(NSError * _Nullable * _Nullable)error;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 @interface GoogleDrive : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
@@ -312,6 +349,7 @@ SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -482,6 +520,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8OneDrive")
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -509,6 +548,7 @@ SWIFT_CLASS("_TtC11CloudrailSI16OneDriveBusiness")
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;

@@ -8,6 +8,18 @@
 		<data>
 		aZn80ZOTrtQNjqZEDIR+wZzdfpo=
 		</data>
+		<key>Headers/CRAdvancedRequestResponse.h</key>
+		<data>
+		lwjgisCBhg/oCOP/FNjVRiLuOWQ=
+		</data>
+		<key>Headers/CRAdvancedRequestSpecification.h</key>
+		<data>
+		zwGNdfTx3OV2/jexr8B7LgpFWsA=
+		</data>
+		<key>Headers/CRAdvancedRequestSupporterProtocol.h</key>
+		<data>
+		PGsR+wN0s4oxUzCVwxX4f95P6DQ=
+		</data>
 		<key>Headers/CRAmazonS3.h</key>
 		<data>
 		RTS6lzdEnEmJuHuG8/f8WRi/mxk=
@@ -30,7 +42,7 @@
 		</data>
 		<key>Headers/CRBusinessCloudStorageProtocol.h</key>
 		<data>
-		QiSrqqyLP92/D/xk8NcEVKzwOjQ=
+		TGJchcYOxovukQ3Hm16I+4M+t98=
 		</data>
 		<key>Headers/CRBusinessFileMetaData.h</key>
 		<data>
@@ -50,7 +62,7 @@
 		</data>
 		<key>Headers/CRCloudStorageProtocol.h</key>
 		<data>
-		nKhVBofeIBGo12MafsH7nL6V0qY=
+		QujW2lVdQ0tk2z0WJczeByZvmgY=
 		</data>
 		<key>Headers/CRCreditCard.h</key>
 		<data>
@@ -82,7 +94,11 @@
 		</data>
 		<key>Headers/CRFacebook.h</key>
 		<data>
-		5/hBQFQDT7po4W84KdHjQxRT8jE=
+		EjU0qi4PEFyRTKpKsvgmxhbWMN8=
+		</data>
+		<key>Headers/CRFacebookPage.h</key>
+		<data>
+		DU+mb7B+fjMAs6YtK36sN4Z0fUw=
 		</data>
 		<key>Headers/CRFoursquare.h</key>
 		<data>
@@ -91,6 +107,10 @@
 		<key>Headers/CRGitHub.h</key>
 		<data>
 		Fgby5i5KRq727orPxjOcW64UrPo=
+		</data>
+		<key>Headers/CRGoogleCloudPlatform.h</key>
+		<data>
+		kTci6R2xazR3eOXfskg4KEG3nSA=
 		</data>
 		<key>Headers/CRGoogleDrive.h</key>
 		<data>
@@ -198,7 +218,7 @@
 		</data>
 		<key>Headers/CRSocialProtocol.h</key>
 		<data>
-		KvwFJQ2kDzzQCiZ+to/aRBu6DUk=
+		WUpWq7lTS6TD2t+9VmpBMEzwy64=
 		</data>
 		<key>Headers/CRSpaceAllocation.h</key>
 		<data>
@@ -222,7 +242,7 @@
 		</data>
 		<key>Headers/CRTwitter.h</key>
 		<data>
-		UQE0E3TK9YQNAYhCoP6vZ07WqVI=
+		g1vkmMTqAmls+3vLLvM8WQWCR2c=
 		</data>
 		<key>Headers/CRYahoo.h</key>
 		<data>
@@ -234,15 +254,19 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		0AlZ32mpQdr99udpFwioJZqWRr8=
+		6E9f31XTUNk/g2iNOya9rJY+yuU=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		0jjfkvRt5LyWP7mPquBc9tOIrHg=
+		Y67Up0GVsYPxTLHFLoE5BvRtKW4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lA+Z0wHzSrimZ9wYO6GloybAZ0Y=
+		vdasaSIWV83x8ruEwjserLvwJLI=
+		</data>
+		<key>LICENSE.txt</key>
+		<data>
+		ycUL1Gtpq6YuYcZdirCN0ejIOzg=
 		</data>
 		<key>MIMETypeMap</key>
 		<data>
@@ -254,7 +278,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		9y85kUPdJ6+WfCghXJMCPJLS39s=
+		JQ6UzVY0gARSt/UyV2CkBVql6d8=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -262,7 +286,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		v5X/MEP/31NWNtnOIgIeGEK2RKk=
+		tWPTPQUQ9ubd720E4IwCCPDhodM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -304,6 +328,39 @@
 			<key>hash2</key>
 			<data>
 			f4CaQ7z+EgBwqN7/fQ3GuFo4Eze1bF2a5FDvFwJIL4I=
+			</data>
+		</dict>
+		<key>Headers/CRAdvancedRequestResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lwjgisCBhg/oCOP/FNjVRiLuOWQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			x8IXNmqLQjkLvpjROpBAbV8GSakOBGoXp5C3Q90Qqa0=
+			</data>
+		</dict>
+		<key>Headers/CRAdvancedRequestSpecification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zwGNdfTx3OV2/jexr8B7LgpFWsA=
+			</data>
+			<key>hash2</key>
+			<data>
+			fWje8E+WNawOyYlITL6QF5TFnDxzeuorjt5gdqVEamU=
+			</data>
+		</dict>
+		<key>Headers/CRAdvancedRequestSupporterProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PGsR+wN0s4oxUzCVwxX4f95P6DQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			v6sdPbdKGxmPMs39/xHSSjU9/V5eHJjfYH4OaqQd8e4=
 			</data>
 		</dict>
 		<key>Headers/CRAmazonS3.h</key>
@@ -365,11 +422,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QiSrqqyLP92/D/xk8NcEVKzwOjQ=
+			TGJchcYOxovukQ3Hm16I+4M+t98=
 			</data>
 			<key>hash2</key>
 			<data>
-			qJFRajDCWW2+ajfQBQO9wkM2hoVLZjGwtqIHILRR6yU=
+			UnSTInU7e5v2IlgM3tBUF2d9v07BFbW0xR38LRJ1dJA=
 			</data>
 		</dict>
 		<key>Headers/CRBusinessFileMetaData.h</key>
@@ -420,11 +477,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nKhVBofeIBGo12MafsH7nL6V0qY=
+			QujW2lVdQ0tk2z0WJczeByZvmgY=
 			</data>
 			<key>hash2</key>
 			<data>
-			l/7MHU/VIw887xyaPrAk0pwFryZ525Xmg4luGzxP77g=
+			idmHoeo1rmG/jNZca5Amsh0Nhf28QzO6chnLENoZVVo=
 			</data>
 		</dict>
 		<key>Headers/CRCreditCard.h</key>
@@ -508,11 +565,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5/hBQFQDT7po4W84KdHjQxRT8jE=
+			EjU0qi4PEFyRTKpKsvgmxhbWMN8=
 			</data>
 			<key>hash2</key>
 			<data>
-			4uqO4y1QqapQcg9gfXHUdywwpA9+M1b2vQ0Uv+nErLA=
+			7mKG9iBS9KluEL40h0AgjC6Fat7ArlQN0IgqvtCJaQc=
+			</data>
+		</dict>
+		<key>Headers/CRFacebookPage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DU+mb7B+fjMAs6YtK36sN4Z0fUw=
+			</data>
+			<key>hash2</key>
+			<data>
+			mVJWnxbsYZl39FgJAbHIBMmIJq/rLtYWv63+Wi/MgOI=
 			</data>
 		</dict>
 		<key>Headers/CRFoursquare.h</key>
@@ -535,6 +603,17 @@
 			<key>hash2</key>
 			<data>
 			t1M+2NQ/rmjkmA+9Kyf14GgCLziMdI/KbjhQU4AZqS4=
+			</data>
+		</dict>
+		<key>Headers/CRGoogleCloudPlatform.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kTci6R2xazR3eOXfskg4KEG3nSA=
+			</data>
+			<key>hash2</key>
+			<data>
+			WynI5t7Fbz+0HtLojuLISIfn7cwFLnLbqRJZA23bO4U=
 			</data>
 		</dict>
 		<key>Headers/CRGoogleDrive.h</key>
@@ -827,11 +906,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KvwFJQ2kDzzQCiZ+to/aRBu6DUk=
+			WUpWq7lTS6TD2t+9VmpBMEzwy64=
 			</data>
 			<key>hash2</key>
 			<data>
-			+arrjgz6reMdHedX2yH2Hgvc7h7xcakUa7DOrxkIqVc=
+			NTAoZ5xItsHWfhr0ATUAqBrH+3mdZmWXlO2wPFQ/f2U=
 			</data>
 		</dict>
 		<key>Headers/CRSpaceAllocation.h</key>
@@ -893,11 +972,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UQE0E3TK9YQNAYhCoP6vZ07WqVI=
+			g1vkmMTqAmls+3vLLvM8WQWCR2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			G2Gh1PjutDEoRWXsygoEedoc8I1eRX3AI7/44Mg45nQ=
+			LNKkEM9Gi7bbQTKo8EKTXJMFjMzeZoZYnUHtiJ+0GwE=
 			</data>
 		</dict>
 		<key>Headers/CRYahoo.h</key>
@@ -926,22 +1005,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0AlZ32mpQdr99udpFwioJZqWRr8=
+			6E9f31XTUNk/g2iNOya9rJY+yuU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FILDk/ZJK8c00erqi81PEYCnaDKVQSASsZ22yReoQ+U=
+			LeZzOgQtDwFfH9w84NFYG76faPxt13lyN0EowaPzbLY=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0jjfkvRt5LyWP7mPquBc9tOIrHg=
+			Y67Up0GVsYPxTLHFLoE5BvRtKW4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WN1WEAEchpQGjvDQLScmE78gwRD4p4Sm/X9hXZX/rVw=
+			uvsUWNKdA8S92ExfU0PbQ2CqGI9ONs2ZujTN6ucIJNw=
+			</data>
+		</dict>
+		<key>LICENSE.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ycUL1Gtpq6YuYcZdirCN0ejIOzg=
+			</data>
+			<key>hash2</key>
+			<data>
+			NW5CJe0HffJYaGeVeXhBBLG3pXUuusxzBKLU7A8Z6Wg=
 			</data>
 		</dict>
 		<key>MIMETypeMap</key>
@@ -970,11 +1060,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9y85kUPdJ6+WfCghXJMCPJLS39s=
+			JQ6UzVY0gARSt/UyV2CkBVql6d8=
 			</data>
 			<key>hash2</key>
 			<data>
-			J0pH5mozys21Z8KeKu0PwFbCA4+xa4XNt5MTGXs+o8c=
+			Xu5a23ADjFjzWeo9v6HA4L915iz0Pa8NjOll7r3PmA4=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -992,11 +1082,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v5X/MEP/31NWNtnOIgIeGEK2RKk=
+			tWPTPQUQ9ubd720E4IwCCPDhodM=
 			</data>
 			<key>hash2</key>
 			<data>
-			tBx6P492GZOFF+lzVQ9hQmuRSMqWmNWEThNXb6PuY3o=
+			02pXPXWEnlCO/L3CW6Utzo0YoaLvp0T+slNx0SH3iXs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

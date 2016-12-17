@@ -12,7 +12,8 @@
 #import "CRBucket.h"
 
 /**
- * This is a common interface for Bucket based Cloud Storage Services. Instead of organizing files in nested folders, they reside in a bucket.
+ * This is a common interface for Bucket based Cloud Storage Services. Instead of organizing files in nested folders, 
+ * they reside in a bucket.
  */
 @protocol CRBusinessCloudStorageProtocol
 

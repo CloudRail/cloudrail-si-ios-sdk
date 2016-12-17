@@ -30,6 +30,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRBackblaze.h>
 #import <CloudRailSI/CRRackspace.h>
 #import <CloudRailSI/CRMicrosoftAzure.h>
+#import <CloudRailSI/CRGoogleCloudPlatform.h>
 
 #pragma mark - ProfileInterface
 #import <CloudRailSI/CRFacebook.h>
@@ -42,6 +43,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRYahoo.h>
 #import <CloudRailSI/CRInstagram.h>
 #import <CloudRailSI/CRHeroku.h>
+#import <CloudRailSI/CRFacebookPage.h>
 
 
 #pragma mark - PointsOfInterestInterface
@@ -75,6 +77,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRPaymentProtocol.h>
 #import <CloudRailSI/CRSocialProtocol.h>
 #import <CloudRailSI/CRBusinessCloudStorageProtocol.h>
+#import <CloudRailSI/CRAdvancedRequestSupporterProtocol.h>
 
 #pragma mark - ClourRail types
 #import <CloudRailSI/CRAddress.h>
@@ -91,6 +94,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRImageMetaData.h>
 #import <CloudRailSI/CRBucket.h>
 #import <CloudRailSI/CRBusinessFileMetaData.h>
+#import <CloudRailSI/CRAdvancedRequestResponse.h>
+#import <CloudRailSI/CRAdvancedRequestSpecification.h>
 
 #pragma mark - Swift Helpers
 #import <CloudRailSI/CRError.h>
