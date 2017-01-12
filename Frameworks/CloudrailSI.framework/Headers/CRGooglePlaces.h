@@ -5,7 +5,7 @@
 @interface CRGooglePlaces : NSObject <CRPointsOfInterestProtocol>
 @property (weak, nonatomic) id target;
 
-- (instancetype)initWithApiKey:(NSString *)apiKey;
+-(instancetype)initWithApiKey:(NSString *)apiKey;
 
 
 

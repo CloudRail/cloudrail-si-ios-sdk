@@ -10,10 +10,11 @@
 #import "CRAuthenticatingProtocol.h"
 #import "CRDateOfBirth.h"
 #import "CRPersistableProtocol.h"
+#import "CRAdvancedRequestSupporterProtocol.h"
 /**
  * An interface that provides access to a diverse range of services that provide user data. They all have in common, that they allow you to get a unique identifier for a logged in user, so it can be used for "Login with ..." scenarios. All the other information might be present or not, depending on the service and how much information the user has filled out with the respective service. To avoid unnecessary requests, information is cached up to one minute.
  */
-@protocol CRProfileProtocol <CRAuthenticatingProtocol,CRPersistableProtocol>
+@protocol CRProfileProtocol <CRAuthenticatingProtocol,CRPersistableProtocol,CRAdvancedRequestSupporterProtocol>
 
 
 /**

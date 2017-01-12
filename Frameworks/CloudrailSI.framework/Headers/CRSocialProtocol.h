@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "CRPersistableProtocol.h"
+#import "CRAuthenticatingProtocol.h"
 
 /**
  * Interface for interaction with social networks
  */
-@protocol CRSocialProtocol <NSObject,CRPersistableProtocol>
+@protocol CRSocialProtocol <NSObject,CRPersistableProtocol,CRAuthenticatingProtocol>
 
 /**
  * Creates a new post/update to the currently logged in user's wall/stream/etc.

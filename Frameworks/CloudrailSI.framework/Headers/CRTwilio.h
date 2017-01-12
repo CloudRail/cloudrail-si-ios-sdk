@@ -5,7 +5,7 @@
 @interface CRTwilio : NSObject <CRSMSProtocol>
 @property (weak, nonatomic) id target;
 
-- (instancetype)initWithAccountSid:(NSString *)accountSid authToken:(NSString *)authToken;
+-(instancetype)initWithAccountSid:(NSString *)accountSid authToken:(NSString *)authToken;
 
 
 

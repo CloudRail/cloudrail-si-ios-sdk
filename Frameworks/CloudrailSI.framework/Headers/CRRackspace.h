@@ -5,7 +5,7 @@
 @interface CRRackspace : NSObject <CRBusinessCloudStorageProtocol>
 @property (weak, nonatomic) id target;
 
-- (instancetype)initWithUsername:(NSString *)username apiKey:(NSString *)apiKey region:(NSString *)region;
+-(instancetype)initWithUsername:(NSString *)username apiKey:(NSString *)apiKey region:(NSString *)region;
 
 
 

@@ -5,7 +5,7 @@
 @interface CRYelp : NSObject <CRPointsOfInterestProtocol>
 @property (weak, nonatomic) id target;
 
-- (instancetype)initWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret token:(NSString *)token tokenSecret:(NSString *)tokenSecret;
+-(instancetype)initWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret token:(NSString *)token tokenSecret:(NSString *)tokenSecret;
 
 
 

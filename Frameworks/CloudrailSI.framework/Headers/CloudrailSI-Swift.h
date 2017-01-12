@@ -259,7 +259,10 @@ SWIFT_CLASS("_TtC11CloudrailSI8Facebook")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)postUpdateWithContent:(NSString * _Nonnull)content error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)postImage:(NSString * _Nonnull)message image:(NSInputStream * _Nonnull)image error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)postVideo:(NSString * _Nonnull)message video:(NSInputStream * _Nonnull)video size:(long)size mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)connectionsAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
@@ -306,6 +309,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6GitHub")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -379,6 +383,7 @@ SWIFT_CLASS("_TtC11CloudrailSI10GooglePlus")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -399,6 +404,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Heroku")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -419,6 +425,7 @@ SWIFT_CLASS("_TtC11CloudrailSI9Instagram")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -439,6 +446,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8LinkedIn")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -484,6 +492,7 @@ SWIFT_CLASS("_TtC11CloudrailSI13MicrosoftLive")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -618,6 +627,7 @@ SWIFT_CLASS("_TtC11CloudrailSI5Slack")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;
@@ -666,7 +676,10 @@ SWIFT_CLASS("_TtC11CloudrailSI7Twitter")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (BOOL)postUpdateWithContent:(NSString * _Nonnull)content error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)postImage:(NSString * _Nonnull)message image:(NSInputStream * _Nonnull)image error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)postVideo:(NSString * _Nonnull)message video:(NSInputStream * _Nonnull)video size:(long)size mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error;
 - (NSMutableArray * _Nullable)connectionsAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
@@ -688,6 +701,7 @@ SWIFT_CLASS("_TtC11CloudrailSI5Yahoo")
 - (NSString * _Nullable)pictureURLAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)setTarget:(id _Null_unspecified)target;

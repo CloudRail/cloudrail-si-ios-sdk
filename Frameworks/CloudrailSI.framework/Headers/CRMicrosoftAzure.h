@@ -5,7 +5,7 @@
 @interface CRMicrosoftAzure : NSObject <CRBusinessCloudStorageProtocol>
 @property (weak, nonatomic) id target;
 
-- (instancetype)initWithAccountName:(NSString *)accountName accessKey:(NSString *)accessKey;
+-(instancetype)initWithAccountName:(NSString *)accountName accessKey:(NSString *)accessKey;
 
 
 
