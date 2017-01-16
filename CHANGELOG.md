@@ -1,5 +1,15 @@
 # Change Log
 
+## [5.4.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.4.1) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.4.0...5.4.1)
+
+* Bugfix in Mailjet which caused the SDK to crash
+
+## [5.4.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.4.0) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.3.0...5.4.0)
+
+* Advanced Request now available for the services implementing the Profile interface
+
 ## [5.3.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.3.0) (2016-11-25)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.2.1...5.3.0)
 
