@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'cloudrail-si-ios-sdk'
-  s.version          = '5.4.1'
+  s.version          = '5.4.2'
   s.summary          = 'CloudRail is a free software library which abstracts multiple APIs from different providers into a single and universal interface.'
 
 

@@ -11,4 +11,6 @@
 //Specific for CloudStorage Interface
 -(instancetype)initWithClientId:(NSString *)clientId clientSecret: (NSString *)clientSecret;
 
+-(void)useAdvancedAuthentication;
+
 @end

@@ -75,7 +75,7 @@ Point of Interest | Google Places, Foursquare, Yelp
 [Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-cloudstorage)
 ```objective-c
 //   self.service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-//   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   self.service = [[CRBox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 [CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
 self.service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -86,7 +86,7 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 [Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-cloudstorage)
 ```swift
 //let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
-//let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+//let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "", redirectUri: "[redirectUri]", state: "[state]")
 //let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
 
 CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")

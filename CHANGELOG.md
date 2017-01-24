@@ -1,5 +1,10 @@
 # Change Log
 
+## [5.4.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.4.2) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.4.1...5.4.2)
+
+* Introduce the external authentication which uses the standard web browser instead of a WebView. This is optional for the most services except from GoogleDrive and GooglePlus as of now. Developers using those services need to upgrade until 20. April 2017
+
 ## [5.4.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.4.1) (2016-11-25)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.4.0...5.4.1)
 
