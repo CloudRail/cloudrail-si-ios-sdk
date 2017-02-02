@@ -39,8 +39,8 @@
                              
                              @"dropboxKey" : @"38nu3lwdvyaqs78",
                              @"dropboxSecret" : @"c95g0wfkdv6ua2d",
-                             @"googledriveKey" : @"871545970580-rsfohjd4g7ge0j3bmue6vc3t1t4if22c.apps.googleusercontent.com",
-                             @"googledriveSecret" : @"MpVwm1MK2lgKQCP2T6BjVn8c",
+                             @"googledriveKey" : @"638240013795-4nunsen5ada95kll9u18dpu1ocrt6nur.apps.googleusercontent.com",
+                             @"googledriveSecret" : @"",
                              @"boxKey" : @"qnskodzvd2naq16xowc40t43fug2848n",
                              @"boxSecret" : @"cQE7Sf9DzZqChjvCTxIMTp3ye6hynhTd",
                              @"onedriveKey" : @"000000004018F12F",
@@ -59,7 +59,12 @@
     self.service = [[CRDropbox alloc] initWithClientId:authDic[key] clientSecret:authDic[secret]];
   }else
   if ([self.serviceName isEqualToString:@"CRGoogleDrive"]) {
-    self.service = [[CRGoogleDrive alloc]initWithClientId:authDic[key] clientSecret:authDic[secret]];
+    CRGoogleDrive* drive = [[CRGoogleDrive alloc] initWithClientId:authDic[key]
+                                                      clientSecret:authDic[secret]
+                                                       redirectUri:@"org.cocoapods.demo.CloudRail-SI-iOS-Example:/oauth2redirect"
+                                                             state:@"efwegwww"];
+    [drive useAdvancedAuthentication];
+    self.service = drive;
   }else
   if ([self.serviceName isEqualToString:@"CRBox"]) {
     self.service = [[CRBox alloc] initWithClientId:authDic[key] clientSecret:authDic[secret]];
@@ -70,6 +75,10 @@
   if ([self.serviceName isEqualToString:@"CREgnyte"]) {
     self.service = [[CREgnyte alloc] initWithDomain:authDic[@"egnyteDomain"] clientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"STATE"];
   }
+  
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [self.service login];
+  });
 }
 #pragma mark - IBActions
 
@@ -109,8 +118,10 @@
 }
 
 - (IBAction)spaceAllocationAction:(id)sender {
+  [CRCloudRail setAppKey:@"57ab1b7c458c4d233b7d2169"];
+  [self.service login];
   
-  CRSpaceAllocation * spaceAllocation = [self.service spaceAllocation];
+  /*CRSpaceAllocation * spaceAllocation = [self.service spaceAllocation];
   
   //Presenting Alert View
   UIAlertController * alert = [UIAlertController
@@ -130,7 +141,7 @@
   
   [alert addAction:noButton];
   
-  [self presentViewController:alert animated:YES completion:nil];
+  [self presentViewController:alert animated:YES completion:nil];*/
 }
 
 - (IBAction)uploadDefault:(id)sender {

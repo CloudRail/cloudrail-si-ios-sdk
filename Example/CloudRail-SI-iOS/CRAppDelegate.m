@@ -20,5 +20,11 @@
     return YES;
 }
 
+// Used for AdvancedAuthentication
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"kCloseSafariViewControllerNotification" object:url];
+  return YES;
+}
+
 
 @end
