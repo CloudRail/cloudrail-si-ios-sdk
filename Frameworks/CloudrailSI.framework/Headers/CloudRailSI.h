@@ -96,6 +96,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRBusinessFileMetaData.h>
 #import <CloudRailSI/CRAdvancedRequestResponse.h>
 #import <CloudRailSI/CRAdvancedRequestSpecification.h>
+#import <CloudRailSI/CustomStream.h>
+#import <CloudRailSI/CRUploadProgressDelegate.h>
 
 #pragma mark - Swift Helpers
 #import <CloudRailSI/CRError.h>
