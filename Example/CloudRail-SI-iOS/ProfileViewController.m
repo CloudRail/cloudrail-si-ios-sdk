@@ -63,7 +63,7 @@
   Class cl = NSClassFromString(self.serviceName);
   
   
-  self.service = [(id<CRProfileProtocol>)[cl alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"CR123"];
+  self.service = [[cl alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"CR123"];
   
     // Do any additional setup after loading the view.
 }

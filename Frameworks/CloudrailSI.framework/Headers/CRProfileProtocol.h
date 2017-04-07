@@ -18,21 +18,6 @@
 
 
 /**
- *  Basic contructor method for any CRProfileProtocol conforming class
- *
- *  @param clientId     The client identifier (or key) of the corresponding service.
- *  @param clientSecret The client secret (or secret) of the corresponding service.
- *  @param redirectUri  The redirect url used to capture the response from the service.
- *  @param state        Value used to identify diferent states on the server side. Unused in iOS version of CloudRail SDK
- *
- *  @return instancetype  id<CRProfileProtocol> Initialized instance of a CRProfile service using the values from the parameters.
- */
-- (nonnull instancetype)initWithClientId:(nonnull NSString *) clientId
-                           clientSecret:(nonnull NSString *) clientSecret
-                            redirectUri:(nonnull NSString *) redirectUri
-                                  state:(nonnull NSString *) state;
-
-/**
  * @return A unique identifier for the authenticated user. All services provide this value. Useful for "Login with ...". Prefixed with the lowercased service name and a minus.
  */
 - (nonnull NSString *)identifier;

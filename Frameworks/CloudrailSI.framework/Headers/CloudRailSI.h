@@ -44,6 +44,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRInstagram.h>
 #import <CloudRailSI/CRHeroku.h>
 #import <CloudRailSI/CRFacebookPage.h>
+#import <CloudRailSI/CRProductHunt.h>
 
 
 #pragma mark - PointsOfInterestInterface

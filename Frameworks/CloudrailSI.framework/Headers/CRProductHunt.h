@@ -3,7 +3,7 @@
 #import "CRProfileProtocol.h"
 #import "CRAdvancedRequestSupporterProtocol.h"
 
-@interface CRSlack : NSObject <CRProfileProtocol, CRAdvancedRequestSupporterProtocol>
+@interface CRProductHunt : NSObject <CRProfileProtocol, CRAdvancedRequestSupporterProtocol>
 @property (weak, nonatomic) id target;
 
 

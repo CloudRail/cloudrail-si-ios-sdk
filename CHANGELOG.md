@@ -1,5 +1,17 @@
 # Change Log
 
+## [5.5.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.5.0) (2016-11-25)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.4.4...5.5.0)
+
+* Fix getChildrenPage method in all services of the CloudStorage interface
+* Repair OneDrive after a sudden change in the OneDrive API that happened without any prior notice
+* Hotfix for GoogleDrive download method
+* Enable downloading Google Documents as PDFs through the download method of Google Drive
+* Fix an issue with Facebook: Logout method now correctly performs the logout
+* Enable developers to specify the scopes they want to acquire for the different services using OAuth
+* Advanced request functionality for all of the services
+* Hotfix: Using the advanced authentication on multiple services caused an issue
+
 ## [5.4.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.4.2) (2016-11-25)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.4.1...5.4.2)
 

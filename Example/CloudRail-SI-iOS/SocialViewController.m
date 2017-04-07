@@ -36,7 +36,7 @@
     self.service = [[CRFacebook alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"STATE"];
     
   } else if ([self.serviceName isEqualToString:@"CRTwitter"]){
-    self.service = [[CRTwitter alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"STATE"];
+    self.service = [[CRTwitter alloc] initWithClientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth"];
   }
   
 }
