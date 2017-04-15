@@ -336,7 +336,7 @@ ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 #### Code Sample - Swift
 [Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-email)
 
-````swift
+```swift
 CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
 let email: EmailProtocol = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
