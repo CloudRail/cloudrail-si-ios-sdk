@@ -75,10 +75,6 @@
   if ([self.serviceName isEqualToString:@"CREgnyte"]) {
     self.service = [[CREgnyte alloc] initWithDomain:authDic[@"egnyteDomain"] clientId:authDic[key] clientSecret:authDic[secret] redirectUri:@"https://www.cloudrailauth.com/auth" state:@"STATE"];
   }
-  
-  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-    [self.service login];
-  });
 }
 #pragma mark - IBActions
 
@@ -118,10 +114,7 @@
 }
 
 - (IBAction)spaceAllocationAction:(id)sender {
-  [CRCloudRail setAppKey:@"57ab1b7c458c4d233b7d2169"];
-  [self.service login];
-  
-  /*CRSpaceAllocation * spaceAllocation = [self.service spaceAllocation];
+  CRSpaceAllocation * spaceAllocation = [self.service spaceAllocation];
   
   //Presenting Alert View
   UIAlertController * alert = [UIAlertController
@@ -141,7 +134,7 @@
   
   [alert addAction:noButton];
   
-  [self presentViewController:alert animated:YES completion:nil];*/
+  [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (IBAction)uploadDefault:(id)sender {
