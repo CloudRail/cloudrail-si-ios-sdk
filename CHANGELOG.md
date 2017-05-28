@@ -1,5 +1,10 @@
 # Change Log
 
+## [5.5.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.5.1) (2017-05-28)
++[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.5.0...5.5.1)
++
++* Fix for swift 3.1 modules.
+
 ## [5.5.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.5.0) (2016-11-25)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.4.4...5.5.0)
 
