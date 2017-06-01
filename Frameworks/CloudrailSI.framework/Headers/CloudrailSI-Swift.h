@@ -830,6 +830,18 @@ SWIFT_CLASS("_TtC11CloudrailSI7Twitter")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI5Twizo")
+@interface Twizo : NSObject
+- (nonnull instancetype)initWithKey:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)sendSmsFromName:(NSString * _Nonnull)fromName toNumber:(NSString * _Nonnull)toNumber content:(NSString * _Nonnull)content error:(NSError * _Nullable * _Nullable)error;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)useAdvancedAuthentication;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI5Yahoo")
 @interface Yahoo : NSObject
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;

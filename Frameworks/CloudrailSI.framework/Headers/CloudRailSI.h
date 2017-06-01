@@ -60,6 +60,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #pragma mark - SMSInterface
 #import <CloudRailSI/CRNexmo.h>
 #import <CloudRailSI/CRTwilio.h>
+#import <CloudRailSI/CRTwizo.h>
+
 
 
 #pragma mark - Email
