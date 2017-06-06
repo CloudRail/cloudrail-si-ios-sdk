@@ -30,7 +30,7 @@ CloudRail is an API integration solution which abstracts multiple APIs from diff
 <!--[![CocoaPods](https://img.shields.io/cocoapods/dm/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
 <!--[![CocoaPods](https://img.shields.io/cocoapods/dt/cloudrail-si-ios-sdk.svg?maxAge=2592000)]()-->
 
-Full documentation can be found at our [wiki](https://documentation.cloudrail.com/ios/ios/Home).
+Full documentation can be found at our [website](https://cloudrail.com/integrations).
 
 Learn more about CloudRail on https://cloudrail.com
 
@@ -83,7 +83,7 @@ Point of Interest | Google Places, Foursquare, Yelp
 * Generate share links for files and folders.
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-cloudstorage)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/CloudStorage;platformId=ObjectiveC)
 ```objective-c
 //   self.service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -94,7 +94,7 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 //READ FROM STREAM
 ```
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-cloudstorage)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/CloudStorage;platformId=Swift)
 ```swift
 //let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
 //let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "", redirectUri: "[redirectUri]", state: "[state]")
@@ -127,7 +127,7 @@ do{
 
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-businesscloudstorage)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/BusinessCloudStorage;platformId=ObjectiveC)
 
 ```objective-c
 // self.service = [[CRMicrosoftAzure alloc] initWithAccountName:@"[account_name]" accessKey:@"[access_key]"];
@@ -148,7 +148,7 @@ NSInputStream * inputStream = [NSInputStream inputStreamWithData:data];
 }
 ```
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-businesscloudstorage)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/BusinessCloudStorage;platformId=Swift)
 ```swift
 //let cloudStorage : BusinessCloudStorageProtocol = Backblaze.init(accountID: "[account_id]", appKey: "[app_key]")
 //let cloudStorage : BusinessCloudStorageProtocol = Rackspace.init(username: "[username]", apiKey: "[api_key]", region: "[region]")
@@ -192,7 +192,7 @@ do{
 * Login using the Social Network.
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-profile)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Profile;platformId=ObjectiveC)
 
 ```objective-c
 //  self.service = [[CRGitHub alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
@@ -208,7 +208,7 @@ NSString * fullName = [self.service fullName];
 ```
 
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-profile)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Profile;platformId=Swift)
 ```swift
 // let profile = GitHub(clientID: "[clientID]", clientSecret: "[clientSecret]")
 // let profile = GooglePlus(clientID: "[clientID]", clientSecret: "[clientSecret]")
@@ -239,7 +239,7 @@ do{
 
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-social)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Social;platformId=ObjectiveC)
 
 ```objective-c
 
@@ -248,7 +248,7 @@ self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSe
 [self.service postUpdateWithContent:@"Using Cloudrail sdk!"];
 ```
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-social)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Social;platformId=Swift)
 
 ```swift
 // let social = Twitter(clientID: "[clientID]", clientSecret: "[clientSecret]")
@@ -276,7 +276,7 @@ do{
 * Manage subscriptions
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-payment)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Payment;platformId=ObjectiveC)
 
 ```objective-c
 //  self.service = [[CRPayPal alloc] initWithUseSandbox:YES clientId:key clientSecret:secret];
@@ -291,7 +291,7 @@ NSLog(@"Sub plan %@", subPlan);
 ```
 
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-payment)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Payment;platformId=Swift)
 
 ```swift
 CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
@@ -316,7 +316,7 @@ do{
 * Send Email
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-email)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=ObjectiveC)
 
 ```objective-c
 //  self.service = [[CRMailJet alloc] initWithClientId:key clientSecret:secret];
@@ -334,7 +334,7 @@ htmlBody:@""
 ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 ```
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-email)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=Swift)
 
 ```swift
 CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
@@ -352,13 +352,14 @@ do{
 
 * Twilio
 * Nexmo
+* Twizo
 
 #### Features
 
 * Send SMS
 
 #### Code Sample - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-sms)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=ObjectiveC)
 
 ```objective-c
 [CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
@@ -369,7 +370,7 @@ self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
 [self.service sendSmsFromName:@"from Code" toNumber:@"+12323423423" content:@"Testing message"];
 ```
 #### Code Sample - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-sms)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=Swift)
 
 ```swift
 // let sms = Nexmo(accountSid: "[clientID]", authToken: "[authToken]")
@@ -397,7 +398,7 @@ do{
 * Filter by categories or search term
 
 #### Code Example - Objective-C
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage#interfaces-pointsofinterest)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/PointsOfInterest;platformId=ObjectiveC)
 
 ```objective-c
 //  self.service = [[CRYelp alloc] initWithConsumerKey:@"key" consumerSecret:@"secret" token:@"token"  tokenSecret:@"tokensecret"];
@@ -411,7 +412,7 @@ NSMutableArray<POI*>* pois =  [self.service nearbyPoisWithLatitude:@49.483927 lo
 NSLog(@"%@", pois);
 ```
 #### Code Example - Swift
-[Full Documentation](https://documentation.cloudrail.com/ios/ios/Usage-(Swift)#interfaces-pointsofinterest)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/PointsOfInterest;platformId=Swift)
 
 ```swift
 // let points = GooglePlaces(apiKey: "[secretKey]")
@@ -438,7 +439,7 @@ More interfaces are coming soon.
 
 * Switch services instantly: One line of code is needed to set up the service you are using. Changing which service is as simple as changing the name to the one you wish to use.
 
-* Simple Documentation: There is no searching around Stack Overflow for the answer. The CloudRail documentation at https://documentation.cloudrail.com/ios/ios/Home is regularly updated, clean, and simple to use.
+* Simple Documentation: There is no searching around Stack Overflow for the answer. The CloudRail documentation at https://cloudrail.com/integrations is regularly updated, clean, and simple to use.
 
 * No Maintenance Times: The CloudRail Libraries are updated when a provider changes their API.
 
@@ -542,11 +543,11 @@ CloudRail provides a developer portal which offers usage insights for the SDKs a
 
 It's free to sign up and generate a key.
 
-Head over to https://developers.cloudrail.com
+Head over to https://cloudrail.com/signup
 
 ## Pricing
 
-Learn more about our pricing on https://cloudrail.com/cloudrail-pricing/ 
+Learn more about our pricing on https://cloudrail.com/pricing 
 
 ## Other Platforms
 
