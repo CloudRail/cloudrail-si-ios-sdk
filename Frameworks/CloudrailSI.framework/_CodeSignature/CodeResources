@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/CRCloudStorageProtocol.h</key>
 		<data>
-		QujW2lVdQ0tk2z0WJczeByZvmgY=
+		TjM5Kl8R9PbN3JbwSouiWErxuRM=
 		</data>
 		<key>Headers/CRCreditCard.h</key>
 		<data>
@@ -147,6 +147,10 @@
 		<key>Headers/CRMailJet.h</key>
 		<data>
 		duOQTTwOuXLjH5X8LYb2u7kU7mo=
+		</data>
+		<key>Headers/CRMicrosoft.h</key>
+		<data>
+		WrxP1njP/SgA/o2oHEXIMFAyy+Q=
 		</data>
 		<key>Headers/CRMicrosoftAzure.h</key>
 		<data>
@@ -266,11 +270,11 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		b0xED8gq1VlqEfcqQHcz4iN1D/c=
+		XkW43yJP2fSHymBZyr6aHgFioiI=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		PU6WrMCrZhoD2ShrID6njh1zyl0=
+		feTC3MhPkp944JU8s/NEXumNJEQ=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -278,7 +282,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4HGAnnACOzhvrPSbXlWflMETaYQ=
+		MhdQtgF90O2yhhRbrv76czBssqM=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -294,7 +298,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		Dpk1DrGOUdaIRJwldpnJ06e4yqQ=
+		qEuYbBTXUPrwi+1d2l4uZa3OjNA=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -302,7 +306,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		pn4aGClel0H+bvXiNCV1j74/nvA=
+		KC+gYnMYdWedAvcynaSqniMQyBY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -493,11 +497,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QujW2lVdQ0tk2z0WJczeByZvmgY=
+			TjM5Kl8R9PbN3JbwSouiWErxuRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			idmHoeo1rmG/jNZca5Amsh0Nhf28QzO6chnLENoZVVo=
+			ly1gqixDU4uSUSYUDRorI0voxKX6LxvwkYKA3d5teSc=
 			</data>
 		</dict>
 		<key>Headers/CRCreditCard.h</key>
@@ -729,6 +733,17 @@
 			<key>hash2</key>
 			<data>
 			QfXWuWClTHhSZr99hecXMReOY8GkdzZIvCoQrYzeQH8=
+			</data>
+		</dict>
+		<key>Headers/CRMicrosoft.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WrxP1njP/SgA/o2oHEXIMFAyy+Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			E1G1ZHfp8hcNlVgAZzkkQ+6SaIZoeC98yHNdUbd8vLY=
 			</data>
 		</dict>
 		<key>Headers/CRMicrosoftAzure.h</key>
@@ -1054,22 +1069,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b0xED8gq1VlqEfcqQHcz4iN1D/c=
+			XkW43yJP2fSHymBZyr6aHgFioiI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mG+g+CIki+1ssL0GxN1gJ41p0cYeU2TDMwXDKuNvJn8=
+			/0Bhr7J+RxYyjPGyAa9Ho2a7WXBAL32Hlf1ky83c1MA=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PU6WrMCrZhoD2ShrID6njh1zyl0=
+			feTC3MhPkp944JU8s/NEXumNJEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wd/VQR4uy5sq0deGdmcuDlSFAXbxz4lTWze+fZye3xQ=
+			K476kP7fl5juM2HmOr4JOB4nwwQduubHzDjFZQ3OBzo=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1120,11 +1135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dpk1DrGOUdaIRJwldpnJ06e4yqQ=
+			qEuYbBTXUPrwi+1d2l4uZa3OjNA=
 			</data>
 			<key>hash2</key>
 			<data>
-			W26j1Mykpj3xcH5joTd2z0aV8OdsVnvZTTy7ILz/5D0=
+			HxFq1E7bePsPFmSIc2gvN012RcC9OKUbK73dOvCLPYI=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1142,11 +1157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pn4aGClel0H+bvXiNCV1j74/nvA=
+			KC+gYnMYdWedAvcynaSqniMQyBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			uAFFjl6yFE2eZYe9PaSm/djSaZu1H5QxG03P81AhVH0=
+			+IJqZ12suN1YBWYsnd/Y/t6bbq/ha0Ok3lNlOXGzMj8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

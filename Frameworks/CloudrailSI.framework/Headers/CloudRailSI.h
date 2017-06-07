@@ -24,6 +24,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CROneDrive.h>
 #import <CloudRailSI/CREgnyte.h>
 #import <CloudRailSI/CROneDriveBusiness.h>
+#import <CloudRailSI/CRMicrosoft.h>
 
 #pragma mark - BusinessCloudStorage
 #import <CloudRailSI/CRAmazonS3.h>

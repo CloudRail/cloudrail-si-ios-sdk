@@ -204,6 +204,7 @@ SWIFT_CLASS("_TtC11CloudrailSI3Box")
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -233,6 +234,7 @@ SWIFT_CLASS("_TtC11CloudrailSI7Dropbox")
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -264,6 +266,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Egnyte")
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -404,6 +407,7 @@ SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -541,6 +545,35 @@ SWIFT_CLASS("_TtC11CloudrailSI7MailJet")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI9Microsoft")
+@interface Microsoft : NSObject
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state scopes:(NSMutableArray * _Nonnull)scopes OBJC_DESIGNATED_INITIALIZER;
+- (NSInputStream * _Nullable)downloadFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)uploadFileToPath:(NSString * _Nonnull)filePath stream:(NSInputStream * _Nonnull)stream size:(long)size overwrite:(BOOL)overwrite error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)moveFileFromPath:(NSString * _Nonnull)sourcePath destinationPath:(NSString * _Nonnull)destinationPath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)deleteFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)copyFileFromPath:(NSString * _Nonnull)sourcePath destinationPath:(NSString * _Nonnull)destinationPath error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)createFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error;
+- (CRCloudMetaData * _Nullable)metadataOfFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)folderPath error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)childrenOfFolderWithPath:(NSString * _Nonnull)path offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)userLoginAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)userNameAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)useAdvancedAuthentication;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI14MicrosoftAzure")
 @interface MicrosoftAzure : NSObject
 - (nonnull instancetype)initWithAccountName:(NSString * _Nonnull)accountName accessKey:(NSString * _Nonnull)accessKey OBJC_DESIGNATED_INITIALIZER;
@@ -616,6 +649,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8OneDrive")
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -645,6 +679,7 @@ SWIFT_CLASS("_TtC11CloudrailSI16OneDriveBusiness")
 - (NSString * _Nullable)shareLinkForFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRSpaceAllocation * _Nullable)spaceAllocationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSInputStream * _Nullable)thumbnailOfFileWithPath:(NSString * _Nonnull)path error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchFileWithQuery:(NSString * _Nonnull)query error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;

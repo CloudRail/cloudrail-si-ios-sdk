@@ -151,4 +151,13 @@
                            clientSecret:(nonnull NSString *) clientSecret
                             redirectUri:(nonnull NSString *) redirectUri
                                   state:(nonnull NSString *) state __attribute__((deprecated));
+
+
+/**
+ *  Basic contructor method for any CRCloudStorageProtocol conforming class
+ *
+ *  @param query     A query string to be used in the search for the file in the service.
+ *  @return NSMutableArray<CRCloudMetaData *> An array containing the metadata of the files matching the query.
+ */
+-(nonnull NSMutableArray<CRCloudMetaData *> *)searchFileWithQuery:(nonnull NSString *) query;
 @end
