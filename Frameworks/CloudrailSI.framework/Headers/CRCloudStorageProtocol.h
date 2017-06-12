@@ -159,5 +159,7 @@
  *  @param query     A query string to be used in the search for the file in the service.
  *  @return NSMutableArray<CRCloudMetaData *> An array containing the metadata of the files matching the query.
  */
--(nonnull NSMutableArray<CRCloudMetaData *> *)searchFileWithQuery:(nonnull NSString *) query;
+-(nonnull NSMutableArray<CRCloudMetaData *> *)searchWithQuery:(nonnull NSString *) query;
+
+
 @end
