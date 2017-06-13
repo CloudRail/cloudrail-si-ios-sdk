@@ -13,7 +13,7 @@ import CloudrailSI
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    static let kCloudRailAPIKey = "592570de40ec7664ba40a4e5"
+    static let kCloudRailAPIKey = ""
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         CRCloudRail.setAppKey(AppDelegate.kCloudRailAPIKey)
