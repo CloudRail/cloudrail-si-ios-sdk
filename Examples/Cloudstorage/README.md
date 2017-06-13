@@ -2,7 +2,8 @@
 <img width="200px" src="http://cloudrail.github.io/img/cloudrail_logo_github.png"/>
 </p>
 
-# Cloud Storage Demo iOS App (Swift)
+# Universal Cloud Storage Manager 
+## Demo App for iOS (Swift)
 
 This demo application let's you manage all of your cloud storage accounts (Dropbox, Google Drive, OneDrive and Box) in a single place. 
 It is written in Swift and uses the [CloudRail Unified Cloud Storage API](https://cloudrail.com/integrations/interfaces/CloudStorage;platformId=Swift;serviceIds=Box%2CDropbox%2CGoogleDrive%2COneDrive). Want to build something similar? [Get started with CloudRail](https://cloudrail.com/signup) today, it's free. 
