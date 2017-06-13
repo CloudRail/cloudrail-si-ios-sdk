@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="egW-CQ-VTT" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="9EG-Mb-N8H"/>
+                        <segue destination="GKE-Un-cVx" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="K9d-v6-d8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="135"/>
+        </scene>
+        <!--Cloud Storage Table View Controller-->
+        <scene sceneID="wIw-sg-xSt">
+            <objects>
+                <tableViewController id="egW-CQ-VTT" customClass="CloudStorageTableViewController" customModule="Cloudstorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="CJv-SO-gJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="2ZW-u0-alJ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudrail-logo" translatesAutoresizingMaskIntoConstraints="NO" id="xr9-S5-0JX">
+                                    <rect key="frame" x="19" y="35" width="152" height="40"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="xr9-S5-0JX" firstAttribute="centerY" secondItem="2ZW-u0-alJ" secondAttribute="centerY" id="CDy-Fq-JfR"/>
+                                <constraint firstItem="xr9-S5-0JX" firstAttribute="leading" secondItem="2ZW-u0-alJ" secondAttribute="leadingMargin" constant="11" id="jc2-Ho-kzW"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="89D-b0-0Me" customClass="CloudStorageCell" customModule="Cloudstorage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="138" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="89D-b0-0Me" id="TBv-yi-nYt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqp-aY-bVL">
+                                            <rect key="frame" x="19" y="9" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4e-Qa-o9G">
+                                            <rect key="frame" x="75" y="19" width="292" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="sideImgView" destination="zqp-aY-bVL" id="l4a-G3-91r"/>
+                                    <outlet property="sideLbl" destination="Q4e-Qa-o9G" id="HOG-jz-6bn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="egW-CQ-VTT" id="Wtj-jW-giP"/>
+                            <outlet property="delegate" destination="egW-CQ-VTT" id="euU-YQ-mit"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igD-qD-UEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="558.17091454272872"/>
+        </scene>
+        <!--Folders Table View Controller-->
+        <scene sceneID="9gn-nk-AKs">
+            <objects>
+                <tableViewController storyboardIdentifier="FolderID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BfD-RI-Wym" customClass="FoldersTableViewController" customModule="Cloudstorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="j28-gh-hK2">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="ez7-qz-PVO" customClass="FoldersCell" customModule="Cloudstorage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ez7-qz-PVO" id="zNm-S9-Hph">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-eQ-JQk">
+                                            <rect key="frame" x="19" y="9" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="HcJ-68-hX5"/>
+                                                <constraint firstAttribute="height" constant="40" id="pyh-CY-EgK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-7z-I88">
+                                            <rect key="frame" x="83" y="9" width="284" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vaF-7z-I88" firstAttribute="top" secondItem="WZM-eQ-JQk" secondAttribute="top" id="Jl5-0t-EtS"/>
+                                        <constraint firstItem="vaF-7z-I88" firstAttribute="leading" secondItem="WZM-eQ-JQk" secondAttribute="trailing" constant="24" id="SgB-a4-T88"/>
+                                        <constraint firstItem="WZM-eQ-JQk" firstAttribute="top" secondItem="zNm-S9-Hph" secondAttribute="top" constant="9" id="XSl-ZJ-hSg"/>
+                                        <constraint firstItem="vaF-7z-I88" firstAttribute="trailing" secondItem="zNm-S9-Hph" secondAttribute="trailingMargin" id="dhu-zF-dox"/>
+                                        <constraint firstItem="WZM-eQ-JQk" firstAttribute="leading" secondItem="zNm-S9-Hph" secondAttribute="leading" constant="19" id="lJ7-V0-YBB"/>
+                                        <constraint firstItem="vaF-7z-I88" firstAttribute="bottom" secondItem="WZM-eQ-JQk" secondAttribute="bottom" id="zep-OI-tNR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="folderImgView" destination="WZM-eQ-JQk" id="5KL-nm-B8X"/>
+                                    <outlet property="folderLbl" destination="vaF-7z-I88" id="sae-Ui-Ln8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BfD-RI-Wym" id="kpY-no-JS8"/>
+                            <outlet property="delegate" destination="BfD-RI-Wym" id="B2b-no-7TN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Hcl-3e-No7">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="6lw-Vt-C8H">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="sAT-Bj-zp6">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="uploadFileAction:" destination="BfD-RI-Wym" id="0EJ-CE-quH"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="jBD-F4-rgY">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BfD-RI-Wym" id="nFl-7k-Vnm"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBarButton" destination="6lw-Vt-C8H" id="BPb-eh-GLf"/>
+                        <segue destination="Sr2-tV-Qik" kind="show" identifier="ImageSegue" id="zZB-v8-yMz"/>
+                        <segue destination="BQu-hP-vFk" kind="show" identifier="SearchSegue" id="JxZ-gV-kb0"/>
+                        <segue destination="3R7-er-vPJ" kind="show" identifier="SubFolderSegue" id="onS-0E-TsJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItF-Ge-tK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="933.28335832083962"/>
+        </scene>
+        <!--Sub Folders Table View Controller-->
+        <scene sceneID="m13-nB-CIb">
+            <objects>
+                <tableViewController id="3R7-er-vPJ" customClass="SubFoldersTableViewController" customModule="Cloudstorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGH-MO-tA5">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="ihC-o5-7e3" customClass="FoldersCell" customModule="Cloudstorage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ihC-o5-7e3" id="FV8-fs-GNd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NLw-3Y-nEj">
+                                            <rect key="frame" x="19" y="9" width="40" height="41.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="oT9-0J-rlF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPC-ti-tCt">
+                                            <rect key="frame" x="83" y="9" width="284" height="41.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NLw-3Y-nEj" firstAttribute="top" secondItem="FPC-ti-tCt" secondAttribute="top" id="9hp-xD-f7F"/>
+                                        <constraint firstItem="NLw-3Y-nEj" firstAttribute="leading" secondItem="FV8-fs-GNd" secondAttribute="leadingMargin" constant="11" id="DQl-0q-wM0"/>
+                                        <constraint firstItem="FPC-ti-tCt" firstAttribute="leading" secondItem="NLw-3Y-nEj" secondAttribute="trailing" constant="24" id="F1c-lu-QVa"/>
+                                        <constraint firstItem="NLw-3Y-nEj" firstAttribute="top" secondItem="FV8-fs-GNd" secondAttribute="topMargin" constant="1" id="dxv-Rl-oxw"/>
+                                        <constraint firstItem="NLw-3Y-nEj" firstAttribute="bottom" secondItem="FPC-ti-tCt" secondAttribute="bottom" id="lQH-lb-30p"/>
+                                        <constraint firstItem="NLw-3Y-nEj" firstAttribute="centerY" secondItem="FV8-fs-GNd" secondAttribute="centerY" id="rPZ-zF-q6H"/>
+                                        <constraint firstItem="FPC-ti-tCt" firstAttribute="trailing" secondItem="FV8-fs-GNd" secondAttribute="trailingMargin" id="usA-8n-azG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="folderImgView" destination="NLw-3Y-nEj" id="971-5E-V4r"/>
+                                    <outlet property="folderLbl" destination="FPC-ti-tCt" id="dXg-5h-q1D"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3R7-er-vPJ" id="INl-NM-65T"/>
+                            <outlet property="delegate" destination="3R7-er-vPJ" id="3r0-lu-Kfv"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcO-Qr-zGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656.8000000000002" y="932.38380809595208"/>
+        </scene>
+        <!--Search Storage-->
+        <scene sceneID="Lsg-fq-W8h">
+            <objects>
+                <tableViewController id="BQu-hP-vFk" customClass="SearchTableViewController" customModule="Cloudstorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="xyx-d8-09h">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" clipsSubviews="YES" contentMode="redraw" placeholder="Search Cloudstorage" id="BIc-FW-MDY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="BQu-hP-vFk" id="08X-oa-HVJ"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="u5y-Uh-M16" customClass="SearchCell" customModule="Cloudstorage" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u5y-Uh-M16" id="VMh-0r-WuN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBx-Bl-25i">
+                                            <rect key="frame" x="19" y="9" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="f9o-3C-lOx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muq-J6-lJv">
+                                            <rect key="frame" x="83" y="9" width="284" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Muq-J6-lJv" firstAttribute="trailing" secondItem="VMh-0r-WuN" secondAttribute="trailingMargin" id="1jc-88-fBg"/>
+                                        <constraint firstItem="fBx-Bl-25i" firstAttribute="leading" secondItem="VMh-0r-WuN" secondAttribute="leadingMargin" constant="11" id="BPJ-gN-CbA"/>
+                                        <constraint firstItem="fBx-Bl-25i" firstAttribute="bottom" secondItem="Muq-J6-lJv" secondAttribute="bottom" id="J03-2e-Qqc"/>
+                                        <constraint firstItem="fBx-Bl-25i" firstAttribute="top" secondItem="VMh-0r-WuN" secondAttribute="topMargin" constant="1" id="Nc6-hn-sYr"/>
+                                        <constraint firstItem="fBx-Bl-25i" firstAttribute="centerY" secondItem="VMh-0r-WuN" secondAttribute="centerY" id="bgS-W3-Fzv"/>
+                                        <constraint firstItem="fBx-Bl-25i" firstAttribute="top" secondItem="Muq-J6-lJv" secondAttribute="top" id="erc-6B-hPb"/>
+                                        <constraint firstItem="Muq-J6-lJv" firstAttribute="leading" secondItem="fBx-Bl-25i" secondAttribute="trailing" constant="24" id="h39-si-jvn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="searchImgView" destination="fBx-Bl-25i" id="BYe-VR-cxC"/>
+                                    <outlet property="searchLbl" destination="Muq-J6-lJv" id="K0g-nu-GS8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BQu-hP-vFk" id="7Dt-hR-mMs"/>
+                            <outlet property="delegate" destination="BQu-hP-vFk" id="tA4-mi-jfH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search Storage" id="5jV-Hv-1k6"/>
+                    <connections>
+                        <outlet property="searchStorage" destination="BIc-FW-MDY" id="oRJ-eV-adE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRK-vZ-NBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="1709.5952023988007"/>
+        </scene>
+        <!--Image Viewer-->
+        <scene sceneID="bTA-sj-01D">
+            <objects>
+                <viewController id="Sr2-tV-Qik" customClass="ImageViewController" customModule="Cloudstorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UEl-EO-wQZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5R-IK-6bl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mYq-lZ-Qef">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AqY-Pj-zat">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AqY-Pj-zat" firstAttribute="top" secondItem="UEl-EO-wQZ" secondAttribute="bottom" id="5yd-fc-aoV"/>
+                            <constraint firstItem="AqY-Pj-zat" firstAttribute="leading" secondItem="mYq-lZ-Qef" secondAttribute="leading" id="e3q-CE-SlU"/>
+                            <constraint firstAttribute="trailing" secondItem="AqY-Pj-zat" secondAttribute="trailing" id="k1y-77-cX1"/>
+                            <constraint firstItem="H5R-IK-6bl" firstAttribute="top" secondItem="AqY-Pj-zat" secondAttribute="bottom" id="lVZ-cF-8cL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Viewer" id="RSK-lP-cn6"/>
+                    <connections>
+                        <outlet property="mainImgView" destination="AqY-Pj-zat" id="Hcf-az-vLe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGP-Ok-Eph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3583" y="196"/>
+        </scene>
+        <!--CloudStorage-->
+        <scene sceneID="mnI-AQ-3CC">
+            <objects>
+                <viewController storyboardIdentifier="HomeID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xdk-hR-yWP" customClass="HomeViewController" customModule="Cloudstorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="caF-Oc-olZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kx5-yb-U9y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xkb-dL-3vC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudrail-logo" translatesAutoresizingMaskIntoConstraints="NO" id="QWR-hf-QoG">
+                                <rect key="frame" x="111" y="30" width="152" height="40"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2H-XT-2yr">
+                                <rect key="frame" x="16" y="95" width="343" height="244"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="gBk-RP-IiX"/>
+                                </constraints>
+                                <string key="text">Welcome to the CloudRail Cloudstorage! This application allows you to interact with all your cloud storage accounts. You can browse through your folder and upload, remove and download files. To get started just select a service within the menu on the left-hand side.
+
+As a developer, CloudRail offers you an abstraction layer for a variety of services which makes integrating those easier than ever before! 
+For further information visit:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bS-wD-18C">
+                                <rect key="frame" x="16" y="347" width="166" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="SlE-TW-zBx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="https://cloudrail.com">
+                                    <color key="titleColor" red="0.88712012770000004" green="0.47906553750000003" blue="0.24784934519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkAction:" destination="xdk-hR-yWP" eventType="touchUpInside" id="bTF-nF-P0M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97249823808670044" green="0.9725843071937561" blue="0.97242635488510132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c2H-XT-2yr" firstAttribute="trailing" secondItem="xkb-dL-3vC" secondAttribute="trailingMargin" id="4ys-S2-Lbp"/>
+                            <constraint firstItem="c2H-XT-2yr" firstAttribute="leading" secondItem="xkb-dL-3vC" secondAttribute="leadingMargin" id="5uA-z1-Kmp"/>
+                            <constraint firstItem="c2H-XT-2yr" firstAttribute="centerX" secondItem="QWR-hf-QoG" secondAttribute="centerX" id="HwK-s3-zqj"/>
+                            <constraint firstItem="QWR-hf-QoG" firstAttribute="top" secondItem="caF-Oc-olZ" secondAttribute="bottom" constant="30" id="RyV-GD-IAt"/>
+                            <constraint firstItem="8bS-wD-18C" firstAttribute="top" secondItem="c2H-XT-2yr" secondAttribute="bottom" constant="8" symbolic="YES" id="kDv-tN-h00"/>
+                            <constraint firstItem="c2H-XT-2yr" firstAttribute="top" secondItem="QWR-hf-QoG" secondAttribute="bottom" constant="25" id="vyg-Pj-Dgw"/>
+                            <constraint firstItem="8bS-wD-18C" firstAttribute="leading" secondItem="c2H-XT-2yr" secondAttribute="leading" id="yT2-lX-4IJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CloudStorage" id="G0K-xn-LSY">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="JVo-va-U5s">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBarButton" destination="JVo-va-U5s" id="O9A-Cz-adK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rX3-MH-8Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lr3-Qu-6Re">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GKE-Un-cVx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="yLb-lP-Kz4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.88712012770000004" green="0.47906553750000003" blue="0.24784934519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xdk-hR-yWP" kind="relationship" relationship="rootViewController" id="JQ7-bG-MmC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oge-x5-uyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.8" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fvJ-3I-bfE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c2x-IH-cqb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vGK-sS-X4F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.88712012770000004" green="0.47906553750000003" blue="0.24784934519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BfD-RI-Wym" kind="relationship" relationship="rootViewController" id="qb7-k8-H86"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFM-Mz-BZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="934"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudrail-logo" width="152" height="40"/>
+        <image name="menu" width="24" height="24"/>
+    </resources>
+</document>

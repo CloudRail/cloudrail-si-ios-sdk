@@ -1,0 +1,10 @@
+framework module CloudrailSI {
+  umbrella header "CloudrailSI.h"
+
+  export *
+  module * { export * }
+}
+
+module CloudrailSI.Swift {
+    header "CloudrailSI-Swift.h"
+}
