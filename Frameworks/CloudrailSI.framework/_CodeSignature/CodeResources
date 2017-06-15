@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/CRCloudStorageProtocol.h</key>
 		<data>
-		rcgMJKk/g5EDkUEcPPIp/W0lvAk=
+		F05tJMqpC/7tZ+7St1SjXHjrS3g=
 		</data>
 		<key>Headers/CRCreditCard.h</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		342O4ukqP2UOgzOab8iA/8n7XkU=
+		6p0BzekAogFPnQVSaVanPjXpg3Y=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -294,19 +294,19 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftdoc</key>
 		<data>
-		3mJwhSQ31niq4y30lXGrhHjRH1I=
+		NngJEPCbVJQRpSiTXwKh6AvJhHI=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		DCmR6DI3nhLsJhCq03otZZ9shTE=
+		7SMQ4rNmQBdARA2QmGCMHmchFns=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		UY4P7foTWbFo08QFp/HBMTHahNY=
+		Im5dlY7DfiyY3Jkoa+1clvrEgTI=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		a73HPBAvQanVhMAyldhsfXMdu74=
+		2FNI/YIdSczFQntd062icFwjVWw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -497,11 +497,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rcgMJKk/g5EDkUEcPPIp/W0lvAk=
+			F05tJMqpC/7tZ+7St1SjXHjrS3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZJ7yciVdi1huM8HBlgvyV6E2v5C1pjb+iK0bo/mIxWc=
+			44Pwq11rGDGG3k637G5h/Nrwx1yW/5amPD3i3f8VruM=
 			</data>
 		</dict>
 		<key>Headers/CRCreditCard.h</key>
@@ -1080,11 +1080,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			342O4ukqP2UOgzOab8iA/8n7XkU=
+			6p0BzekAogFPnQVSaVanPjXpg3Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			VMzP7HNXAhU1KYNcetnQ+Y15LP3uuTrCU34S/t8K878=
+			hvrm7+roxx0+YmrcEQ0/3uGZfmGI2uh3DibBLRSfyO4=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1124,44 +1124,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3mJwhSQ31niq4y30lXGrhHjRH1I=
+			NngJEPCbVJQRpSiTXwKh6AvJhHI=
 			</data>
 			<key>hash2</key>
 			<data>
-			DJypywP7TcClPxp6W+Y7m56p+O8cOHuEnxqwIjf0R5o=
+			JO3LcAsmAJQydBv2O0hiIs3FbgLe2VpKf1sPC1raH08=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DCmR6DI3nhLsJhCq03otZZ9shTE=
+			7SMQ4rNmQBdARA2QmGCMHmchFns=
 			</data>
 			<key>hash2</key>
 			<data>
-			fJcqaSI1LbSqDEFRg1az/K2+M6liBLZfjUO/vNqqeTo=
+			jA6AW/AXyfdx5UdnzyMH6bOWuQKMVAGYq82+qkKVHlU=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UY4P7foTWbFo08QFp/HBMTHahNY=
+			Im5dlY7DfiyY3Jkoa+1clvrEgTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IACzjOEHsqAEkd+FRSbp59TNzihQ8pnIeu54ubtfBiQ=
+			raj2J3AYC48D4KKSmG5rHUAE2aNwlSW3tRVNMhxC1O4=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a73HPBAvQanVhMAyldhsfXMdu74=
+			2FNI/YIdSczFQntd062icFwjVWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			4kkzSCAnqzpA//T/2FB6euqmWqCM8IZ346DrfjGkzio=
+			TMvByDGT990/4h3FuPCtLdC/KOJhMqc4rWY/R+dKJWI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

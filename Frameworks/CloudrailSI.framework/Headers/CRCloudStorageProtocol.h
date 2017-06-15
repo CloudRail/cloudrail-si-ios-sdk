@@ -118,14 +118,14 @@
  *
  *  @return NSString the user login.
  */
-- (nonnull NSString *) userLogin;
+- (nullable NSString *) userLogin;
 
 /**
  *  Method to retrieve a user's name
  *
  *  @return NSString the user name.
  */
-- (nonnull NSString *) userName;
+- (nullable NSString *) userName;
 
 /**
  *  Gets a thumbnail of the image at the path. The path must resolve into an image.
@@ -134,7 +134,7 @@
  *
  *  @return NSIntputStream Stream that points to the image thumbnail
  */
-- (nonnull  NSInputStream *) thumbnailOfFileWithPath: (nonnull NSString *) path;
+- (nullable  NSInputStream *) thumbnailOfFileWithPath: (nonnull NSString *) path;
 
 @optional
 /**
@@ -154,7 +154,7 @@
 
 
 /**
- *  Basic contructor method for any CRCloudStorageProtocol conforming class
+ *  Use the given query to search for matching files.
  *
  *  @param query     A query string to be used in the search for the file in the service.
  *  @return NSMutableArray<CRCloudMetaData *> An array containing the metadata of the files matching the query.
