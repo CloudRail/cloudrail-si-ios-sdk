@@ -38,3 +38,6 @@ CloudRail-SI-iOS.xcworkspace/xcuserdata/*
 *Podfile.lock
 Podfile.lock
 *.lock
+
+# Allow
+!Examples/Cloudstorage/Podfile.lock

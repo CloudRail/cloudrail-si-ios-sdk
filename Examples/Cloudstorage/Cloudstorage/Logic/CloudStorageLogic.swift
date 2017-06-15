@@ -41,7 +41,7 @@ class CloudStorageLogic {
     
     // MARK: userLogin - Login User
     
-    static func userLogin(cloudStorage: CloudStorageProtocol) -> String {
+    static func userLogin(cloudStorage: CloudStorageProtocol) -> String? {
         do {
             let result = try cloudStorage.userLogin()
             return result
@@ -53,7 +53,7 @@ class CloudStorageLogic {
     
     // MARK: userName - User Name
     
-    static func userName(cloudStorage: CloudStorageProtocol) -> String {
+    static func userName(cloudStorage: CloudStorageProtocol) -> String? {
         do {
             let result = try cloudStorage.userName()
             return result
