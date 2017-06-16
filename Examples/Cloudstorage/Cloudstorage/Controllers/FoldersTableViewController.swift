@@ -113,7 +113,6 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
         }
         
         //Load Saved Service
-        
         guard let result = UserDefaults.standard.value(forKey: self.cloudStorageType!) else {
             retriveFilesFoldersData(true)
             return
@@ -203,11 +202,13 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
     // MARK: - Search
     
     @IBAction func searchAction(_ sender: Any) {
-        let alertController = UIAlertController(title: "Feature Coming Soon", message: "Search Cloudstorage feature coming soon", preferredStyle: .alert)
-        let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        alertController.addAction(cancelButton)
-        
-        self.navigationController!.present(alertController, animated: true, completion: nil)
+//        let alertController = UIAlertController(title: "Feature Coming Soon", message: "Search Cloudstorage feature coming soon", preferredStyle: .alert)
+//        let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+//        alertController.addAction(cancelButton)
+//        
+//        self.navigationController!.present(alertController, animated: true, completion: nil)
+//        
+        self.performSegue(withIdentifier: "SearchSegue", sender: nil)
         
     }
     
@@ -355,14 +356,20 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let indexPath = (sender as! IndexPath)
-        let cloudMetaData = self.data[indexPath.row]
         
         if segue.identifier == "ImageSegue" {
+            
+            let indexPath = (sender as! IndexPath)
+            let cloudMetaData = self.data[indexPath.row]
+            
             let details = (segue.destination as! ImageViewController)
             details.cloudStorage = self.cloudStorage
             details.cloudMetaData = cloudMetaData
         } else if segue.identifier == "SubFolderSegue" {
+            
+            let indexPath = (sender as! IndexPath)
+            let cloudMetaData = self.data[indexPath.row]
+            
             let details = (segue.destination as! SubFoldersTableViewController)
             details.cloudStorage = self.cloudStorage
             details.path = cloudMetaData.path

@@ -203,13 +203,12 @@ class CloudStorageLogic {
     
     // MARK: searchFileWithQuery - Search Files or Folders with Query
     static func searchWithQuery(cloudStorage: CloudStorageProtocol, query: String) -> Array<Any> {
-//        do {
-//            let result = try cloudStorage.searchWithQuery(query)
-//            return result as! Array<Any>
-//        } catch {
-//            print(error.localizedDescription)
-//            return []
-//        }
-        return []
+        do {
+            let result = try cloudStorage.searchWithQuery(query)
+            return result as! Array<Any>
+        } catch {
+            print(error.localizedDescription)
+            return []
+        }
     }
 }

@@ -20,10 +20,18 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
-        
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+        searchStorage.becomeFirstResponder()
     }
     
     // MARK: - Search Delegate
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.data = []
+            self.tableView.reloadData()
+        }
+    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchStorage.resignFirstResponder()
@@ -35,9 +43,8 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
                                                 target: nil)
             backgroundQueue.async {
                 self.startActivityIndicator()
-                
                 self.data = CloudStorageLogic.searchWithQuery(cloudStorage: self.cloudStorage!, query: text) as! [CRCloudMetaData]
-                
+                self.tableView.reloadData()
                 self.stopActivityIndicator()
             }
         }

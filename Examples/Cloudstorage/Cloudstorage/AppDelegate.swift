@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let kCloudRailAPIKey = ""
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         CRCloudRail.setAppKey(AppDelegate.kCloudRailAPIKey)
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 226.0/255.0, green: 122.0/255.0, blue: 63.0/255.0, alpha: 1.0)
