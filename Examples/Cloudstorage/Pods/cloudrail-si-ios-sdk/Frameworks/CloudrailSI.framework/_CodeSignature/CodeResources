@@ -274,7 +274,7 @@
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		6p0BzekAogFPnQVSaVanPjXpg3Y=
+		LHAhU8muYi2MTY99A6TRt+JC1p0=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KSaut95elC8Pb90YDbn+clXGg2Q=
+		5AJaePGEsKzXx7fcutvOLusXIck=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		7SMQ4rNmQBdARA2QmGCMHmchFns=
+		8yOEEHdB7jEoF9JhCYQW+jkkTyg=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -306,11 +306,15 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		2FNI/YIdSczFQntd062icFwjVWw=
+		TbQNmkJWkx48qHz4zCXxDQQUQ1g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		BAjwwvj37YjCgz7vuWYFNQJMS68=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		3P3Nhb8UxXzmheJAvnPi/sWiGW0=
 		</data>
 		<key>SVWebViewControllerActivityChrome-iPad.png</key>
 		<data>
@@ -1080,11 +1084,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6p0BzekAogFPnQVSaVanPjXpg3Y=
+			LHAhU8muYi2MTY99A6TRt+JC1p0=
 			</data>
 			<key>hash2</key>
 			<data>
-			hvrm7+roxx0+YmrcEQ0/3uGZfmGI2uh3DibBLRSfyO4=
+			HyzytoXqI6n1JPD4szLJhd2wi+cGuG/BdTmd7Dusnwc=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1135,11 +1139,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7SMQ4rNmQBdARA2QmGCMHmchFns=
+			8yOEEHdB7jEoF9JhCYQW+jkkTyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			jA6AW/AXyfdx5UdnzyMH6bOWuQKMVAGYq82+qkKVHlU=
+			4xF78yg1b9+7TFxsRW6/xNcB6bRujQurrWNfuHE7hIU=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1157,11 +1161,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2FNI/YIdSczFQntd062icFwjVWw=
+			TbQNmkJWkx48qHz4zCXxDQQUQ1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			TMvByDGT990/4h3FuPCtLdC/KOJhMqc4rWY/R+dKJWI=
+			S2QyoNC7sGgOgaE1Zgd3hpbO0eyHONje0fvZHAVXn2w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

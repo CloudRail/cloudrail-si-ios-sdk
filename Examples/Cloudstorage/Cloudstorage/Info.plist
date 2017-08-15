@@ -26,6 +26,32 @@
 				<string>org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>CloudrailSI</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>localhost/dropbox_callback</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>http://localhost/dropbox_callback</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

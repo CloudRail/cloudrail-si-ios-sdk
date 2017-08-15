@@ -51,6 +51,25 @@ run
 pod install
 ```
 
+## Basic setup
+In the Project Navigator, open the source file of your application delegate. Add the import statement at the top of the file, then add the following call to CloudRail in the didFinishLaunching or didFinishLaunchingWithOptions method of your app delegate:
+#### Objective-C
+```objective-c
+#import <CloudRailSI/CloudRailSI.h>
+
+[CRCloudRail setAppKey:@"{Your_License_Key}"];
+
+```
+
+#### Swift
+```swift
+import CloudrailSI
+
+CRCloudRail.setAppKey("{Your_License_Key}")
+
+```
+---
+
 
 ## Current Interfaces:
 Interface | Included Services
@@ -85,12 +104,14 @@ Point of Interest | Google Places, Foursquare, Yelp
 #### Code Sample - Objective-C
 [Full Documentation](https://cloudrail.com/integrations/interfaces/CloudStorage;platformId=ObjectiveC)
 ```objective-c
-//   self.service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-//   self.service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-//   self.service = [[CRBox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
-self.service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
+id<CRCloudStorageProtocol> service;
+
+//   service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//   service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//   service = [[CRBox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+
+service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+NSInputStream * object = [service downloadFileWithPath:@"/mudkip.jpg"];
 //READ FROM STREAM
 ```
 #### Code Sample - Swift
@@ -100,9 +121,8 @@ NSInputStream * object = [self.service downloadFileWithPath:@"/mudkip.jpg"];
 //let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "", redirectUri: "[redirectUri]", state: "[state]")
 //let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
 
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
-do{
+do {
   let inputStream = try cloudStorage.downloadFileWithPath("/TestFolder/Data.csv")
 } catch let error{
   print("An error: \(error)")
@@ -130,10 +150,13 @@ do{
 [Full Documentation](https://cloudrail.com/integrations/interfaces/BusinessCloudStorage;platformId=ObjectiveC)
 
 ```objective-c
-// self.service = [[CRMicrosoftAzure alloc] initWithAccountName:@"[account_name]" accessKey:@"[access_key]"];
-// self.service = [[CRAmazonS3 alloc] initWithAccessKeyId:@"[clientID]" secretAccessKey:@"[client_Secret]" region:@"[region]"];
-// self.service = [[CRRackspace alloc] initWithUsername:@"[username]" apiKey:@"[api_key]" region:@"[region]"];
-self.service = [[CRBackblaze alloc] initWithAccountID:@"[account_init]" appKey:@"[app_key]"];
+id<CRBusinessCloudStorageProtocol> service;
+
+// service = [[CRMicrosoftAzure alloc] initWithAccountName:@"[account_name]" accessKey:@"[access_key]"];
+// service = [[CRAmazonS3 alloc] initWithAccessKeyId:@"[clientID]" secretAccessKey:@"[client_Secret]" region:@"[region]"];
+// service = [[CRRackspace alloc] initWithUsername:@"[username]" apiKey:@"[api_key]" region:@"[region]"];
+
+service = [[CRBackblaze alloc] initWithAccountID:@"[account_init]" appKey:@"[app_key]"];
 
 CRBucket * bucket = [[CRBucket alloc] init];
 bucket.name = @"[bucket_name]";
@@ -142,7 +165,7 @@ bucket.identifier = @"[bucket_id]";
 NSData * data = //data source;
 NSInputStream * inputStream = [NSInputStream inputStreamWithData:data];
 @try {
-  [self.currentService uploadFileToBucket:bucket name:@"[file_name]" withStream:inputStream size:data.length];
+  [service uploadFileToBucket:bucket name:@"[file_name]" withStream:inputStream size:data.length];
 } @catch (NSException *exception) {
   //handle exception
 }
@@ -164,8 +187,7 @@ let fileAttributes = try! FileManager.default.attributesOfItem(atPath: path)
 let fileSize: UInt64 = fileAttributes[FileAttributeKey.size] as! UInt64
 let stream = InputStream.init(fileAtPath: path)!
 
-
-do{
+do {
   try cloudStorage.uploadFileToBucket(bucket, name: "[fileName]", stream: stream, size:fileSize)
 } catch let error{
   print("An error: \(error)")
@@ -195,16 +217,16 @@ do{
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Profile;platformId=ObjectiveC)
 
 ```objective-c
-//  self.service = [[CRGitHub alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-//  self.service = [[CRInstagram alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-//  self.service = [[CRSlack alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-//  self.service = [[CRGooglePlus alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+id<CRProfileProtocol> service;
 
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+//  service = [[CRGitHub alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//  service = [[CRInstagram alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//  service = [[CRSlack alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//  service = [[CRGooglePlus alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
-self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
-NSString * fullName = [self.service fullName];
+NSString * fullName = [service fullName];
 ```
 
 #### Code Sample - Swift
@@ -215,10 +237,8 @@ NSString * fullName = [self.service fullName];
 // let profile = Instagram(clientID: "[clientID]", clientSecret: "[clientSecret]")
 // let profile = Slack(clientID: "[clientID]", clientSecret: "[clientSecret]")
 
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
-
 let profile = Facebook(clientID: "[clientID]", clientSecret: "[clientSecret]")
-do{
+do {
   let fullName = try profile.fullName()
 } catch let error{
   print("An error: \(error)")
@@ -242,10 +262,12 @@ do{
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Social;platformId=ObjectiveC)
 
 ```objective-c
+id<CRSocialProtocol> service;
 
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
-self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
-[self.service postUpdateWithContent:@"Using Cloudrail sdk!"];
+// service = [[CRTwitter alloc] initWithClientIdentifier:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL"];
+
+service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+[service postUpdateWithContent:@"Using Cloudrail sdk!"];
 ```
 #### Code Sample - Swift
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Social;platformId=Swift)
@@ -253,10 +275,8 @@ self.service = [[CRFacebook alloc] initWithClientId:@"clientIdentifier" clientSe
 ```swift
 // let social = Twitter(clientID: "[clientID]", clientSecret: "[clientSecret]")
 
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
-
 let social = Facebook(clientID: "[clientID]", clientSecret: "[clientSecret]")
-do{
+do {
   try social.postUpdateWithContent("CloudRail is awesome!!!")
 } catch let error{
   print("An error: \(error)")
@@ -279,13 +299,13 @@ do{
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Payment;platformId=ObjectiveC)
 
 ```objective-c
-//  self.service = [[CRPayPal alloc] initWithUseSandbox:YES clientId:key clientSecret:secret];
+id<CRPaymentProtocol> service;
 
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+//  service = [[CRPayPal alloc] initWithUseSandbox:YES clientId:@"key" clientSecret:@"secret"];
 
-self.service = [[CRStripe alloc] initWithSecretKey:key];
+service = [[CRStripe alloc] initWithSecretKey:@"key"];
 
-SubscriptionPlan * subPlan = [self.service createSubscriptionPlanWithName:@"Plan name" amount:@2000 currency:@"USD" description:@"description" Longerval:@"day" Longerval_count:@7];
+SubscriptionPlan * subPlan = [service createSubscriptionPlanWithName:@"Plan name" amount:@2000 currency:@"USD" description:@"description" Longerval:@"day" Longerval_count:@7];
 
 NSLog(@"Sub plan %@", subPlan);
 ```
@@ -294,10 +314,9 @@ NSLog(@"Sub plan %@", subPlan);
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Payment;platformId=Swift)
 
 ```swift
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
 let payment = PayPal(useSandbox: [true/false], clientId: "[clientID]")
-do{
+do {
   let subscriptionPlan : CRSubscriptionPlan = try payment.createSubscriptionPlanWithName("My subscription", amount: 500, currency: "USD", description: "myDescription", interval: "week", intervalCount: 2)
 } catch let error{
   print("An error: \(error)")
@@ -319,28 +338,21 @@ do{
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=ObjectiveC)
 
 ```objective-c
-//  self.service = [[CRMailJet alloc] initWithClientId:key clientSecret:secret];
+id<CREmailProtocol> service;
 
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+//  service = [[CRMailJet alloc] initWithClientId:@"key" clientSecret:@"secret"];
 
-self.service = [[CRSendGrid alloc]initWithUsername:key password:secret];
+service = [[CRSendGrid alloc]initWithUsername:@"key" password:@"secret"];
 
-[self.service sendEmailFromAddress:@"cloudrail@cloudrail.com"
-fromName:@"Bob"
-toAddresses:[@[@"foo@gmail.com",@"bar@gmail.com"] mutableCopy]
-subject:@"Mailjet and SendGrid"
-textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!"
-htmlBody:@""
-ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
+[service sendEmailFromAddress:@"cloudrail@cloudrail.com" fromName:@"Bob" toAddresses:[@[@"foo@gmail.com",@"bar@gmail.com"] mutableCopy] subject:@"Mailjet and SendGrid" textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!" htmlBody:@"" ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
 ```
 #### Code Sample - Swift
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=Swift)
 
 ```swift
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
 let email: EmailProtocol = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
-do{
+do {
   try email.sendEmailFromAddress("info@cloudrail.com", fromName: "CloudRail", toAddresses:NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), subject: "my subject", textBody: "text body", htmlBody: "Html body", ccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), bccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]))
 } catch let error{
   print("An error: \(error)")
@@ -359,25 +371,24 @@ do{
 * Send SMS
 
 #### Code Sample - Objective-C
-[Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=ObjectiveC)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/SMS;platformId=ObjectiveC)
 
 ```objective-c
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+id<CRSMSProtocol> service;
 
-self.service = [[CRNexmo alloc] initWithClientId:key clientSecret:secret];
-self.service = [[CRTwilio alloc] initWithAccountSid:key authToken:secret];
+//service = [[CRNexmo alloc] initWithClientId:@"key" clientSecret:@"secret"];
+service = [[CRTwilio alloc] initWithAccountSid:@"key" authToken:@"secret"];
 
-[self.service sendSmsFromName:@"from Code" toNumber:@"+12323423423" content:@"Testing message"];
+[service sendSmsFromName:@"from Code" toNumber:@"+12323423423" content:@"Testing message"];
 ```
 #### Code Sample - Swift
-[Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=Swift)
+[Full Documentation](https://cloudrail.com/integrations/interfaces/SMS;platformId=Swift)
 
 ```swift
 // let sms = Nexmo(accountSid: "[clientID]", authToken: "[authToken]")
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
 let sms = Twilio(accountSid: "[clientID]", authToken: "[authToken]")
-do{
+do {
   try sms.sendSmsFromName("CloudRail", toNumber: "+491234567890", content: "Hello from CloudRail")
 } catch let error{
   print("An error: \(error)")
@@ -401,13 +412,13 @@ do{
 [Full Documentation](https://cloudrail.com/integrations/interfaces/PointsOfInterest;platformId=ObjectiveC)
 
 ```objective-c
-//  self.service = [[CRYelp alloc] initWithConsumerKey:@"key" consumerSecret:@"secret" token:@"token"  tokenSecret:@"tokensecret"];
-//  self.service = [[CRGooglePlaces alloc] initWithApiKey:@"apiKey"];
+id<CRPointsOfInterestProtocol> service;
 
-[CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
+//  service = [[CRYelp alloc] initWithConsumerKey:@"key" consumerSecret:@"secret" token:@"token"  tokenSecret:@"tokensecret"];
+//  service = [[CRGooglePlaces alloc] initWithApiKey:@"apiKey"];
 
-self.service = [[CRFoursquare alloc] initWithClientId:key clientSecret:secret];
-NSMutableArray<POI*>* pois =  [self.service nearbyPoisWithLatitude:@49.483927 longitude:@8.473272 radius:@300 searchTerm:[NSNull null] categories:[NSNull null]];
+service = [[CRFoursquare alloc] initWithClientId:key clientSecret:secret];
+NSMutableArray<POI*>* pois =  [service nearbyPoisWithLatitude:@49.483927 longitude:@8.473272 radius:@300 searchTerm:[NSNull null] categories:[NSNull null]];
 
 NSLog(@"%@", pois);
 ```
@@ -416,10 +427,9 @@ NSLog(@"%@", pois);
 
 ```swift
 // let points = GooglePlaces(apiKey: "[secretKey]")
-CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
 let points = Foursquare(clientID: "[cientID]", clientSecret: "[clientSecret]")
-do{
+do {
   //Mannheim : 49.483927, 8.473272
   var points = try places.nearbyPoisWithLatitude(49.483927, longitude: 8.473272, radius: 3000, searchTerm: "Restaurant", categories: [])
 } catch let error{
@@ -493,7 +503,7 @@ Now that you are all set up, you can learn how to use CloudRail by heading over 
 let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
 CRCloudRail.setAppKey("CLOUDRAIL_API_KEY")
 
-do{
+do {
   let inputStream = try cloudStorage.downloadFileWithPath("/TestFolder/Data.csv")
 } catch let error{
   print("An error: \(error)")
@@ -505,33 +515,32 @@ do{
 #import <CloudRailSI/CloudRailSI.h>
 
 @interface CRViewController ()
-@property (nonatomic) CRDropbox * dropbox;
-@property (nonatomic) CRGoogleDrive * googleDrive;
-//@property (nonatomic) CROneDrive * oneDrive;
-//@property (nonatomic) CRBox * box;
+@property (strong, nonatomic) CRDropbox * dropbox;
+@property (strong, nonatomic) CRGoogleDrive * googleDrive;
+//@property (strong, nonatomic) CROneDrive * oneDrive;
+//@property (strong, nonatomic) CRBox * box;
 @end
 
 @implementation CRViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
 [super viewDidLoad];
 [CRCloudRail setAppKey:@"CLOUDRAIL_API_KEY"];
 
-self.dropbox = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"https://www.cloudrailauth.com/auth" //example state:@"CRSTATE"];
+self.dropbox = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"];
 
-self.googleDrive = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"https://www.cloudrailauth.com/auth" //example state:@"CRSTATE"];
-
+self.googleDrive = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret"  redirectUri:@"https://www.cloudrailauth.com/auth" state:@"CRSTATE"];
+[self.googleDrive useAdvancedAuthentication]; //Required for Google Login
 
 }
 
--(void)downloadAndUpload{
+- (void)downloadAndUpload {
 
-//Download File from Dropbox
-NSInputStream * streamToDownloadedFile = [self.dropbox downloadFileWithPath:@"/mudkip.jpg"];
+  //Download File from Dropbox
+  NSInputStream * streamToDownloadedFile = [self.dropbox downloadFileWithPath:@"/mudkip.jpg"];
 
-//Upload the downloaded file to Googledrive
-[self.googleDrive uploadFileToPath:@"/mudkip.jpg" withStream:streamToDownloadedFile size:size overwrite:YES];
+  //Upload the downloaded file to Googledrive
+  [self.googleDrive uploadFileToPath:@"/mudkip.jpg" withStream:streamToDownloadedFile size:size overwrite:YES];
 }
 
 @end

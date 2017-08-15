@@ -94,9 +94,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             cloudStorage = drive
             
         } else if cloudStorageType == "oneDrive" {
-            
-            cloudStorage = OneDrive(clientId: "000000004018F12F", clientSecret: "lGQPubehDO6eklir1GQmIuCPFfzwihMo", redirectUri: "https://www.cloudrailauth.com/auth", state: "STATE", scopes: [])
-            
+            cloudStorage = OneDrive(clientId: "b5e4a71f-8a3d-402b-aa78-46ff6c39189f", clientSecret: "J0L9YcCmhDmk0fRjzc6YUKd")
         } else if cloudStorageType == "egnyte" {
             
             //Egnyte requires the following:
