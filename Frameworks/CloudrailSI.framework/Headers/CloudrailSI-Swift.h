@@ -380,8 +380,6 @@ SWIFT_CLASS("_TtC11CloudrailSI19GoogleCloudPlatform")
 
 SWIFT_CLASS("_TtC11CloudrailSI11GoogleDrive")
 @interface GoogleDrive : NSObject
-- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret scopes:(NSMutableArray * _Nonnull)scopes OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state scopes:(NSMutableArray * _Nonnull)scopes OBJC_DESIGNATED_INITIALIZER;
 - (NSInputStream * _Nullable)downloadFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -523,7 +521,7 @@ SWIFT_CLASS("_TtC11CloudrailSI8LinkedIn")
 SWIFT_CLASS("_TtC11CloudrailSI7MailJet")
 @interface MailJet : NSObject
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses attachments:(NSMutableArray * _Nonnull)attachments error:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
@@ -619,9 +617,6 @@ SWIFT_CLASS("_TtC11CloudrailSI5Nexmo")
 
 SWIFT_CLASS("_TtC11CloudrailSI8OneDrive")
 @interface OneDrive : NSObject
-- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret scopes:(NSMutableArray * _Nonnull)scopes OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state scopes:(NSMutableArray * _Nonnull)scopes OBJC_DESIGNATED_INITIALIZER;
 - (NSInputStream * _Nullable)downloadFileWithPath:(NSString * _Nonnull)filePath error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)uploadFileToPath:(NSString * _Nonnull)filePath stream:(NSInputStream * _Nonnull)stream size:(long)size overwrite:(BOOL)overwrite error:(NSError * _Nullable * _Nullable)error;
@@ -749,7 +744,7 @@ SWIFT_CLASS("_TtC11CloudrailSI9Rackspace")
 SWIFT_CLASS("_TtC11CloudrailSI8SendGrid")
 @interface SendGrid : NSObject
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses error:(NSError * _Nullable * _Nullable)error;
+- (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses attachments:(NSMutableArray * _Nonnull)attachments error:(NSError * _Nullable * _Nullable)error;
 - (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
@@ -884,9 +879,8 @@ SWIFT_CLASS("_TtC11CloudrailSI5Yahoo")
 
 SWIFT_CLASS("_TtC11CloudrailSI4Yelp")
 @interface Yelp : NSObject
-- (nonnull instancetype)initWithConsumerKey:(NSString * _Nonnull)consumerKey consumerSecret:(NSString * _Nonnull)consumerSecret token:(NSString * _Nonnull)token tokenSecret:(NSString * _Nonnull)tokenSecret OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (NSMutableArray * _Nullable)nearbyPoisWithLatitude:(double)latitude longitude:(double)longitude radius:(NSInteger)radius searchTerm:(NSString * _Nonnull)searchTerm categories:(NSMutableArray * _Nonnull)categories error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)useAdvancedAuthentication;

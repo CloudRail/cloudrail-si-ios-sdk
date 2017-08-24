@@ -1,13 +1,12 @@
 
 #import <Foundation/Foundation.h>
 #import "CRPointsOfInterestProtocol.h"
-#import "CRAdvancedRequestSupporterProtocol.h"
 
-@interface CRYelp : NSObject <CRPointsOfInterestProtocol, CRAdvancedRequestSupporterProtocol>
+@interface CRYelp : NSObject <CRPointsOfInterestProtocol>
 @property (weak, nonatomic) id target;
 
 
--(instancetype)initWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret token:(NSString *)token tokenSecret:(NSString *)tokenSecret;
+-(instancetype)initWithClientID:(NSString *)clientID clientSecret:(NSString *)clientSecret;
 
 
 -(void)useAdvancedAuthentication;
