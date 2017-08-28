@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center">
 <img width="200px" src="http://cloudrail.github.io/img/cloudrail_logo_github.png"/>
 </p>
 
@@ -44,7 +44,7 @@ This means that, for example, upload() works in exactly the same way for Dropbox
 ## CocoaPods
 Add the pod to your podfile
 ```
-pod 'cloudrail-si-ios-sdk'
+pod 'cloudrail-si-ios-sdk', :git => 'https://github.com/CloudRail/cloudrail-si-ios-sdk.git', :branch => 'swift4-beta'
 ```
 run
 ```
