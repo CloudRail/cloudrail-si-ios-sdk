@@ -814,6 +814,28 @@ SWIFT_CLASS("_TtC11CloudrailSI6Twilio")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+@class CRVideoMetaData;
+@class CRChannelMetaData;
+
+SWIFT_CLASS("_TtC11CloudrailSI6Twitch")
+@interface Twitch : NSObject
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (CRVideoMetaData * _Nullable)uploadVideoWithTitle:(NSString * _Nonnull)title description:(NSString * _Nonnull)description stream:(NSInputStream * _Nonnull)stream size:(long)size channelId:(NSString * _Nonnull)channelId mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchVideosWithQuery:(NSString * _Nonnull)query offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRVideoMetaData * _Nullable)videoWithId:(NSString * _Nonnull)videoId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRChannelMetaData * _Nullable)channelWithId:(NSString * _Nonnull)channelId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRChannelMetaData * _Nullable)channelAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)listVideosForChannel:(NSString * _Nonnull)channelId offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)useAdvancedAuthentication;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
 
 SWIFT_CLASS("_TtC11CloudrailSI7Twitter")
 @interface Twitter : NSObject
@@ -854,6 +876,26 @@ SWIFT_CLASS("_TtC11CloudrailSI5Twizo")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI5Vimeo")
+@interface Vimeo : NSObject
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (CRVideoMetaData * _Nullable)uploadVideoWithTitle:(NSString * _Nonnull)title description:(NSString * _Nonnull)description stream:(NSInputStream * _Nonnull)stream size:(long)size channelId:(NSString * _Nonnull)channelId mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchVideosWithQuery:(NSString * _Nonnull)query offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRVideoMetaData * _Nullable)videoWithId:(NSString * _Nonnull)videoId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRChannelMetaData * _Nullable)channelWithId:(NSString * _Nonnull)channelId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRChannelMetaData * _Nullable)channelAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)listVideosForChannel:(NSString * _Nonnull)channelId offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)useAdvancedAuthentication;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI5Yahoo")
 @interface Yahoo : NSObject
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
@@ -881,6 +923,28 @@ SWIFT_CLASS("_TtC11CloudrailSI4Yelp")
 @interface Yelp : NSObject
 - (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (NSMutableArray * _Nullable)nearbyPoisWithLatitude:(double)latitude longitude:(double)longitude radius:(NSInteger)radius searchTerm:(NSString * _Nonnull)searchTerm categories:(NSMutableArray * _Nonnull)categories error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)useAdvancedAuthentication;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI7YouTube")
+@interface YouTube : NSObject
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state scopes:(NSMutableArray * _Nonnull)scopes OBJC_DESIGNATED_INITIALIZER;
+- (CRVideoMetaData * _Nullable)uploadVideoWithTitle:(NSString * _Nonnull)title description:(NSString * _Nonnull)description stream:(NSInputStream * _Nonnull)stream size:(long)size channelId:(NSString * _Nonnull)channelId mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)searchVideosWithQuery:(NSString * _Nonnull)query offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRVideoMetaData * _Nullable)videoWithId:(NSString * _Nonnull)videoId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRChannelMetaData * _Nullable)channelWithId:(NSString * _Nonnull)channelId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (CRChannelMetaData * _Nullable)channelAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSMutableArray * _Nullable)listVideosForChannel:(NSString * _Nonnull)channelId offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loginAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (BOOL)logoutAndReturnError:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
 - (void)useAdvancedAuthentication;
