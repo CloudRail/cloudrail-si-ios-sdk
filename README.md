@@ -82,6 +82,7 @@ Payment | PayPal, Stripe
 Email | Maljet, Sendgrid
 SMS | Twilio, Nexmo
 Point of Interest | Google Places, Foursquare, Yelp
+Video | Youtube, Twitch, Vimeo
 
 ---
 ### Cloud Storage Interface:
@@ -329,6 +330,7 @@ do {
 
 * Mailjet
 * Sendgrid
+* Gmail
 
 #### Features
 
@@ -341,19 +343,41 @@ do {
 id<CREmailProtocol> service;
 
 //  service = [[CRMailJet alloc] initWithClientId:@"key" clientSecret:@"secret"];
+// service = [[CRGMail alloc] initWithClientID:@"[GMail Client Identifier]" clientSecret:@"" redirectUri:@"com.cloudrail.example:/auth" state:@"someState"];
+//[service useAdvancedAuthentication]; //required for Gmail
 
 service = [[CRSendGrid alloc]initWithUsername:@"key" password:@"secret"];
 
-[service sendEmailFromAddress:@"cloudrail@cloudrail.com" fromName:@"Bob" toAddresses:[@[@"foo@gmail.com",@"bar@gmail.com"] mutableCopy] subject:@"Mailjet and SendGrid" textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!" htmlBody:@"" ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy]];
+CRAttachment *attachImage = [[CRAttachment alloc] initWithContent:NSInputStream type:"image/jpg" name:"fileName"];
+NSMutableArray *attachments = [[NSMutableArray alloc] init];
+[attachments addObject:attachImage];
+
+[service sendEmailFromAddress:@"cloudrail@cloudrail.com" fromName:@"Bob" toAddresses:[@[@"foo@gmail.com",@"bar@gmail.com"] mutableCopy] subject:@"Mailjet and SendGrid" textBody:@"The Mailjet and Sendgrid is on cloudrail now!!!" htmlBody:@"" ccAddresses:[@[]mutableCopy] bccAddresses:[@[] mutableCopy], attachments:attachments];
 ```
 #### Code Sample - Swift
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Email;platformId=Swift)
 
 ```swift
 
-let email: EmailProtocol = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
+var service: EmailProtocol;
+
+// service = SendGrid(apiKey: "[SendGrid API Key]")
+// service = GMail(clientID: "[GMail Client Identifier]",clientSecret: "",redirectUri: "com.cloudrail.example:/auth",state: "someState")
+// service.useAdvancedAuthentication() //required for Gmail
+
+service = MailJet(clientID: "[clientID]", clientSecret:"[accountSid]")
+
+let attachImage = CRAttachment()
+attachImage.content = InputStream
+attachImage.mimeType = "image/jpg"
+attachImage.filename = "File.jpg"
+
+var attachments = [CRAttachment]()
+attachments.append(attachImage)
+
+
 do {
-  try email.sendEmailFromAddress("info@cloudrail.com", fromName: "CloudRail", toAddresses:NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), subject: "my subject", textBody: "text body", htmlBody: "Html body", ccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), bccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]))
+  try service.sendEmailFromAddress("info@cloudrail.com", fromName: "CloudRail", toAddresses:NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), subject: "my subject", textBody: "text body", htmlBody: "Html body", ccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"]), bccAddresses: NSMutableArray(array:  ["foo@bar.com","bar@foo.com"])  attachments: attachments)
 } catch let error{
   print("An error: \(error)")
 }
@@ -438,6 +462,72 @@ do {
 ```
 ---
 
+### Points of Interest Interface:
+
+* Google Places
+* Foursquare
+* Yelp
+
+#### Features
+
+* Get a list of POIs nearby
+* Filter by categories or search term
+
+#### Code Example - Objective-C
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Video;platformId=ObjectiveC)
+
+```objective-c
+id<CRVideoProtocol> service;
+
+//  service = [[CRTwitch alloc] initWithClientId:@"[Twitch Client Identifier]" clientSecret:@"[Twitch Client Secret]"];
+//  service = [[CRVimeo alloc] initWithClientId:@"[Vimeo Client Identifier]" clientSecret:@"[Vimeo Client Secret]"];
+
+service = [[CRYouTube alloc] initWithClientId:@"[YouTube Client Identifier]" clientSecret:@"" redirectUri:@"com.cloudrail.example:/auth" state:@"someState"];
+[service useAdvancedAuthentication]; //required for Youtube
+
+
+NSMutableArray<CRVideoMetaData *> * searchResult = [service searchVideosWithQueryQuery:@"CloudRail" offset:[NSNumber numberWithInt: 0] limit:[NSNumber numberWithInt: 12]];
+
+NSLog(@"%@", searchResult);
+
+CRVideoMetaData * uploadResult = [service uploadVideoWithTitleTitle:@"HowTo: Setup CloudRail" 
+        description:@"Video about Setting up CloudRail" 
+        stream:NSInputStream 
+        size:[NSNumber numberWithInt: 1448576] 
+        channelId:@"70207321" 
+        mimeType:@"video/mp4"
+]; //ChannelId optional for youtube
+
+NSLog(@"%@", uploadResult);
+
+
+```
+#### Code Example - Swift
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Video;platformId=Swift)
+
+```swift
+var service: VideoProtocol
+
+// service = Twitch(clientId: "[Twitch Client Identifier]",clientSecret: "[Twitch Client Secret]")
+// service = Vimeo(clientId: "[Vimeo Client Identifier]",clientSecret: "[Vimeo Client Secret]")
+
+service = YouTube(clientId: "[YouTube Client Identifier]",clientSecret: "",redirectUri: "com.cloudrail.example:/auth",state: "someState")
+service.useAdvancedAuthentication(); //required for Youtube
+
+do {
+   
+   let searchResult = service.searchVideos(query: "CloudRail",offset: 0,limit: 12)
+   print(searchResult)
+   
+   let uploadResult = service.uploadVideo(title: "HowTo: Setup CloudRail", description: "Video about Setting up CloudRail", stream: InputStream, size: 1448576, channelId: "70207321", mimeType: "video/mp4") //Channel id optional for youtube
+   
+   print(uploadResult)
+   
+} catch let error{
+  print("An error: \(error)")
+}
+```
+---
 
 More interfaces are coming soon.
 
