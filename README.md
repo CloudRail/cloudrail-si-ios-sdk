@@ -462,16 +462,20 @@ do {
 ```
 ---
 
-### Points of Interest Interface:
+### Video Interface:
 
-* Google Places
-* Foursquare
-* Yelp
+* Youtube
+* Twitch
+* Vimeo
 
 #### Features
 
-* Get a list of POIs nearby
-* Filter by categories or search term
+* Search for videos
+* Upload videos
+* Get a list of videos for a channel
+* Get channel details
+* Get your own channel details
+* Get video details 
 
 #### Code Example - Objective-C
 [Full Documentation](https://cloudrail.com/integrations/interfaces/Video;platformId=ObjectiveC)
