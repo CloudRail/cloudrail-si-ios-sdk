@@ -15,7 +15,7 @@ FOUNDATION_EXPORT double CloudRailSIVersionNumber;
 FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 
 // To use the framework just do #import <CloudRailSI/CloudRailSI.h>
-#import <CloudRailSI/CRCloudrail.h>
+#import <CloudRailSI/CRCloudRail.h>
 
 #pragma mark - CloudStorage
 #import <CloudRailSI/CRDropbox.h>
@@ -66,6 +66,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #pragma mark - Email
 #import <CloudRailSI/CRSendGrid.h>
 #import <CloudRailSI/CRMailJet.h>
+#import <CloudRailSI/CRGMail.h>
 
 #pragma mark - Video
 #import <CloudRailSI/CRYouTube.h>

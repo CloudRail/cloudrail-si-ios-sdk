@@ -333,6 +333,19 @@ SWIFT_CLASS("_TtC11CloudrailSI10Foursquare")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI5GMail")
+@interface GMail : NSObject
+- (nonnull instancetype)initWithClientID:(NSString * _Nonnull)clientID clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)sendEmailFromAddress:(NSString * _Nonnull)fromAddress fromName:(NSString * _Nonnull)fromName toAddresses:(NSMutableArray * _Nonnull)toAddresses subject:(NSString * _Nonnull)subject textBody:(NSString * _Nonnull)textBody htmlBody:(NSString * _Nonnull)htmlBody ccAddresses:(NSMutableArray * _Nonnull)ccAddresses bccAddresses:(NSMutableArray * _Nonnull)bccAddresses attachments:(NSMutableArray * _Nonnull)attachments error:(NSError * _Nullable * _Nullable)error;
+- (CRAdvancedRequestResponse * _Nullable)advancedRequest:(CRAdvancedRequestSpecification * _Nonnull)specification error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)saveAsStringAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)loadAsString:(NSString * _Nonnull)savedState error:(NSError * _Nullable * _Nullable)error;
+- (void)useAdvancedAuthentication;
+- (void)setTarget:(id _Null_unspecified)target;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI6GitHub")
 @interface GitHub : NSObject
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;

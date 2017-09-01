@@ -112,6 +112,10 @@
 		<data>
 		XB7AmOsZoN+xTE7hv/mgz/JCBDE=
 		</data>
+		<key>Headers/CRGMail.h</key>
+		<data>
+		AGw4+ItApr+DkSDaLHHx3/rIUxM=
+		</data>
 		<key>Headers/CRGitHub.h</key>
 		<data>
 		iYozrJd4xlzRZXjoz0iIsPGH9YE=
@@ -298,11 +302,11 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		C9DpvQelHKspLoqQGCSKtoQlgrQ=
+		AJsskwbqDlAYteaGBuZG5OIn3TA=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		UPRzYOj70xTyi21XEM7zf6+FkOQ=
+		dy5RssOLahWnN6SiV4gJf15Fe2s=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -326,7 +330,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		kscNfc6VRHan9yO1PpFmLBEJ/gc=
+		v5ITXkCMEarxMn+1NzbfoVWHWqo=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -334,7 +338,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		P+112Zzp1issDX3xV4UltqlSB6M=
+		Pf2oK6H96MPdsRJPJx+qhmoWiSo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -666,6 +670,17 @@
 			<key>hash2</key>
 			<data>
 			cuzul6YRpU53xWz/NVIOBI4ce7PUqfJH/dNPkIF+e4s=
+			</data>
+		</dict>
+		<key>Headers/CRGMail.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AGw4+ItApr+DkSDaLHHx3/rIUxM=
+			</data>
+			<key>hash2</key>
+			<data>
+			un5zPYyk3Ilgd3c0RVrnoYOM+FIYGj4s3Fubo0M+uZc=
 			</data>
 		</dict>
 		<key>Headers/CRGitHub.h</key>
@@ -1178,22 +1193,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C9DpvQelHKspLoqQGCSKtoQlgrQ=
+			AJsskwbqDlAYteaGBuZG5OIn3TA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XHj3cHqJe7cObO5COaYj2NBYH5c4kFBRtN5W3evBHU0=
+			XF4d5kNd/k5w+qH3tWkRc3KbNYRf+bFeH2Uj4pSbF2I=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UPRzYOj70xTyi21XEM7zf6+FkOQ=
+			dy5RssOLahWnN6SiV4gJf15Fe2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			W7bz2BJl6IjcNShvV3ZGxrAoAd4xXC1lQoxTSvAsczs=
+			OdmnXBCvk8viKjgPnoW1oVyR2p6PrOQ3JXJR5cE/Wrk=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1244,11 +1259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kscNfc6VRHan9yO1PpFmLBEJ/gc=
+			v5ITXkCMEarxMn+1NzbfoVWHWqo=
 			</data>
 			<key>hash2</key>
 			<data>
-			7LKwLdMzXnAxuw+PSL0NjWSmc4RM8UX0onUH8pgavUw=
+			NU3X5vV40ilwG8/VyYPzs6ib0lsypO2M9w9RcqtPZ1M=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1266,11 +1281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P+112Zzp1issDX3xV4UltqlSB6M=
+			Pf2oK6H96MPdsRJPJx+qhmoWiSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qVlXLWh/60U6v1Tc5+gL/2HDGWcJR/j1/uahUOEUbUo=
+			EVyErixnLOewKkn7AuVn4MfjyP9KNbQWFaQ/bmRTofg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
