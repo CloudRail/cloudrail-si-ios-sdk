@@ -9,6 +9,8 @@
 
 -(instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret redirectUri:(NSString *)redirectUri state:(NSString *)state;
 
+-(instancetype)initWithClientId:(NSString *)clientId clientSecret:(NSString *)clientSecret;
+
 
 -(void)useAdvancedAuthentication;
 -(NSString *) saveAsString;

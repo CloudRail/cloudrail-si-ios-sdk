@@ -833,6 +833,7 @@ SWIFT_CLASS("_TtC11CloudrailSI6Twilio")
 SWIFT_CLASS("_TtC11CloudrailSI6Twitch")
 @interface Twitch : NSObject
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (CRVideoMetaData * _Nullable)uploadVideoWithTitle:(NSString * _Nonnull)title description:(NSString * _Nonnull)description stream:(NSInputStream * _Nonnull)stream size:(long)size channelId:(NSString * _Nonnull)channelId mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSMutableArray * _Nullable)searchVideosWithQuery:(NSString * _Nonnull)query offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRVideoMetaData * _Nullable)videoWithId:(NSString * _Nonnull)videoId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
@@ -892,6 +893,7 @@ SWIFT_CLASS("_TtC11CloudrailSI5Twizo")
 SWIFT_CLASS("_TtC11CloudrailSI5Vimeo")
 @interface Vimeo : NSObject
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret redirectUri:(NSString * _Nonnull)redirectUri state:(NSString * _Nonnull)state OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret OBJC_DESIGNATED_INITIALIZER;
 - (CRVideoMetaData * _Nullable)uploadVideoWithTitle:(NSString * _Nonnull)title description:(NSString * _Nonnull)description stream:(NSInputStream * _Nonnull)stream size:(long)size channelId:(NSString * _Nonnull)channelId mimeType:(NSString * _Nonnull)mimeType error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSMutableArray * _Nullable)searchVideosWithQuery:(NSString * _Nonnull)query offset:(long)offset limit:(long)limit error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (CRVideoMetaData * _Nullable)videoWithId:(NSString * _Nonnull)videoId error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
