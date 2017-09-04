@@ -1,5 +1,22 @@
 # Change Log
 
+## [5.8.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.1) (2017-09-04)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.0...5.8.2)
+
+* Hotfix Added missing constuctor for Twitch and Vimeo
+* Hotfix Search and List Videos by channel for Twitch and Vimeo
+
+## [5.8.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.1) (2017-09-01)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.0...5.8.1)
+
+* Hotfix: Added missing Gmail interface
+
+## [5.8.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.1) (2017-08-31)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.7.0...5.8.0)
+
+* Added new Video Interface (CRVideoProtocol) **Youtube** , **Twitch** and **Vimeo**
+
+
 ## [5.5.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.5.1) (2017-05-28)
 +[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.5.0...5.5.1)
 +
