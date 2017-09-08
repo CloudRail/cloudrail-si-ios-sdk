@@ -1,6 +1,12 @@
 # Change Log
 
-## [5.8.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.1) (2017-09-04)
+## [5.8.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.3) (2017-09-08)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.2...5.8.3)
+
+* Fix Vimeo fixed the offset / limit logic
+* Fix Gmail attachment crash fixed
+
+## [5.8.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.2) (2017-09-04)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.0...5.8.2)
 
 * Hotfix Added missing constuctor for Twitch and Vimeo
