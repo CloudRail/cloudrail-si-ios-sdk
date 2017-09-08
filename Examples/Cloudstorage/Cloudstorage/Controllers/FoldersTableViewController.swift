@@ -70,8 +70,10 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             
             //Dropbox service needs Key / Secret
             //Note: - useAdvancedAuthentication() For Google Login with the RedirectURI constructor
-            
-            let drive = Dropbox(clientId: "38nu3lwdvyaqs78", clientSecret: "c95g0wfkdv6ua2d")
+            //https://blog.cloudrail.com/authenticating-with-dropbox/
+            let drive = Dropbox(clientId: "38nu3lwdvyaqs78", clientSecret: "c95g0wfkdv6ua2d", redirectUri: "https://auth.cloudrail.com/org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage",
+                                state: "efwegwww")
+            drive.useAdvancedAuthentication()
             cloudStorage = drive
             
         } else if cloudStorageType == "box" {
