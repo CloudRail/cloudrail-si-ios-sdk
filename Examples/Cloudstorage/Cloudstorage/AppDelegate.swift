@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     //Get your free key: https://cloudrail.com/signup
     
-    static let kCloudRailAPIKey = "[Your API Key]"
+    static let kCloudRailAPIKey = "59ad578aded6ef25c77d17cc"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         

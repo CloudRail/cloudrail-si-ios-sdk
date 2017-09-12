@@ -306,7 +306,7 @@
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		dbbOAnOxTfrmKPUCnq17NjzBafM=
+		ZQyj7fjj/BxF2ROnx4tt17pDXTs=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wUMkxQ3YMEjU+a1lRWCZQlpHv1E=
+		ZVghAu9aWPESxTts7EK3Petn7mw=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -330,7 +330,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		sjxeKRb0M6KpBv6TjQ0D9YOk4KM=
+		7PPOWCZGc/hARgLb5pez9D8eRTI=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		v/sbYTtwQIiX7ft/tQLpbRyjGz8=
+		1+v5p+vgKHM6jSuzLFSiTmBuz1g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1204,11 +1204,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dbbOAnOxTfrmKPUCnq17NjzBafM=
+			ZQyj7fjj/BxF2ROnx4tt17pDXTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			sKL+lTGbU8VQiBAAcsGE6XWuyarHiCn4g6pm1vrn1mw=
+			K+DCLqy//ATgDaJS+l0zJUDUGgMVGptFc1HvZneA2Yg=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1259,11 +1259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sjxeKRb0M6KpBv6TjQ0D9YOk4KM=
+			7PPOWCZGc/hARgLb5pez9D8eRTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			BEN6XWDQjuUEOo8BYy3TRFtbEef7k7HzOGnWqRAiReQ=
+			uACsxgQzUpImXEwnAOQBn/AJNPpd2iN9gSYzBbbcAwg=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1281,11 +1281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v/sbYTtwQIiX7ft/tQLpbRyjGz8=
+			1+v5p+vgKHM6jSuzLFSiTmBuz1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			QfSIQuXnw2wQDKjXiM7QF6Q7IyMFiYXLdsRRfEj/FVA=
+			usNbxwsoJDoDm6625b6qoq/H2MuAfgfYPS8CUgWZ5hA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

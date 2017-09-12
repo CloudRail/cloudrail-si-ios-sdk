@@ -1,5 +1,10 @@
 # Change Log
 
+## [5.8.4](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.4) (2017-09-12)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.3...5.8.4)
+
+* Hotfix Added missing OneDrive Construtor
+
 ## [5.8.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.3) (2017-09-08)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.2...5.8.3)
 
