@@ -73,6 +73,10 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRTwitch.h>
 #import <CloudRailSI/CRVimeo.h>
 
+#pragma mark - Messaging
+#import <CloudRailSI/CRTelegram.h>
+#import <CloudRailSI/CRLine.h>
+
 #pragma mark - Protocols
 #import <CloudRailSI/CRCloudStorageProtocol.h>
 #import <CloudRailSI/CRProfileProtocol.h>
@@ -85,8 +89,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRSocialProtocol.h>
 #import <CloudRailSI/CRBusinessCloudStorageProtocol.h>
 #import <CloudRailSI/CRAdvancedRequestSupporterProtocol.h>
-
 #import <CloudRailSI/CRVideoProtocol.h>
+#import <CloudRailSI/CRMessagingProtocol.h>
 
 #pragma mark - ClourRail types
 #import <CloudRailSI/CRAddress.h>
@@ -107,10 +111,10 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRAdvancedRequestSpecification.h>
 #import <CloudRailSI/CustomStream.h>
 #import <CloudRailSI/CRUploadProgressDelegate.h>
-
-
 #import <CloudRailSI/CRVideoMetaData.h>
 #import <CloudRailSI/CRChannelMetaData.h>
+#import <CloudRailSI/CRMessage.h>
+#import <CloudRailSI/CRMessagingAttachment.h>
 
 
 #pragma mark - Swift Helpers
