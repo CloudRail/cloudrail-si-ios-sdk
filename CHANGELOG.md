@@ -1,5 +1,15 @@
 # Change Log
 
+## [5.9.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.1) (2017-10-02)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.0...5.9.1)
+
+* Hotfix fixed major bug causing the interface to crash
+
+## [5.9.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.0) (2017-09-29)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.4...5.9.0)
+
+* Added Messaging Interface
+
 ## [5.8.4](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.8.4) (2017-09-12)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.8.3...5.8.4)
 

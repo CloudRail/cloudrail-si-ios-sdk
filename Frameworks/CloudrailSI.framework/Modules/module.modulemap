@@ -7,5 +7,4 @@ framework module CloudrailSI {
 
 module CloudrailSI.Swift {
     header "CloudrailSI-Swift.h"
-    requires objc
 }
