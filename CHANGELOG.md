@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.9.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.2) (2017-10-09)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.1...5.9.2)
+
+* Updated Messaging Interface
+* Fixed timestamp issue
+* Fixed missing constructor for OneDrive / Gmail
+
 ## [5.9.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.1) (2017-10-02)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.0...5.9.1)
 

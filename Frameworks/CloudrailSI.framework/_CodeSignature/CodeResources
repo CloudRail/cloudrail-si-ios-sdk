@@ -174,7 +174,7 @@
 		</data>
 		<key>Headers/CRMessagingProtocol.h</key>
 		<data>
-		0y67rsIElYwNcOKXSpoFR5JU4hw=
+		iH5VstseoePNXRMC/u507OfQaj8=
 		</data>
 		<key>Headers/CRMicrosoft.h</key>
 		<data>
@@ -326,7 +326,7 @@
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		uFIAw22c/IrtCHJnLLKnx7GBfVo=
+		gGBXOr6ClN2MhZD0kNS3N7CXb7Y=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		L09SgK4X904QOUDAbf4Dh1RQaF8=
+		CWgYgswzLOR9uKBZghfx7OyNvMc=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -346,23 +346,23 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftdoc</key>
 		<data>
-		6Q1VruPRdH1OuqnsQTp087nJer4=
+		1Qq+Mv8CanOSE74L7H/jlLzgBPo=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		sLFvPEusmUx8Abz8axzmIwtqIfo=
+		gzlyVsdSniRBdb0ZaCkh8bNrpjk=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Ykp8fqk7yHjMS67ryFmSXNWhkD0=
+		qDTw9jcf0AfCmKbk8gh9XLizA3E=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		QFKxWqFSMnEp8ThWw+A4A+MmkK8=
+		/SIq2oYQnXU/mIJyR6+3g/XCtbo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		BAjwwvj37YjCgz7vuWYFNQJMS68=
+		ziZrEovBnrsUYu0BkRsMYAjCObg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -861,11 +861,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0y67rsIElYwNcOKXSpoFR5JU4hw=
+			iH5VstseoePNXRMC/u507OfQaj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			sDAhNdj2Gt2rvxCnfFLbiKA2/7Hhhzvni/ey/CWLAAc=
+			pvtywLRRmOgAMsw11DfURK1thIWuVOTLumgLfBZjbLE=
 			</data>
 		</dict>
 		<key>Headers/CRMicrosoft.h</key>
@@ -1279,11 +1279,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uFIAw22c/IrtCHJnLLKnx7GBfVo=
+			gGBXOr6ClN2MhZD0kNS3N7CXb7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			WhmEeuUsM6sZy+j0qPumpqR42RWSSGhGPpZ9vZHlDWI=
+			jRFKxYtFRKOaEEzvi1MGJm0nmDfUZeLSfhyEN/vcij8=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1323,55 +1323,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6Q1VruPRdH1OuqnsQTp087nJer4=
+			1Qq+Mv8CanOSE74L7H/jlLzgBPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			lj5fkTfVUXOJCSN1SSrhauz+fYFapl0C8KdekkiVS7w=
+			sSvesVOoG78W4xpCh5tl2D3ArZsThbU7LJAO632j0D0=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sLFvPEusmUx8Abz8axzmIwtqIfo=
+			gzlyVsdSniRBdb0ZaCkh8bNrpjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			pBm8YE+h0WN/3gMkAlFt2zvhvLUXO36z2va5y1oWqEI=
+			DNm1GkdtN/s31BjW52ZKIuMUc0aKLqk8zFIjHrjNP2w=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ykp8fqk7yHjMS67ryFmSXNWhkD0=
+			qDTw9jcf0AfCmKbk8gh9XLizA3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			VRGDo8hbXiZT4UjZUbH5KEu9GaVbEcqqWl+ii0Ynmcs=
+			P5i0cu8IPTL03jYOV0xPaMQ66rrn5ibMZQ1r/Ofvvf8=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QFKxWqFSMnEp8ThWw+A4A+MmkK8=
+			/SIq2oYQnXU/mIJyR6+3g/XCtbo=
 			</data>
 			<key>hash2</key>
 			<data>
-			cRGHx+ZJZq3vQC6NKPgk5awOpxO4mmsL0vlygpMl4YU=
+			xip9c+RzFhjkRu1AYUSPwd2qlFd1/+ZUSl+ya+lcU/U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BAjwwvj37YjCgz7vuWYFNQJMS68=
+			ziZrEovBnrsUYu0BkRsMYAjCObg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kBS1CYmfzpiPHmYrXx1CZZo0XwIsTAIYz/N61UBvJ3c=
+			bsMFuGMja911JDTjgQAzV80xfnxTEggwldmHYwmu5yk=
 			</data>
 		</dict>
 		<key>SVWebViewControllerActivityChrome-iPad.png</key>
