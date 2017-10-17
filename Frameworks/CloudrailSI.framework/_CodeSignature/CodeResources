@@ -104,6 +104,10 @@
 		<data>
 		r1jlbwZcWj2eaFxWlizZi9oezGo=
 		</data>
+		<key>Headers/CRFacebookMessenger.h</key>
+		<data>
+		gum8cOXuqOWPODaAFEWA7A8xD/Y=
+		</data>
 		<key>Headers/CRFacebookPage.h</key>
 		<data>
 		gOj2+hjF2nZm+6e0e2Cf032135c=
@@ -174,7 +178,7 @@
 		</data>
 		<key>Headers/CRMessagingProtocol.h</key>
 		<data>
-		iH5VstseoePNXRMC/u507OfQaj8=
+		sPFU5rRP8LDCvk3Sb+z/HugpRQw=
 		</data>
 		<key>Headers/CRMicrosoft.h</key>
 		<data>
@@ -296,6 +300,10 @@
 		<data>
 		gGYLVFMaHayArhfZo4ZjVn+aZjQ=
 		</data>
+		<key>Headers/CRViber.h</key>
+		<data>
+		ReFynezIvS690uejzpnUODF6FdY=
+		</data>
 		<key>Headers/CRVideoMetaData.h</key>
 		<data>
 		AQbUSdmPNuaHncCYnDTAnhiB1JM=
@@ -322,11 +330,11 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		L1BDGMfFfLEM9e8Xfm5gSZwnBvw=
+		KpWldnazV19iHGzzmEQftGdMaKY=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		gGBXOr6ClN2MhZD0kNS3N7CXb7Y=
+		wv0PmRx7I7dGDzrJvDY/0doluLI=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -334,7 +342,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CWgYgswzLOR9uKBZghfx7OyNvMc=
+		TQ6fPQAvcrx2Mx8ElCqfKXNrT9Y=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -346,11 +354,11 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftdoc</key>
 		<data>
-		1Qq+Mv8CanOSE74L7H/jlLzgBPo=
+		GHSNTyzBLzD6IXLCAyTy5Aa2F+4=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		gzlyVsdSniRBdb0ZaCkh8bNrpjk=
+		Ozl0VCBYqeNdHmodOHXC7fHdrLs=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -358,7 +366,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/SIq2oYQnXU/mIJyR6+3g/XCtbo=
+		124n8HFBCr5zbYC+3ErsaOIP+Ac=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -670,6 +678,17 @@
 			QB9MCJbyh1P4xTbnMv4EBnvv+L56egMRZeOyB20wPrE=
 			</data>
 		</dict>
+		<key>Headers/CRFacebookMessenger.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gum8cOXuqOWPODaAFEWA7A8xD/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			UQ5Nnwa3XaJfFdx1aY+5rcFIoixN6BLsi//NKHT+2xg=
+			</data>
+		</dict>
 		<key>Headers/CRFacebookPage.h</key>
 		<dict>
 			<key>hash</key>
@@ -861,11 +880,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iH5VstseoePNXRMC/u507OfQaj8=
+			sPFU5rRP8LDCvk3Sb+z/HugpRQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pvtywLRRmOgAMsw11DfURK1thIWuVOTLumgLfBZjbLE=
+			az5A5V7dXOz7peO60wz0s8NHOLhcf18AS6DM+4m+0+E=
 			</data>
 		</dict>
 		<key>Headers/CRMicrosoft.h</key>
@@ -1198,6 +1217,17 @@
 			CQFQoqAcLkEGtQp47VxbOl9MUhaWFHbrYSfOD3tGlZI=
 			</data>
 		</dict>
+		<key>Headers/CRViber.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ReFynezIvS690uejzpnUODF6FdY=
+			</data>
+			<key>hash2</key>
+			<data>
+			39aVBdZRJpPxbwI4KdzmQ64xRNEBKDmXkRvgzQOJmuE=
+			</data>
+		</dict>
 		<key>Headers/CRVideoMetaData.h</key>
 		<dict>
 			<key>hash</key>
@@ -1268,22 +1298,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L1BDGMfFfLEM9e8Xfm5gSZwnBvw=
+			KpWldnazV19iHGzzmEQftGdMaKY=
 			</data>
 			<key>hash2</key>
 			<data>
-			dsLNGynRcW9rLF5Ow/BWgi3VYxz1LdlmcePLU9altEA=
+			7IPUG8ZlvUUcdtns/+RXOkb1xvH3q9rtmoRqKZoVvHs=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gGBXOr6ClN2MhZD0kNS3N7CXb7Y=
+			wv0PmRx7I7dGDzrJvDY/0doluLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jRFKxYtFRKOaEEzvi1MGJm0nmDfUZeLSfhyEN/vcij8=
+			QtXBdxtelXOD8vbpYw/LslirJe4mPtcwuvsWB7TjHy8=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1323,22 +1353,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Qq+Mv8CanOSE74L7H/jlLzgBPo=
+			GHSNTyzBLzD6IXLCAyTy5Aa2F+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sSvesVOoG78W4xpCh5tl2D3ArZsThbU7LJAO632j0D0=
+			AfnXwgExeRuksQ+kSkRP54OOk2frblg4EqfBOa7BC8E=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gzlyVsdSniRBdb0ZaCkh8bNrpjk=
+			Ozl0VCBYqeNdHmodOHXC7fHdrLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			DNm1GkdtN/s31BjW52ZKIuMUc0aKLqk8zFIjHrjNP2w=
+			U12bnSn7zk8W30mrPojfOjUgZ4vn2+Giju7JWdsECC0=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1356,11 +1386,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/SIq2oYQnXU/mIJyR6+3g/XCtbo=
+			124n8HFBCr5zbYC+3ErsaOIP+Ac=
 			</data>
 			<key>hash2</key>
 			<data>
-			xip9c+RzFhjkRu1AYUSPwd2qlFd1/+ZUSl+ya+lcU/U=
+			9aCo9D9j+yEEFmHRw3hIlmbQ7PTz4PHrHSy85tGed58=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

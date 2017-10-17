@@ -27,7 +27,8 @@
                                message: (NSString *) message
                                imageId: (NSString *) imageId
                            imageStream: (NSInputStream *) imageStream
-                            previewUrl: (NSString *) previewUrl;
+                            previewUrl: (NSString *) previewUrl
+                              mimeType: (NSString *) mimeType;
 
 -(CRMessage *) sendVideoWithReceiverId: (NSString *) receiverId
                                message: (NSString *) message
@@ -52,7 +53,7 @@
                              fileName: (NSString *) fileName
                                  size: (long) size;
 
--(NSMutableArray<CRMessage *> *) processWebhookRequest: (NSInputStream *) httpRequestStream;
+-(NSMutableArray<CRMessage *> *) parseReceivedMessages: (NSInputStream *) httpRequestStream;
 
 -(CRMessagingAttachment *) downloadContent: (CRMessagingAttachment *) attachment;
 

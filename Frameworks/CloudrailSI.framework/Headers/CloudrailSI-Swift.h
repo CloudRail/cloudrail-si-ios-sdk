@@ -221,6 +221,12 @@ SWIFT_CLASS("_TtC11CloudrailSI8Facebook")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI17FacebookMessenger")
+@interface FacebookMessenger : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI12FacebookPage")
 @interface FacebookPage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -397,6 +403,12 @@ SWIFT_CLASS("_TtC11CloudrailSI7Twitter")
 
 SWIFT_CLASS("_TtC11CloudrailSI5Twizo")
 @interface Twizo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11CloudrailSI5Viber")
+@interface Viber : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
