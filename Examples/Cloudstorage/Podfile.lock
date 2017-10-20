@@ -1,5 +1,5 @@
 PODS:
-  - cloudrail-si-ios-sdk (5.6.4)
+  - cloudrail-si-ios-sdk (5.9.3)
   - Toast-Swift (2.0.0)
 
 DEPENDENCIES:
@@ -7,7 +7,7 @@ DEPENDENCIES:
   - Toast-Swift (~> 2.0.0)
 
 SPEC CHECKSUMS:
-  cloudrail-si-ios-sdk: e24654c016b576d9d9387c8d8abcf161a37c4831
+  cloudrail-si-ios-sdk: 2cc9b23ea2e124c88644ef14a7f11d3fff3a60ab
   Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
 
 PODFILE CHECKSUM: 21670dd2b8ca3fc461173222e9496d6bb279d280

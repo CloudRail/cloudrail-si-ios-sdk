@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRAttachment.h"
 
 /**
  * An interface whose implementations allow sending emails
@@ -25,6 +26,7 @@
  * @param htmlBody The email's body HTML part. Either this and/or the textBody must be specified.
  * @param ccAddresses Optional. A list of CC recipient email addresses.
  * @param bccAddresses Optional. A list of BCC recipient email addresses.
+ * @param attachments Optional. A list of attachments.
  */
 - (void)sendEmailFromAddress:(NSString *)fromAddress
                    fromName:(NSString *)fromName
@@ -33,7 +35,8 @@
                    textBody:(NSString *)textBody
                    htmlBody:(NSString *)htmlBody
                 ccAddresses:(NSMutableArray<NSString *> *)ccAddresses
-               bccAddresses:(NSMutableArray<NSString *> *)bccAddresses;
+               bccAddresses:(NSMutableArray<NSString *> *)bccAddresses
+                attachments:(NSMutableArray<CRAttachment *> *) attachments;
 
 
 @end

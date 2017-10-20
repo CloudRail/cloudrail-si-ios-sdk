@@ -3,12 +3,13 @@
 //  Cloudstorage
 //
 //  Created by Mujtaba Alam on 06.06.17.
+//  Updated on 10.20.17.
 //  Copyright © 2017 CloudRail. All rights reserved.
 //
 
 import UIKit
 import CloudrailSI
-import Toast_Swift
+//import Toast_Swift
 import WebKit
 
 class FoldersTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -68,35 +69,55 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
         
         if cloudStorageType == "dropbox" {
             
-            //Dropbox service needs Key / Secret
-            //Note: - useAdvancedAuthentication() For Google Login with the RedirectURI constructor
+            //Dropbox needs the following:
+            //1. ClientId: App Key
+            //2. ClientSecret: App Secret
+            //3. Redirect URI: https://auth.cloudrail.com/YourBundleID
+            //4. State - Any String e.g. state
+            //5. useAdvancedAuthentication() method Must be called!
             //https://blog.cloudrail.com/authenticating-with-dropbox/
-            let drive = Dropbox(clientId: "38nu3lwdvyaqs78", clientSecret: "c95g0wfkdv6ua2d", redirectUri: "https://auth.cloudrail.com/org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage",
-                                state: "efwegwww")
+            
+            let drive = Dropbox(clientId: "[Dropbox App Key]",
+                                clientSecret: "[Dropbox App Secret]",
+                                redirectUri: "https://auth.cloudrail.com/org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage",
+                                state: "state")
+            
             drive.useAdvancedAuthentication()
             cloudStorage = drive
             
         } else if cloudStorageType == "box" {
-            //Box service needs Key / Secret
-            cloudStorage = Box(clientId: "qnskodzvd2naq16xowc40t43fug2848n", clientSecret: "cQE7Sf9DzZqChjvCTxIMTp3ye6hynhTd")
+            //1. ClientId: Client ID
+            //2. ClientSecret: Client Secret
+            
+            cloudStorage = Box(clientId: "[Box Client Id]",
+                               clientSecret: "[Box Client Secret]")
             
         } else if cloudStorageType == "googleDrive" {
             
-            //Google Drive is unique as it needs the following:
-            //1. API Key (no secret required)
-            //2. Redirect URI and a State (any)
-            //3. useAdvancedAuthentication() method Must be called!
+            //Google Drive needs the following:
+            //1. ClientId: Client Id
+            //2. ClientSecret: Leave Empty
+            //3. Redirect URI: YourBundleID:/oauth2redirect
+            //4. State - Any String e.g. state
+            //5. useAdvancedAuthentication() method Must be called!
+            //https://blog.cloudrail.com/authenticating-google-drive/
             
-            let drive = GoogleDrive(clientId: "1007170750392-0ikqfi754e8bkuua26098193frl07nle.apps.googleusercontent.com",
+            let drive = GoogleDrive(clientId: "[Google Drive Client Identifier]",
                                     clientSecret: "",
                                     redirectUri: "org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage:/oauth2redirect",
-                                    state: "efwegwww")
+                                    state: "state")
             
             drive.useAdvancedAuthentication()
             cloudStorage = drive
             
         } else if cloudStorageType == "oneDrive" {
-            cloudStorage = OneDrive(clientId: "b5e4a71f-8a3d-402b-aa78-46ff6c39189f", clientSecret: "J0L9YcCmhDmk0fRjzc6YUKd")
+            
+            //1. ClientId: Application Id
+            //2. ClientSecret: Application Secret
+            
+            cloudStorage = OneDrive(clientId: "[OneDrive Application Id]",
+                                    clientSecret: "[OneDrive Application Secret]")
+            
         } else if cloudStorageType == "egnyte" {
             
             //Egnyte requires the following:
@@ -104,12 +125,13 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             //2. API Key
             //3. Secret
             //4. Redirect URI and a State (any)
+            //5. State - Any String e.g. state
             
-            cloudStorage = Egnyte(domain: "cloudrailcloudtest",
-                             clientId: "k9y879bha2kmsyyqx4urtnaz",
-                             clientSecret: "TsgByd2YZqsJPyYMDhEB6ctAYQ6kP35qYTnEG9urPKq2eNNXRF",
+            cloudStorage = Egnyte(domain: "[Your Egnyte Domain]",
+                             clientId: "[Your Egnyte API Key]",
+                             clientSecret: "[Your Egnyte Shared Secret]",
                              redirectUri: "https://www.cloudrailauth.com/auth",
-                             state: "STATE")
+                             state: "state")
         }
         
         //Load Saved Service
@@ -202,14 +224,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
     // MARK: - Search
     
     @IBAction func searchAction(_ sender: Any) {
-//        let alertController = UIAlertController(title: "Feature Coming Soon", message: "Search Cloudstorage feature coming soon", preferredStyle: .alert)
-//        let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-//        alertController.addAction(cancelButton)
-//        
-//        self.navigationController!.present(alertController, animated: true, completion: nil)
-//        
         self.performSegue(withIdentifier: "SearchSegue", sender: nil)
-        
     }
     
     // MARK: - Table view data source
@@ -285,7 +300,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             
             UIPasteboard.general.string = link
             
-            self.view.makeToast("Link copied to clipboard", duration: 3.0, position: .bottom)
+            //self.view.makeToast("Link copied to clipboard", duration: 3.0, position: .bottom)
             self.tableView.reloadData()
         }
         share.backgroundColor = UIColor.FlatColor.Blue.Denim
@@ -293,7 +308,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
         
         let download = UITableViewRowAction(style: .normal, title: "Download") { action, index in
             
-            self.view.makeToast("Downloading file", duration: 3.0, position: .top)
+            //self.view.makeToast("Downloading file", duration: 3.0, position: .top)
             let backgroundQueue = DispatchQueue(label: "com.cloudrail.queue",
                                                 qos: .background,
                                                 target: nil)
@@ -304,7 +319,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
                 }
             }
             
-            self.view.makeToast("File saved", duration: 2.0, position: .top)
+            //self.view.makeToast("File saved", duration: 2.0, position: .top)
         }
         download.backgroundColor = UIColor.FlatColor.Green.ChateauGreen
         
@@ -323,7 +338,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
         self.dismiss(animated: true, completion: nil)
         
         //Always run this on background thread
-        self.view.makeToast("Uploading image", duration: 3.0, position: .top)
+        //self.view.makeToast("Uploading image", duration: 3.0, position: .top)
         let backgroundQueue = DispatchQueue(label: "com.cloudrailapp.queue",
                                             qos: .background,
                                             target: nil)
@@ -337,7 +352,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
                 let path = "/\(Helpers.randomImageName())"
                 
                 if CloudStorageLogic.uploadFileToPath(cloudStorage: self.cloudStorage!, path: path, inputStream: inputStream, size: data.count) {
-                    self.view.makeToast("Image uploaded", duration: 2.0, position: .top)
+                    //self.view.makeToast("Image uploaded", duration: 2.0, position: .top)
                     self.retriveFilesFoldersData(false)
                 }
             }

@@ -3,6 +3,7 @@
 //  Cloudstorage
 //
 //  Created by Mujtaba Alam on 09.06.17.
+//  Updated on 10.20.17.
 //  Copyright © 2017 CloudRail. All rights reserved.
 //
 
@@ -29,6 +30,32 @@ class CloudStorageLogic {
             try cloudStorage.loadAsString(savedState)
         } catch {
             print(error.localizedDescription)
+        }
+    }
+    
+    /**
+     * Authentication Method
+     * If Login / Logout shows an Exception it is not working fine
+     * URL: http://cocoadocs.org/docsets/cloudrail-si-ios-sdk/1.0.0/Protocols/AuthenticatingProtocol.html
+     */
+    
+    static func login(cloudStorage: CloudStorageProtocol) ->Bool! {
+        do {
+            try cloudStorage.login()
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
+    }
+    
+    static func logout(cloudStorage: CloudStorageProtocol) ->Bool! {
+        do {
+            try cloudStorage.logout()
+            return true
+        } catch {
+            print(error.localizedDescription)
+            return false
         }
     }
     

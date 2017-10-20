@@ -3,6 +3,7 @@
 //  Cloudstorage
 //
 //  Created by Mujtaba Alam on 06.06.17.
+//  Updated on 10.20.17.
 //  Copyright © 2017 CloudRail. All rights reserved.
 //
 
@@ -13,9 +14,9 @@ import CloudrailSI
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    //Get your free key: https://cloudrail.com/signup
+    //Get your free license key: https://cloudrail.com/signup
     
-    static let kCloudRailAPIKey = "59ad578aded6ef25c77d17cc"
+    static let kCloudRailAPIKey = "[Your License Key]"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
