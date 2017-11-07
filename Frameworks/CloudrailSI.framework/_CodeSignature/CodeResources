@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/CRExceptionHandler.h</key>
 		<data>
-		H6N0msm3EuHCgA219lQDvwR5WJY=
+		I5d4k4luWj/yALVaUEDvqWmh/y8=
 		</data>
 		<key>Headers/CRFacebook.h</key>
 		<data>
@@ -172,13 +172,21 @@
 		<data>
 		cD/yffeES0h0eETfq1WUNs9TDgI=
 		</data>
+		<key>Headers/CRMessageButton.h</key>
+		<data>
+		+kX1zB5QoXT/Xs2yevdGgU7bsOo=
+		</data>
+		<key>Headers/CRMessageItem.h</key>
+		<data>
+		UhEBKTkMdQ05/Tj3Lv5WLnXwBFs=
+		</data>
 		<key>Headers/CRMessagingAttachment.h</key>
 		<data>
-		5fvP0R0BkDRs2ZwaD71jlqJIzNo=
+		jHLpjpdhkJCDjv9Rm4l+uy3D0Es=
 		</data>
 		<key>Headers/CRMessagingProtocol.h</key>
 		<data>
-		sPFU5rRP8LDCvk3Sb+z/HugpRQw=
+		ZkH5ZouEXEnojGdWuJj3SwzxLxo=
 		</data>
 		<key>Headers/CRMicrosoft.h</key>
 		<data>
@@ -330,7 +338,7 @@
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		KpWldnazV19iHGzzmEQftGdMaKY=
+		5HHh31NAwUSf1a9sOtwiQnglBW8=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
@@ -342,7 +350,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TQ6fPQAvcrx2Mx8ElCqfKXNrT9Y=
+		HTibcv0zs8RbM5PhU9vM+/23MwY=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -354,11 +362,11 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftdoc</key>
 		<data>
-		GHSNTyzBLzD6IXLCAyTy5Aa2F+4=
+		1Qq+Mv8CanOSE74L7H/jlLzgBPo=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		Ozl0VCBYqeNdHmodOHXC7fHdrLs=
+		g8C0JoF8vbZzLHeONQVoN311h0w=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -366,7 +374,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		124n8HFBCr5zbYC+3ErsaOIP+Ac=
+		QhnRZYyIbY8AY6K6YDvKp+86738=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -375,30 +383,6 @@
 		<key>PkgInfo</key>
 		<data>
 		3P3Nhb8UxXzmheJAvnPi/sWiGW0=
-		</data>
-		<key>SVWebViewControllerActivityChrome-iPad.png</key>
-		<data>
-		oBBU8SkV8UF1KWegja5ahErTXq4=
-		</data>
-		<key>SVWebViewControllerActivityChrome-iPad@2x.png</key>
-		<data>
-		Pp9kBNSEIkK0z8dVa/C/WVjb4K0=
-		</data>
-		<key>SVWebViewControllerActivityChrome@2x.png</key>
-		<data>
-		2U3TCIqAj5ZUWmLUrQISa6x3VRQ=
-		</data>
-		<key>SVWebViewControllerActivitySafari-iPad.png</key>
-		<data>
-		Z9h8iLJEVxUrRlXh9nqLR8X2RYQ=
-		</data>
-		<key>SVWebViewControllerActivitySafari-iPad@2x.png</key>
-		<data>
-		y7hvK5OuNHJbmhRaW+H9b0/U3Qg=
-		</data>
-		<key>SVWebViewControllerActivitySafari@2x.png</key>
-		<data>
-		vETADKdOSfJz2ITNp2EKLNl3Q0A=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -660,11 +644,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H6N0msm3EuHCgA219lQDvwR5WJY=
+			I5d4k4luWj/yALVaUEDvqWmh/y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			mAzuvNqEMUJRI4BuIygUM4LQ1ej5PU+HXTvxR1QPPM4=
+			EfmLdbF4rGKvwtiO3suFIN4s0bM6mjtIF1xbn7dQSlQ=
 			</data>
 		</dict>
 		<key>Headers/CRFacebook.h</key>
@@ -865,26 +849,48 @@
 			2xX1x/Hz77gALK56B+S8yt/x015GJsBqaHEwdHtZCd8=
 			</data>
 		</dict>
+		<key>Headers/CRMessageButton.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+kX1zB5QoXT/Xs2yevdGgU7bsOo=
+			</data>
+			<key>hash2</key>
+			<data>
+			x7pANmh3I3ERDOBpztjLtTR61vmejgA4I2/tA0nwJmA=
+			</data>
+		</dict>
+		<key>Headers/CRMessageItem.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UhEBKTkMdQ05/Tj3Lv5WLnXwBFs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zh9cqEiABl8vf/uIQRPa6+6cx2Hn/+WSd1fPWQiuEcI=
+			</data>
+		</dict>
 		<key>Headers/CRMessagingAttachment.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5fvP0R0BkDRs2ZwaD71jlqJIzNo=
+			jHLpjpdhkJCDjv9Rm4l+uy3D0Es=
 			</data>
 			<key>hash2</key>
 			<data>
-			lMwzQJlw69EaAde0HAZ+eqLia/4rG9ET7DlEpmn2JUQ=
+			xrWkIgePQCmP44pIJLaEtUuFsAYElP4IKe9LHFu4Y5k=
 			</data>
 		</dict>
 		<key>Headers/CRMessagingProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sPFU5rRP8LDCvk3Sb+z/HugpRQw=
+			ZkH5ZouEXEnojGdWuJj3SwzxLxo=
 			</data>
 			<key>hash2</key>
 			<data>
-			az5A5V7dXOz7peO60wz0s8NHOLhcf18AS6DM+4m+0+E=
+			t4zCJwjSSSm0AphK1tLNey9Zj0RcbGqEU+PnwRIjzvg=
 			</data>
 		</dict>
 		<key>Headers/CRMicrosoft.h</key>
@@ -1298,11 +1304,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KpWldnazV19iHGzzmEQftGdMaKY=
+			5HHh31NAwUSf1a9sOtwiQnglBW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7IPUG8ZlvUUcdtns/+RXOkb1xvH3q9rtmoRqKZoVvHs=
+			ACVGPhbmkfLm186+V/HCBRLYYm4bBgAVpl1bIXz7XGw=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
@@ -1353,22 +1359,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GHSNTyzBLzD6IXLCAyTy5Aa2F+4=
+			1Qq+Mv8CanOSE74L7H/jlLzgBPo=
 			</data>
 			<key>hash2</key>
 			<data>
-			AfnXwgExeRuksQ+kSkRP54OOk2frblg4EqfBOa7BC8E=
+			sSvesVOoG78W4xpCh5tl2D3ArZsThbU7LJAO632j0D0=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ozl0VCBYqeNdHmodOHXC7fHdrLs=
+			g8C0JoF8vbZzLHeONQVoN311h0w=
 			</data>
 			<key>hash2</key>
 			<data>
-			U12bnSn7zk8W30mrPojfOjUgZ4vn2+Giju7JWdsECC0=
+			v8HAY5GYVDG4rMt7VWfT6mXXlKs+N5/ywC+5PhedoBQ=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1386,11 +1392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			124n8HFBCr5zbYC+3ErsaOIP+Ac=
+			QhnRZYyIbY8AY6K6YDvKp+86738=
 			</data>
 			<key>hash2</key>
 			<data>
-			9aCo9D9j+yEEFmHRw3hIlmbQ7PTz4PHrHSy85tGed58=
+			CWL2JF0FXdEHGf/BLHNvmkfLDInwPXZSc0HbXDcosSg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1402,72 +1408,6 @@
 			<key>hash2</key>
 			<data>
 			bsMFuGMja911JDTjgQAzV80xfnxTEggwldmHYwmu5yk=
-			</data>
-		</dict>
-		<key>SVWebViewControllerActivityChrome-iPad.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oBBU8SkV8UF1KWegja5ahErTXq4=
-			</data>
-			<key>hash2</key>
-			<data>
-			ERiIYJiATxGVLYA785lDekpUy5MoIfNLVPhBb4Gl5VA=
-			</data>
-		</dict>
-		<key>SVWebViewControllerActivityChrome-iPad@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Pp9kBNSEIkK0z8dVa/C/WVjb4K0=
-			</data>
-			<key>hash2</key>
-			<data>
-			NiwunI6Rb8ym/CBVGYm0VxA+wHmEPMM/F5IRA6pn2DU=
-			</data>
-		</dict>
-		<key>SVWebViewControllerActivityChrome@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2U3TCIqAj5ZUWmLUrQISa6x3VRQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			FARgKf6Fa5AT+UVNv3vshE7j/sbidQ2Gm1yd/dmMQXU=
-			</data>
-		</dict>
-		<key>SVWebViewControllerActivitySafari-iPad.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z9h8iLJEVxUrRlXh9nqLR8X2RYQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			01UjmBf+Mo1tvigOv9dk3KFAsZ2+T62FJe7PhVJeeGU=
-			</data>
-		</dict>
-		<key>SVWebViewControllerActivitySafari-iPad@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y7hvK5OuNHJbmhRaW+H9b0/U3Qg=
-			</data>
-			<key>hash2</key>
-			<data>
-			8mz8XYGEn26q7nH+DJgZ1FrfdblEKs8aIRJF/v21HMg=
-			</data>
-		</dict>
-		<key>SVWebViewControllerActivitySafari@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vETADKdOSfJz2ITNp2EKLNl3Q0A=
-			</data>
-			<key>hash2</key>
-			<data>
-			Qyy4BaUOh0fPrpxQj8pKLMsIU++KKjTRBr/Bm5eS7Ec=
 			</data>
 		</dict>
 	</dict>

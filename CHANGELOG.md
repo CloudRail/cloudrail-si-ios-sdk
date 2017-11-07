@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.9.4](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.4) (2017-11-07)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.3...5.9.4)
+
+* Added Advance Request to Messaging Services
+* Added Send Caurosel Method to Messaging Interface
+* Fixed the Done button on the WebView (Changed to WKWebView)
+
 ## [5.9.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.3) (2017-10-17)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.2...5.9.3)
 
