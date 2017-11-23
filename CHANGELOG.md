@@ -1,5 +1,17 @@
 # Change Log
 
+## [5.9.6](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.4) (2017-11-23)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.5...5.9.6)
+
+* Added missing files (messaging files)
+* Fixed CloudStorage issues to limit files
+* Added Category to POI
+
+## [5.9.5](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.4) (2017-11-22)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.4...5.9.5)
+
+* Updated to Swift 3.2.2 (Using XCode 9.1)
+
 ## [5.9.4](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.4) (2017-11-07)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.3...5.9.4)
 
