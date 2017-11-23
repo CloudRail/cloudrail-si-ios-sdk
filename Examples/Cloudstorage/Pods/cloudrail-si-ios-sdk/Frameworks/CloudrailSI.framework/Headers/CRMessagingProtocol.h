@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CRMessage.h"
 #import "CRMessagingAttachment.h"
+#import "CRMessageItem.h"
 #import "CRAdvancedRequestSupporterProtocol.h"
 
 /**
@@ -52,6 +53,10 @@
                            previewUrl: (NSString *) previewUrl
                              fileName: (NSString *) fileName
                                  size: (long) size;
+
+-(CRMessage *) sendCarouselWithReceiverId: (NSString *) receiverId
+                              messageItem: (NSMutableArray<CRMessageItem *> *) messageItem;
+
 
 -(NSMutableArray<CRMessage *> *) parseReceivedMessages: (NSInputStream *) httpRequestStream;
 

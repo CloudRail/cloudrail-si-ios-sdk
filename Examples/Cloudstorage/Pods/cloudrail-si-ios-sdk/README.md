@@ -14,7 +14,7 @@ CloudRail is an API integration solution which abstracts multiple APIs from diff
 
 **Current Interfaces:**
 <p align="center">
-<img width="800px" src="http://cloudrail.github.io/img/available_interfaces_v2.png"/>
+<img width="800px" src="http://cloudrail.github.io/img/available_interfaces_v3.png"/>
 </p>
 ---
 ---
@@ -79,10 +79,11 @@ Business Cloud Storage | Amazon S3, Microsoft Azure, Rackspace, Backblaze
 Social Profiles | Facebook, GitHub, Google+, LinkedIn, Slack, Twitter, Windows Live, Yahoo, Instagram, Heroku
 Social Interaction | Facebook, Twitter
 Payment | PayPal, Stripe
-Email | Maljet, Sendgrid
+Email | Maljet, Sendgrid, Gmail
 SMS | Twilio, Nexmo
 Point of Interest | Google Places, Foursquare, Yelp
 Video | Youtube, Twitch, Vimeo
+Messaging | Facebook Messenger, Telegram, Line, Viber
 
 ---
 ### Cloud Storage Interface:
@@ -531,6 +532,66 @@ do {
   print("An error: \(error)")
 }
 ```
+---
+### Messaging Interface:
+
+* FacebookMessenger
+* Telegram
+* Line
+* Viber
+
+#### Features
+
+* Send text messages
+* Send files, images, videos and audios
+* Parse a message received on your webhook
+* Download the content of an attachment sent to your webhook
+
+#### Code Example - Objective-C
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Messaging;platformId=ObjectiveC)
+
+```objective-c
+id<CRMessagingProtocol> service;
+
+//  service = [[CRViber alloc] initWithBotToken:@"[Bot Token]" webhook:@"[Webhook URL]" botName:@"[Bot Name]"];
+//  service = [[CRTelegram alloc] initWithBotToken:@"[Bot Token]" webhook:@"[Webhook URL]"];
+//  service = [[CRLine alloc] initWithBotToken:@"[Bot Token]"];
+
+service =  [[CRFacebookMessenger alloc] initWithBotToken:@"[Bot Token]"];
+
+CRMessage * result = [service sendMessageWithReceiverIdReceiverId:@"12123242" 
+        message:@"It's so easy to send message via CloudRail"
+];
+
+NSLog(@"%@", result);
+
+```
+#### Code Example - Swift
+[Full Documentation](https://cloudrail.com/integrations/interfaces/Messaging;platformId=Swift)
+
+```swift
+var service: MessagingProtocol
+
+// service = Viber(botToken: "[Bot Token]",webhook: "[Webhook URL]",botName: "[Bot Name]")
+// service = Telegram(botToken: "[Bot Token]",webhook: "[Webhook URL]")
+// service = Line(botToken: "[Bot Token]")
+
+service = FacebookMessenger(botToken: "[Bot Token]")
+
+do {
+   
+   var result = service.sendMessageWithReceiverId(
+    receiverId: "12123242",
+    message: "It's so easy to send message via CloudRail")
+   
+   print(result)
+   
+} catch let error{
+  print("An error: \(error)")
+}
+```
+
+
 ---
 
 More interfaces are coming soon.

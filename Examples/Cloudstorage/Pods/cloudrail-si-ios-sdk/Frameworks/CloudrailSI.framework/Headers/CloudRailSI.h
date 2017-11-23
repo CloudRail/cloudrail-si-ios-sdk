@@ -118,7 +118,8 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRChannelMetaData.h>
 #import <CloudRailSI/CRMessage.h>
 #import <CloudRailSI/CRMessagingAttachment.h>
-
+#import <CloudRailSI/CRMessageItem.h>
+#import <CloudRailSI/CRMessageButton.h>
 
 #pragma mark - Swift Helpers
 #import <CloudRailSI/CRError.h>

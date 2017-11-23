@@ -10,4 +10,19 @@
 
 @interface CRMessagingAttachment : CRSandboxObject
 
+/// Attachment ID
+@property (nonatomic) NSString * identifier;
+
+/// Attachment Content Type
+@property (nonatomic) NSString * contentType;
+
+/// Attachment Mime Type
+@property (nonatomic) NSString * mimeType;
+
+/// Attachment Caption
+@property (nonatomic) NSString * caption;
+
+/// Converted to Stream
+@property (nonatomic) NSInputStream * stream;
+
 @end
