@@ -350,7 +350,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I6GrlmsOCjijoTDO3zei+gBnHGE=
+		CMnqTzqLt8U789wDFmdhlgPN+p4=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -366,7 +366,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		Evq/7gvNEYyCGfeKfeHfWuZf8LI=
+		3eVoNh2Cwl3V8o2Z4Ok85+/Y3LU=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -374,7 +374,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		c3XentwQDOFagwJDyVR2Gl8g/zo=
+		rdEDJENmKkd6vqIQ2aHRdxye06w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1370,11 +1370,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Evq/7gvNEYyCGfeKfeHfWuZf8LI=
+			3eVoNh2Cwl3V8o2Z4Ok85+/Y3LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			inQqYTcaZioj7H34U3jTFkU6+swc0zK85yacLeacQ3Y=
+			+NNB+B0Fivp27+FptV+YFDmU6RTT2wL1yZfBAp6sLr4=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1392,11 +1392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c3XentwQDOFagwJDyVR2Gl8g/zo=
+			rdEDJENmKkd6vqIQ2aHRdxye06w=
 			</data>
 			<key>hash2</key>
 			<data>
-			a1YUyiUQCT6pfcfulr8xAoDh/4XYL6LIJQNmNXBldb8=
+			A0efT1JkmADec8VCutyMpA9B755dHkFDW3zmzlbX1bk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
