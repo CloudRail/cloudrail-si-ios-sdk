@@ -78,7 +78,7 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRLine.h>
 #import <CloudRailSI/CRTelegram.h>
 #import <CloudRailSI/CRViber.h>
-
+#import <CloudRailSI/CRSlackBot.h>
 
 #pragma mark - Protocols
 #import <CloudRailSI/CRCloudStorageProtocol.h>
