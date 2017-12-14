@@ -371,6 +371,12 @@ SWIFT_CLASS("_TtC11CloudrailSI5Slack")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI8SlackBot")
+@interface SlackBot : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI6Stripe")
 @interface Stripe : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

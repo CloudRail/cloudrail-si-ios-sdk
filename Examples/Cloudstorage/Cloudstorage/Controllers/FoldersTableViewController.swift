@@ -24,6 +24,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
     
     var cloudStorageTitle: String?
     var cloudStorageType: String?
+    var typeOfService: String?
     
     //CloudStorageProctocol that you want to use e.g Dropxbox, Box, Google Drive, One Drive or Egnyte
     private var cloudStorage: CloudStorageProtocol?
@@ -66,6 +67,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
     func setupService() {
         
         //Note: These are sample Keys/Secrets for example purpose, do not use it in live production
+        typeOfService = ""
         
         if cloudStorageType == "dropbox" {
             
@@ -77,6 +79,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             //5. useAdvancedAuthentication() method Must be called!
             //https://blog.cloudrail.com/authenticating-with-dropbox/
             
+            typeOfService = "Dropbox"
             let drive = Dropbox(clientId: "[Dropbox App Key]",
                                 clientSecret: "[Dropbox App Secret]",
                                 redirectUri: "https://auth.cloudrail.com/org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage",
@@ -89,6 +92,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             //1. ClientId: Client ID
             //2. ClientSecret: Client Secret
             
+            typeOfService = "Box"
             cloudStorage = Box(clientId: "[Box Client Id]",
                                clientSecret: "[Box Client Secret]")
             
@@ -102,6 +106,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             //5. useAdvancedAuthentication() method Must be called!
             //https://blog.cloudrail.com/authenticating-google-drive/
             
+            typeOfService = "GoogleDrive"
             let drive = GoogleDrive(clientId: "[Google Drive Client Identifier]",
                                     clientSecret: "",
                                     redirectUri: "org.cocoapods.demo.CloudRail-SI-iOS.Cloudstorage:/oauth2redirect",
@@ -115,6 +120,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             //1. ClientId: Application Id
             //2. ClientSecret: Application Secret
             
+            typeOfService = "OneDrive"
             cloudStorage = OneDrive(clientId: "[OneDrive Application Id]",
                                     clientSecret: "[OneDrive Application Secret]")
             
@@ -127,6 +133,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             //4. Redirect URI and a State (any)
             //5. State - Any String e.g. state
             
+            typeOfService = "Egnyte"
             cloudStorage = Egnyte(domain: "[Your Egnyte Domain]",
                              clientId: "[Your Egnyte API Key]",
                              clientSecret: "[Your Egnyte Shared Secret]",

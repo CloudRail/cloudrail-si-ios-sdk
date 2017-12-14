@@ -21,7 +21,7 @@ class CloudStorageLogic {
         do {
             return try cloudStorage.saveAsString()
         } catch {
-            return error.localizedDescription
+            return String(describing: error)
         }
     }
     
@@ -29,7 +29,7 @@ class CloudStorageLogic {
         do {
             try cloudStorage.loadAsString(savedState)
         } catch {
-            print(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -44,7 +44,7 @@ class CloudStorageLogic {
             try cloudStorage.login()
             return true
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return false
         }
     }
@@ -54,7 +54,7 @@ class CloudStorageLogic {
             try cloudStorage.logout()
             return true
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return false
         }
     }
@@ -73,7 +73,7 @@ class CloudStorageLogic {
             let result = try cloudStorage.userLogin()
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return ""
         }
     }
@@ -85,7 +85,7 @@ class CloudStorageLogic {
             let result = try cloudStorage.userName()
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return ""
         }
     }
@@ -97,7 +97,7 @@ class CloudStorageLogic {
             let result = try cloudStorage.childrenOfFolderWithPath(path)
             return result as! Array<Any>
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return []
         }
     }
@@ -109,7 +109,7 @@ class CloudStorageLogic {
             let resultString = try cloudStorage.shareLinkForFileWithPath(path)
             return resultString
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return""
         }
     }
@@ -121,7 +121,7 @@ class CloudStorageLogic {
             try cloudStorage.deleteFileWithPath(path)
             return true
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return false
         }
     }
@@ -136,7 +136,7 @@ class CloudStorageLogic {
             try cloudStorage.uploadFileToPath(path, stream: inputStream, size: size, overwrite: true)
             return true
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return false
         }
     }
@@ -147,7 +147,7 @@ class CloudStorageLogic {
             let result = try cloudStorage.downloadFileWithPath(path)
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return nil
         }
     }
@@ -158,7 +158,7 @@ class CloudStorageLogic {
             let result = try cloudstorage.spaceAllocation()
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return nil
         }
     }
@@ -169,7 +169,7 @@ class CloudStorageLogic {
             let result = try cloudstorage.fileExistsAtPath(path)
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return false
         }
     }
@@ -181,7 +181,7 @@ class CloudStorageLogic {
             let result = try cloudstorage.thumbnailOfFileWithPath(path)
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return nil
         }
     }
@@ -192,7 +192,7 @@ class CloudStorageLogic {
         do {
             try cloudstorage.createFolderWithPath(path)
         } catch {
-            print(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -202,7 +202,7 @@ class CloudStorageLogic {
         do {
             try cloudstorage.copyFileFromPath(path,destinationPath: destination)
         } catch {
-            print(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -212,7 +212,7 @@ class CloudStorageLogic {
         do {
             try cloudstorage.moveFileFromPath(path,destinationPath: destination)
         } catch {
-            print(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -223,7 +223,7 @@ class CloudStorageLogic {
             let result = try cloudstorage.metadataOfFileWithPath(path)
             return result
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return nil
         }
     }
@@ -234,7 +234,7 @@ class CloudStorageLogic {
             let result = try cloudStorage.searchWithQuery(query)
             return result as! Array<Any>
         } catch {
-            print(error.localizedDescription)
+            print(error)
             return []
         }
     }
