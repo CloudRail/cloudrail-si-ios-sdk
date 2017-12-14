@@ -142,7 +142,7 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
         }
         
         //Load Saved Service
-        guard let result = UserDefaults.standard.value(forKey: self.cloudStorageType!) else {
+        guard let result = UserDefaults.standard.value(forKey: typeOfService!) else {
             retriveFilesFoldersData(true)
             return
         }
@@ -183,7 +183,10 @@ class FoldersTableViewController: UITableViewController, UIImagePickerController
             
             //Persistent data - Save Service
             let savedString = CloudStorageLogic.saveAsString(cloudStorage: self.cloudStorage!)
-            UserDefaults.standard.set(savedString, forKey: self.cloudStorageType!)
+            
+            if self.typeOfService != "" {
+                UserDefaults.standard.set(savedString, forKey: self.typeOfService!)
+            }
             
             DispatchQueue.main.async {
                 self.tableView.isUserInteractionEnabled = true
