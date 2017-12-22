@@ -1,5 +1,10 @@
 # Change Log
 
+## [5.9.11](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.11) (2017-12-22)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.10...5.9.11)
+
+* Fixed Issue where Google services throw exception before authentication
+
 ## [5.9.7](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.7) (2017-11-28)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.6...5.9.7)
 
@@ -213,7 +218,7 @@
 - Added Swift interface
 ## [3.1.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.1.2) (2016-07-15)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/3.1.1...3.1.2)
-- Critical bug fix on CloudStorage 
+- Critical bug fix on CloudStorage
 
 ## [3.1.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/3.1.1) (2016-07-11)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/3.1.0...3.1.1)
@@ -231,7 +236,7 @@
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/2.4.0...3.0.0)
  - Changed all classes names to have the prefix "CR" (short for CloudRail). Conforming to Apple conventions regarding Objective-C
  - Changed framework name and import to `CloudrailSI`
- 
+
 ## [2.4.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/2.4.0) (2016-06-24)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/1.0.0...2.4.0)
 - General Bug fixes
