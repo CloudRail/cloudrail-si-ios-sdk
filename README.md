@@ -74,7 +74,7 @@ CRCloudRail.setAppKey("{Your_License_Key}")
 ## Current Interfaces:
 Interface | Included Services
 --- | ---
-Cloud Storage | Dropbox, Google Drive, OneDrive, Box, Egnyte, OneDrive Business
+Cloud Storage | Dropbox, Google Drive, OneDrive, Box, PCloud, Egnyte, OneDrive Business
 Business Cloud Storage | Amazon S3, Microsoft Azure, Rackspace, Backblaze
 Social Profiles | Facebook, GitHub, Google+, LinkedIn, Slack, Twitter, Windows Live, Yahoo, Instagram, Heroku
 Social Interaction | Facebook, Twitter
@@ -92,6 +92,7 @@ Messaging | Facebook Messenger, Telegram, Line, Viber
 * Box
 * Google Drive
 * Microsoft OneDrive
+* PCloud
 * Egnyte
 * OneDrive Business
 
@@ -111,6 +112,7 @@ id<CRCloudStorageProtocol> service;
 //   service = [[CROneDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   service = [[CRGoogleDrive alloc] initWithClientId:@"clientIdentifier" clientSecret:@"" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 //   service = [[CRBox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
+//   service = [[CRPCloud alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 
 service = [[CRDropbox alloc] initWithClientId:@"clientIdentifier" clientSecret:@"clientSecret" redirectUri:@"REDIRURL" state:@"CRSTATE"];
 NSInputStream * object = [service downloadFileWithPath:@"/mudkip.jpg"];
@@ -122,6 +124,7 @@ NSInputStream * object = [service downloadFileWithPath:@"/mudkip.jpg"];
 //let cloudStorage : CloudStorageProtocol = Box.init(clientId: "ClientID", clientSecret: "ClientSecret")
 //let cloudStorage : CloudStorageProtocol = GoogleDrive.init(clientId: "ClientID", clientSecret: "", redirectUri: "[redirectUri]", state: "[state]")
 //let cloudStorage : CloudStorageProtocol = OneDrive.init(clientId: "ClientID", clientSecret: "ClientSecret")
+//let cloudStorage : CloudStorageProtocol = PCloud.init(clientId: "ClientID", clientSecret: "ClientSecret")
 
 let cloudStorage : CloudStorageProtocol = Dropbox.init(clientId: "ClientID", clientSecret: "ClientSecret")
 do {

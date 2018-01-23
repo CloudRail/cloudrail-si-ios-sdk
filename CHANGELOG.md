@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.9.12](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.12) (2018-01-23)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.11...5.9.12)
+
+* PCloud added as a new integration in the Cloud Storage interface
+* Fixed Google Drive path issue (when it contains backslashes)
+
 ## [5.9.11](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.11) (2017-12-22)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.10...5.9.11)
 

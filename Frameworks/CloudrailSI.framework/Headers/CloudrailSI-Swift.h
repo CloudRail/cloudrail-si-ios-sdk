@@ -341,6 +341,12 @@ SWIFT_CLASS("_TtC11CloudrailSI16OneDriveBusiness")
 @end
 
 
+SWIFT_CLASS("_TtC11CloudrailSI6PCloud")
+@interface PCloud : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC11CloudrailSI6PayPal")
 @interface PayPal : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
