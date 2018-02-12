@@ -161,5 +161,16 @@
  */
 -(nonnull NSMutableArray<CRCloudMetaData *> *)searchWithQuery:(nonnull NSString *) query;
 
-
+/**
+ *  Uploads a file to a cloud storage with content modified date
+ * @param filePath The path where to store the file from the root folder and including the name, e.g /myFolder/myFile.jpg
+ * @param stream A stream from which the file can bwe read
+ * @param size The size in bytes of the data that can be read from the stream
+ * @param contentModifiedDate The timeInterval (in ms) when the contents of a file were last modified
+ */
+-(void) uploadFileWithContentModifiedDateToPath: (nonnull NSString *) filePath
+                                     withStream: (nonnull NSInputStream *) stream
+                                           size: (long) size
+                                      overwrite: (BOOL) overwrite
+                            contentModifiedDate: (long) contentModifiedDate;
 @end

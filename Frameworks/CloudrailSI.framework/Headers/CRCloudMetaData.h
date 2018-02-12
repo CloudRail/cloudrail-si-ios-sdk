@@ -41,4 +41,9 @@
  */
 @property (nonatomic) CRImageMetaData * imageMetaData;
 
+/**
+ * Timestamp that describes the last time the contents of a file were modified, derived from long type.
+ */
+@property (nonatomic) NSNumber *contentModifiedAt;
+
 @end

@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.9.13](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.13) (2018-01-23)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.12...5.9.13)
+
+* Added missing protocol inheritance in SocialProcol Swift
+* Added uploadedWithModifiedDate to CRCloudStorage
+* Updated CloudMetaData properties
+
 ## [5.9.12](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.12) (2018-01-23)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.11...5.9.12)
 
