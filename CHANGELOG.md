@@ -1,9 +1,18 @@
 # Change Log
 
+## [5.9.14](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.13) (2018-02-28)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.13...5.9.14)
+
+* Minor changes to OneDrive, OneDriveBusiness, GoogleDrive
+* Fixed Unknown Issue caused by wrong allocation
+* Fixed apostrophe issue in GoogleDrive
+* Fixed Crash on OneDrive
+* Updated CRDate formats
+
 ## [5.9.13](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.9.13) (2018-01-23)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.12...5.9.13)
 
-* Added missing protocol inheritance in SocialProcol Swift
+* Added missing protocol inheritance in SocialProtocol Swift
 * Added uploadedWithModifiedDate to CRCloudStorage
 * Updated CloudMetaData properties
 
