@@ -6,7 +6,7 @@
 @property (weak, nonatomic) id target;
 
 
--(instancetype)initWithClientID:(NSString *)clientID clientSecret:(NSString *)clientSecret;
+-(instancetype)initWithApiKey:(NSString *)apiKey;
 
 
 -(void)useAdvancedAuthentication;

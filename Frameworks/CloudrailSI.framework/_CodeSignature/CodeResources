@@ -338,7 +338,7 @@
 		</data>
 		<key>Headers/CRYelp.h</key>
 		<data>
-		zXD00SXQdy+2nxNCogmvRW5FC8s=
+		Z8WWHvhYSMLS+cknFZvhtLE2eZE=
 		</data>
 		<key>Headers/CRYouTube.h</key>
 		<data>
@@ -358,7 +358,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KPxAcgXm5aJH2TufimBIwAF8f1A=
+		zVwpj02wouPQefyV0B4gVjRPHJ0=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -374,7 +374,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		murwGZvcgBh1G5ROW2sI/ouQ8G8=
+		Hv/LCRxGvTPKLDvaSntLzrVECJ8=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -382,7 +382,7 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8zI+gKDxUyIn/RbKAStn8BKQSJg=
+		0VIc+iH3VdD2OK+//RUBe7OkUUY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1312,11 +1312,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zXD00SXQdy+2nxNCogmvRW5FC8s=
+			Z8WWHvhYSMLS+cknFZvhtLE2eZE=
 			</data>
 			<key>hash2</key>
 			<data>
-			wGrRX4doIbyIrCw15wUeYuTrzuszctgKV+lWHmXGGio=
+			Zzjmk/g/97HiInLAWKbubbhoh9hMT+PCbVRPBp97M1U=
 			</data>
 		</dict>
 		<key>Headers/CRYouTube.h</key>
@@ -1400,11 +1400,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			murwGZvcgBh1G5ROW2sI/ouQ8G8=
+			Hv/LCRxGvTPKLDvaSntLzrVECJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZGPxwtHpetYb0z4zPRFGyxIzoLhrO+tJm7TTPR/f3xg=
+			rkPeIVw25tIVidrH0N7mL4/B6wrp0VNNiGGcThgiXRk=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
@@ -1422,11 +1422,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8zI+gKDxUyIn/RbKAStn8BKQSJg=
+			0VIc+iH3VdD2OK+//RUBe7OkUUY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZOYdSmqgf4/jjFjjFuB2Tw5h8h34GWK4t4U0yG3UODM=
+			G+ukQAzoT226Ov82a3nszLiyDCK7vUHFEkn1UBe0Ds8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
