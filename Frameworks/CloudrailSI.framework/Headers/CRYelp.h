@@ -1,8 +1,9 @@
 
 #import <Foundation/Foundation.h>
 #import "CRPointsOfInterestProtocol.h"
+#import "CRAdvancedRequestSupporterProtocol.h"
 
-@interface CRYelp : NSObject <CRPointsOfInterestProtocol>
+@interface CRYelp : NSObject <CRPointsOfInterestProtocol, CRAdvancedRequestSupporterProtocol>
 @property (weak, nonatomic) id target;
 
 

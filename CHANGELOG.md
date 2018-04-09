@@ -1,5 +1,13 @@
 # Change Log
 
+## [5.11.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.0) (2018-04-10)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.10.0...5.11.0)
+
+* Updated to **Swift 4.1**
+* Fixed bug in **fileExistsAtPath:** method in GoogleDrive.
+* Added AdvancedRequest feature in Yelp.
+* Added new method **listFilesInBucket:withPrefix:** to BusinessCloudStorage interface.
+
 ## [5.10.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.10.0) (2018-03-27)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.9.13...5.10.0)
 

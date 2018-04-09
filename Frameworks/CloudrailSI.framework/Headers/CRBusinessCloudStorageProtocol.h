@@ -48,6 +48,14 @@
  */
 - (NSMutableArray<CRBusinessFileMetaData *> *)listFilesInBucket:(CRBucket *) bucket;
 
+/**
+ * Get a list of files contained in the specified bucket.
+ *
+ * @param bucket The bucket containing the files.
+ * @param prefix The name prefix of the files to be listed
+ */
+-(NSMutableArray<CRBusinessFileMetaData *> *) listFilesInBucket: (CRBucket *) bucket
+                                                     withPrefix: (NSString *) prefix;
 #pragma mark - File Operations
 
 /**
