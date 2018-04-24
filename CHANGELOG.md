@@ -1,5 +1,14 @@
 # Change Log
 
+
+## [5.11.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.1) (2018-04-24)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.11.0...5.11.1)
+
+* Fixed bug where backslash file path where not encoded properly in GoogleDrive.
+* OneDrive: Attach missing state parameter to authentication url
+* Facebook: Removed user_about_me scope which shows description. This is removed from Facebook
+* Google Cloud: Added object name encoding to google cloud.
+
 ## [5.11.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.0) (2018-04-10)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.10.0...5.11.0)
 
