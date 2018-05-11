@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'cloudrail-si-ios-sdk'
-  s.version          = '5.11.1'
+  s.version          = '5.11.2'
   s.summary          = 'CloudRail is a free software library which abstracts multiple APIs from different providers into a single and universal interface.'
 
 
@@ -15,7 +15,6 @@ With CloudRail, you can easily integrate external APIs into your application. Cl
 
 
   s.homepage         = 'http://www.cloudrail.com'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Copyright', :file => 'LICENSE' }
   s.author           = { 'Felipe Cesar' => 'felipe.cesar@cloudrail.com' }
   s.source           = { :git => 'https://github.com/CloudRail/cloudrail-si-ios-sdk.git', :tag => s.version.to_s }
