@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.11.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.3) (2018-05-22)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.11.2...5.11.3)
+
+* OneDriveBusiness: Fix missing url encoding of the client secret on refreshing tokens
+* MicrosoftAzure: Fix an issue in the advanced request function
+* Fixed bug when performing authentication in background thread
+
 ## [5.11.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.2) (2018-05-11)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.11.1...5.11.2)
 
