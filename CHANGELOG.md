@@ -1,5 +1,13 @@
 # Change Log
 
+## [5.12.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.3) (2018-07-05)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.11.3...5.12.0)
+
+* Updated to swift 4.1.2
+* Added AuthenticatingDelegate
+* Added UploadDidCancel method to UploadDelegate
+* Minor Bug fixes
+
 ## [5.11.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.3) (2018-05-22)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.11.2...5.11.3)
 

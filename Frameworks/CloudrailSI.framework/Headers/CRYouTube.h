@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "CRVideoProtocol.h"
 #import "CRAdvancedRequestSupporterProtocol.h"
-
+#import "CRAuthenticationDelegate.h"
 @interface CRYouTube : NSObject <CRVideoProtocol, CRAdvancedRequestSupporterProtocol>
 @property (weak, nonatomic) id target;
 
@@ -17,5 +17,5 @@
 -(void)useAdvancedAuthentication;
 -(NSString *) saveAsString;
 -(void) loadAsString:(NSString*) savedState;
-
+-(void) setAuthDelegate:(id<CRAuthenticationDelegate>)delegate;
 @end

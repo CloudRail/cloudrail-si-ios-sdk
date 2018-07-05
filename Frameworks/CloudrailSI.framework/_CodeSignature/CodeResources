@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CRAmazonS3.h</key>
 		<data>
-		LkbPqTHZDnJWHEyjRose+BisZ0I=
+		sQxXH1Jq89bNc3dV27MWUPm74BY=
 		</data>
 		<key>Headers/CRAttachment.h</key>
 		<data>
@@ -32,13 +32,17 @@
 		<data>
 		DmwDqVKVrInuJcpr0J6+7Ok/FBU=
 		</data>
+		<key>Headers/CRAuthenticationDelegate.h</key>
+		<data>
+		2UgTlS1NKAM3jiH11ryXBXTHX/w=
+		</data>
 		<key>Headers/CRBackblaze.h</key>
 		<data>
-		/024wV87VNHmc+9RVID8ORBtP9g=
+		onR6CGl/HUM96fMs5VZqXnT5BJc=
 		</data>
 		<key>Headers/CRBox.h</key>
 		<data>
-		ajA9iS2EoCGtmGa+GuzFg7WuybA=
+		PgByKREGaHQIwiDJVBxVjvHu7+s=
 		</data>
 		<key>Headers/CRBucket.h</key>
 		<data>
@@ -82,11 +86,11 @@
 		</data>
 		<key>Headers/CRDropbox.h</key>
 		<data>
-		HRDbJ3AvPZeIeSHC578ulu01rk0=
+		OlNh5tZAvPRfUKmVhzacziWVqic=
 		</data>
 		<key>Headers/CREgnyte.h</key>
 		<data>
-		0bAruT1PT7zOLitrTDhRbrPlobE=
+		Ui2Dj1viOWb+sfBthZ6pVmSS6Iw=
 		</data>
 		<key>Headers/CREmailProtocol.h</key>
 		<data>
@@ -102,47 +106,47 @@
 		</data>
 		<key>Headers/CRFacebook.h</key>
 		<data>
-		r1jlbwZcWj2eaFxWlizZi9oezGo=
+		gIeux8sIhFRwGMVCfXCDJhUTmys=
 		</data>
 		<key>Headers/CRFacebookMessenger.h</key>
 		<data>
-		gum8cOXuqOWPODaAFEWA7A8xD/Y=
+		M34VPHZhqGYyqd5YmZovhn/X+uo=
 		</data>
 		<key>Headers/CRFacebookPage.h</key>
 		<data>
-		gOj2+hjF2nZm+6e0e2Cf032135c=
+		iFk1v6de8TxHoHa7nmlzkN3/0qY=
 		</data>
 		<key>Headers/CRFoursquare.h</key>
 		<data>
-		XB7AmOsZoN+xTE7hv/mgz/JCBDE=
+		DMd1CxsrWHz7O44Bry4euyU/PhA=
 		</data>
 		<key>Headers/CRGMail.h</key>
 		<data>
-		AGw4+ItApr+DkSDaLHHx3/rIUxM=
+		js3tOWzA3jNflByXmBgMvWgVJRQ=
 		</data>
 		<key>Headers/CRGitHub.h</key>
 		<data>
-		iYozrJd4xlzRZXjoz0iIsPGH9YE=
+		YGkGXD3JwTQVomtwiT4DH0J5seE=
 		</data>
 		<key>Headers/CRGoogleCloudPlatform.h</key>
 		<data>
-		DYZ/1p9L/ZH+fyQJpXdyijtRW3E=
+		e2TYKpttJbF5Tu8328eno2uW4Eg=
 		</data>
 		<key>Headers/CRGoogleDrive.h</key>
 		<data>
-		tn7MHbHC/a9gsDGVHDJzVJR+Q/0=
+		2hwlRywFGG8m54yJcPslBTmi4oc=
 		</data>
 		<key>Headers/CRGooglePlaces.h</key>
 		<data>
-		aJONEpJFWm7UEhZGbExVU9RWXR0=
+		WvyoC7Sfqc0o47Wavg1wpAS/wfo=
 		</data>
 		<key>Headers/CRGooglePlus.h</key>
 		<data>
-		35ekK5oGYa2jjGjwvYu+WOyE/hA=
+		+P1GNxLhqJOB2YjYiRN+/o294q4=
 		</data>
 		<key>Headers/CRHeroku.h</key>
 		<data>
-		XuauUCISxPX+8i/nk++37WuOxCs=
+		tK7syEbp0qCrg014jeZC98fOdXM=
 		</data>
 		<key>Headers/CRImageMetaData.h</key>
 		<data>
@@ -150,15 +154,15 @@
 		</data>
 		<key>Headers/CRInstagram.h</key>
 		<data>
-		Ny7PWJ/cDaguqqd+9CFyDkFU/H8=
+		PgkdK7qsOkMccL/1joHU6csltV8=
 		</data>
 		<key>Headers/CRLine.h</key>
 		<data>
-		Qc5Pk4l3wwvThEKm5kB3ANdqaTU=
+		wNMp473yfyUVgQvx/2htYtVfP74=
 		</data>
 		<key>Headers/CRLinkedIn.h</key>
 		<data>
-		Sd8iY08Qpyq2yrKgiFQOAWF4/TU=
+		8CA/eubZOmpEZ7bSkK64HP6TeCU=
 		</data>
 		<key>Headers/CRLocation.h</key>
 		<data>
@@ -166,7 +170,7 @@
 		</data>
 		<key>Headers/CRMailJet.h</key>
 		<data>
-		duOQTTwOuXLjH5X8LYb2u7kU7mo=
+		0OgE1B4k/HsDn9l1T131bxmFK9U=
 		</data>
 		<key>Headers/CRMessage.h</key>
 		<data>
@@ -190,31 +194,31 @@
 		</data>
 		<key>Headers/CRMicrosoft.h</key>
 		<data>
-		WrxP1njP/SgA/o2oHEXIMFAyy+Q=
+		fu/AHVKxKnPUKbxV4gwD8DaSwvU=
 		</data>
 		<key>Headers/CRMicrosoftAzure.h</key>
 		<data>
-		tK7ylxTtmUA7bzp6SP4bawJtKFo=
+		+CIRZsC6YUXk1InUlGtul1II1AI=
 		</data>
 		<key>Headers/CRMicrosoftLive.h</key>
 		<data>
-		pcyeEdB7Kjb8L8jPznxd+gaUZSc=
+		scRCIqnokUW9/2tPdl2UdxQobGE=
 		</data>
 		<key>Headers/CRNexmo.h</key>
 		<data>
-		23ekekBk1pMTgoeCwUCC0KkEWkg=
+		4ghruXFZR6h3Wh6v1PwghDT/buw=
 		</data>
 		<key>Headers/CROneDrive.h</key>
 		<data>
-		xBoZ0ltGDrFsrb35+UKbw7R9Bbg=
+		avmLFJl0/jU/nl2wIQG4MD3MQ5E=
 		</data>
 		<key>Headers/CROneDriveBusiness.h</key>
 		<data>
-		awl1jZOJqQjYxas1auyInznatF0=
+		hBD8Oyh5cqDArs/RNtIIYC1Gnx8=
 		</data>
 		<key>Headers/CRPCloud.h</key>
 		<data>
-		o8gSgJ6/YZH7P9yyO/Hq/XxFmns=
+		kW2d6ArdZSAa7Zi+8EtXE6gCCMs=
 		</data>
 		<key>Headers/CRPOI.h</key>
 		<data>
@@ -222,7 +226,7 @@
 		</data>
 		<key>Headers/CRPayPal.h</key>
 		<data>
-		fhdKvu6MgDS3LkKvDiD9bnYiRIA=
+		sakLhWT0g23OYlBTvuE0/SU9ScQ=
 		</data>
 		<key>Headers/CRPaymentProtocol.h</key>
 		<data>
@@ -238,7 +242,7 @@
 		</data>
 		<key>Headers/CRProductHunt.h</key>
 		<data>
-		29Dx9SITXcdd91y4aF3X3z7O1g4=
+		RTX4xNbL2tpa71qiOZnDQTM7OoY=
 		</data>
 		<key>Headers/CRProfileProtocol.h</key>
 		<data>
@@ -246,7 +250,7 @@
 		</data>
 		<key>Headers/CRRackspace.h</key>
 		<data>
-		mKceOw+NLmpU6K9ciU5SDK43/9I=
+		hsch1Ql7v6hX8egpHJa/bidXSDs=
 		</data>
 		<key>Headers/CRRefund.h</key>
 		<data>
@@ -262,15 +266,15 @@
 		</data>
 		<key>Headers/CRSendGrid.h</key>
 		<data>
-		eApfBhA3KNenS/TUQ5ENrQ2K2Sg=
+		wiA/WMX8ocgrb7E1zJay6CpC2PM=
 		</data>
 		<key>Headers/CRSlack.h</key>
 		<data>
-		EKmo8xvAPsS2k1APJbyVs44bbhQ=
+		iId90Q38wwMIV0Q9gUPpr47qrkg=
 		</data>
 		<key>Headers/CRSlackBot.h</key>
 		<data>
-		OH1zWCCsFmAphkcJwx4NH3v80bQ=
+		jUcVr43vnvHWcoVpVGJ/lZowGMg=
 		</data>
 		<key>Headers/CRSocialProtocol.h</key>
 		<data>
@@ -282,7 +286,7 @@
 		</data>
 		<key>Headers/CRStripe.h</key>
 		<data>
-		FVwppYF5OOkTZkKPnGSDDZI8M4Q=
+		bYDHQ0Ty67lD1oNDCKsiW6WtDog=
 		</data>
 		<key>Headers/CRSubscription.h</key>
 		<data>
@@ -294,31 +298,31 @@
 		</data>
 		<key>Headers/CRTelegram.h</key>
 		<data>
-		QogcDo0wgj6a5+erqY66nqddVBk=
+		RwQXsPV5eolKUzJPPjdhgyZYWaY=
 		</data>
 		<key>Headers/CRTwilio.h</key>
 		<data>
-		Bif6GxZvKZKdd+i+5nVC2AIdbO0=
+		fajOXlSEHVoYGFnOLxeGecA6M9o=
 		</data>
 		<key>Headers/CRTwitch.h</key>
 		<data>
-		cbbYsyz9orEnPcB/MVbuZU1ShlA=
+		mani9ex05VlR7i+gP/RCWz/vphg=
 		</data>
 		<key>Headers/CRTwitter.h</key>
 		<data>
-		nnALViRzWWbaLF/bdR+vjEB/A7s=
+		VvRVSnLXldmyzYl8SFT8tpGH2XI=
 		</data>
 		<key>Headers/CRTwizo.h</key>
 		<data>
-		aw0sJnY2OWmfNVaeDxMUXxMhWUo=
+		YCT/I7UT1W0NvTKDOdNThucW1UE=
 		</data>
 		<key>Headers/CRUploadProgressDelegate.h</key>
 		<data>
-		gGYLVFMaHayArhfZo4ZjVn+aZjQ=
+		1PKob3F/N6WxIpnf3kN5y24c48I=
 		</data>
 		<key>Headers/CRViber.h</key>
 		<data>
-		ReFynezIvS690uejzpnUODF6FdY=
+		yzrzLMzeW3mpxLxZ1p3HW7ayifM=
 		</data>
 		<key>Headers/CRVideoMetaData.h</key>
 		<data>
@@ -330,27 +334,27 @@
 		</data>
 		<key>Headers/CRVimeo.h</key>
 		<data>
-		eBM5nV2tbR/XCtVArp7Q+8N3ktE=
+		ex5ohg2eZm6wtiJVkFpdlHhE72E=
 		</data>
 		<key>Headers/CRYahoo.h</key>
 		<data>
-		bdc4HW8P+z02pDupPkSw64Vf14Q=
+		+e675OoDyWlG77BLw9rZsnkcOuk=
 		</data>
 		<key>Headers/CRYelp.h</key>
 		<data>
-		h+41SORYDxkxc8EbEefSDlg5T5E=
+		OpdcE0uk1oTcore5k5Umb5ZSQas=
 		</data>
 		<key>Headers/CRYouTube.h</key>
 		<data>
-		Ek7UzFhe5x5X2+clGNgYYAuKzzg=
+		Gawxuy3XD0SrOakqDP35flNpBJw=
 		</data>
 		<key>Headers/CloudRailSI.h</key>
 		<data>
-		JC0UyC/g3YNDrmeyH/FEtXuGXn0=
+		T/tiNXzC/RDyuhnDDAMztptTHd8=
 		</data>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<data>
-		zqVKmBRQTtKTYycXOs37ddP1vpo=
+		INpwxXvFoDpZgqxn+82PlT/5JAk=
 		</data>
 		<key>Headers/CustomStream.h</key>
 		<data>
@@ -358,7 +362,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bg3xTx0av81bY/xYRqstGH7PVXQ=
+		Z2lPqAZQV+ORKIBccFtTkPJuW2w=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -370,19 +374,19 @@
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftdoc</key>
 		<data>
-		jkQI3uin/U7DgtZ8062GfwY/PSs=
+		WN+ldJfMmyWwDMOiVt3vc/vWXN4=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<data>
-		O48PZ9DUQj5nGRP3YZloBZ1mYOw=
+		03wKOWXwhWQ1nDoegVNvE6MwGAc=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		hhVWt1pdI7qWefGe/uArmDVPXZA=
+		2nGqVPcn4WrqQL6CvWUapjsr0+8=
 		</data>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		n2W8PjoB9KBkjYb3mSEr6Bp9L0c=
+		lehJqPmnxrwrLf5d2najGyvUZtA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -443,11 +447,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LkbPqTHZDnJWHEyjRose+BisZ0I=
+			sQxXH1Jq89bNc3dV27MWUPm74BY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mUJpzj7MJLuxhZ781BuvrzR2eJqpgaD76oFCkJn0d24=
+			eabb4C3sBrhcE6ODt5cDe2N09c2kjFD9oNXaesKgLLc=
 			</data>
 		</dict>
 		<key>Headers/CRAttachment.h</key>
@@ -472,26 +476,37 @@
 			EsFsy2hmW6CCSnqR0PNTu8QChg8b2XP7zgV0UEyKc7k=
 			</data>
 		</dict>
+		<key>Headers/CRAuthenticationDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2UgTlS1NKAM3jiH11ryXBXTHX/w=
+			</data>
+			<key>hash2</key>
+			<data>
+			meOA6VvKHYz+dTwb+YiUuDVgltVu6sEW1YBGxL+Cpxw=
+			</data>
+		</dict>
 		<key>Headers/CRBackblaze.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/024wV87VNHmc+9RVID8ORBtP9g=
+			onR6CGl/HUM96fMs5VZqXnT5BJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			A9/DI1P1539M72SYQhGWoxdf5aaKwhQQWWH+0qPvD5w=
+			4KFv5GxmFDkVpxqoz/iJsOFWsgyD8KARivvHN0XH4bc=
 			</data>
 		</dict>
 		<key>Headers/CRBox.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ajA9iS2EoCGtmGa+GuzFg7WuybA=
+			PgByKREGaHQIwiDJVBxVjvHu7+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			jp0fJYX0BAYCvgw3/f37Yqn3A+bKpWOtLlRHaAnhBjM=
+			n+SyCDqbDYFBjNGB9IEnc36DljFu6s3mdrpWiW0v0iA=
 			</data>
 		</dict>
 		<key>Headers/CRBucket.h</key>
@@ -608,22 +623,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HRDbJ3AvPZeIeSHC578ulu01rk0=
+			OlNh5tZAvPRfUKmVhzacziWVqic=
 			</data>
 			<key>hash2</key>
 			<data>
-			6WRFQiY/dTTbtF0efpxhX9vypO22ArDcuNA+eG4pLr0=
+			J8Ok7JrNhQcs1360+qPKq+gdNLNJNFxj+e5SBADDnYA=
 			</data>
 		</dict>
 		<key>Headers/CREgnyte.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0bAruT1PT7zOLitrTDhRbrPlobE=
+			Ui2Dj1viOWb+sfBthZ6pVmSS6Iw=
 			</data>
 			<key>hash2</key>
 			<data>
-			5syKPAwlOqPWatz4Zdras8mvezdaoBz/9YuBZ30T8PU=
+			g0rQr/DmVhOlYQEg1OpYwYpU8CABCnfRdM1YLd75lD0=
 			</data>
 		</dict>
 		<key>Headers/CREmailProtocol.h</key>
@@ -663,121 +678,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r1jlbwZcWj2eaFxWlizZi9oezGo=
+			gIeux8sIhFRwGMVCfXCDJhUTmys=
 			</data>
 			<key>hash2</key>
 			<data>
-			QB9MCJbyh1P4xTbnMv4EBnvv+L56egMRZeOyB20wPrE=
+			7K7wAjB/BUHTgIsQunrB83NCceuPcqzKt3DEpm3ivgQ=
 			</data>
 		</dict>
 		<key>Headers/CRFacebookMessenger.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gum8cOXuqOWPODaAFEWA7A8xD/Y=
+			M34VPHZhqGYyqd5YmZovhn/X+uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			UQ5Nnwa3XaJfFdx1aY+5rcFIoixN6BLsi//NKHT+2xg=
+			bJ+2spJBFpnlG7iovc3DvMoN9KFOKppNB8tTU2mdhcQ=
 			</data>
 		</dict>
 		<key>Headers/CRFacebookPage.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gOj2+hjF2nZm+6e0e2Cf032135c=
+			iFk1v6de8TxHoHa7nmlzkN3/0qY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BRkfD4Xkb8xa8amtDiIgPEQ7rm79KJMGRORACQJI8fM=
+			O2S8/he1AimMO1GZuKgNQV5r70SHIe5A7FXPmu5U8vw=
 			</data>
 		</dict>
 		<key>Headers/CRFoursquare.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XB7AmOsZoN+xTE7hv/mgz/JCBDE=
+			DMd1CxsrWHz7O44Bry4euyU/PhA=
 			</data>
 			<key>hash2</key>
 			<data>
-			cuzul6YRpU53xWz/NVIOBI4ce7PUqfJH/dNPkIF+e4s=
+			M2nGPYbnImIzeB/r5j+m5Ykt4Z3R2/0ZvM282zE1vyc=
 			</data>
 		</dict>
 		<key>Headers/CRGMail.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AGw4+ItApr+DkSDaLHHx3/rIUxM=
+			js3tOWzA3jNflByXmBgMvWgVJRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			un5zPYyk3Ilgd3c0RVrnoYOM+FIYGj4s3Fubo0M+uZc=
+			AFoSFplAYtgehSWtgqgYnmsy34OV8gRYKgacM7P/1HI=
 			</data>
 		</dict>
 		<key>Headers/CRGitHub.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iYozrJd4xlzRZXjoz0iIsPGH9YE=
+			YGkGXD3JwTQVomtwiT4DH0J5seE=
 			</data>
 			<key>hash2</key>
 			<data>
-			MiQuRL7lSXH+ytEUthzi29eBNcZfyDIp8U4I7K285kk=
+			oL3MIe+a2todXxV2NpM5fanBUgCl8s2/wfqVu/OO5mQ=
 			</data>
 		</dict>
 		<key>Headers/CRGoogleCloudPlatform.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DYZ/1p9L/ZH+fyQJpXdyijtRW3E=
+			e2TYKpttJbF5Tu8328eno2uW4Eg=
 			</data>
 			<key>hash2</key>
 			<data>
-			SiXQkpP5SwXHzk1q3zuxxghyBa9qu3Kcs7X0h52bHqA=
+			k91fUBMmJtCc5DDJk9pBYMvBz9NhJLtNCB0ML8KC4Mk=
 			</data>
 		</dict>
 		<key>Headers/CRGoogleDrive.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tn7MHbHC/a9gsDGVHDJzVJR+Q/0=
+			2hwlRywFGG8m54yJcPslBTmi4oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			KdEPENoz6yqY9LMB1CY20ZegwnAb/Er2ozwOPpdxrZs=
+			eKDMUC8q3iHrnyMJWU1rgwo+PsopTlTlZdxwits8iwQ=
 			</data>
 		</dict>
 		<key>Headers/CRGooglePlaces.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aJONEpJFWm7UEhZGbExVU9RWXR0=
+			WvyoC7Sfqc0o47Wavg1wpAS/wfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jrIOT1LRtPC0z7MU8dP29VVM+AYXCQcTlrd3b8wsqg=
+			u12jW1SfKW5fYdMl2RPl3qIl2zDMkMI79TFpu90kevQ=
 			</data>
 		</dict>
 		<key>Headers/CRGooglePlus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			35ekK5oGYa2jjGjwvYu+WOyE/hA=
+			+P1GNxLhqJOB2YjYiRN+/o294q4=
 			</data>
 			<key>hash2</key>
 			<data>
-			B3/M5GRneb5trWed/My0toCZ+Db8ARUZKk10DUfiKUs=
+			wscilpus4Q6qBToCp/YL7wjlN8qZWUQ5+wqHyBiTwCo=
 			</data>
 		</dict>
 		<key>Headers/CRHeroku.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XuauUCISxPX+8i/nk++37WuOxCs=
+			tK7syEbp0qCrg014jeZC98fOdXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			BoqWnE9+ZoaagRdvWi9tkJ3PGhJjeuAFsJyDNwjNtcY=
+			h+Vru6djeSTS39EYo3SQJwUuX8lpQYr2AMqlI0o4fLg=
 			</data>
 		</dict>
 		<key>Headers/CRImageMetaData.h</key>
@@ -795,33 +810,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ny7PWJ/cDaguqqd+9CFyDkFU/H8=
+			PgkdK7qsOkMccL/1joHU6csltV8=
 			</data>
 			<key>hash2</key>
 			<data>
-			gq/ho+8+QQlBsLDVnvmAzc4E0+KmecurORXenSX/rIg=
+			8BfpMonCFQIHMeylRmiG+epwhpkxFkKzI7xP6qin4dc=
 			</data>
 		</dict>
 		<key>Headers/CRLine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qc5Pk4l3wwvThEKm5kB3ANdqaTU=
+			wNMp473yfyUVgQvx/2htYtVfP74=
 			</data>
 			<key>hash2</key>
 			<data>
-			hRRNdMbIOYcVMa2dqUGm4mfJ+ZNr4OWDCkxV71TfLPw=
+			3TWlSOr46z9cP7IO+loPlYGKe7KCjnsLdU2lHOL3e7o=
 			</data>
 		</dict>
 		<key>Headers/CRLinkedIn.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sd8iY08Qpyq2yrKgiFQOAWF4/TU=
+			8CA/eubZOmpEZ7bSkK64HP6TeCU=
 			</data>
 			<key>hash2</key>
 			<data>
-			NnUrBl/gR489arsLycij19lFdXnBcYK2NnUERA0vzys=
+			i+2YEDUzI0/8npW/U+DPENurLt50j3II+w1SZ1qtUUI=
 			</data>
 		</dict>
 		<key>Headers/CRLocation.h</key>
@@ -839,11 +854,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			duOQTTwOuXLjH5X8LYb2u7kU7mo=
+			0OgE1B4k/HsDn9l1T131bxmFK9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			QfXWuWClTHhSZr99hecXMReOY8GkdzZIvCoQrYzeQH8=
+			b463epFjx5jdrxOO4DEhTK2eLq2bmyE3YHYFbMKxzKg=
 			</data>
 		</dict>
 		<key>Headers/CRMessage.h</key>
@@ -905,77 +920,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WrxP1njP/SgA/o2oHEXIMFAyy+Q=
+			fu/AHVKxKnPUKbxV4gwD8DaSwvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			E1G1ZHfp8hcNlVgAZzkkQ+6SaIZoeC98yHNdUbd8vLY=
+			Soh1FK/JSGJBQSFSWBZJ06XN/advR0HYRDMAZmljbuI=
 			</data>
 		</dict>
 		<key>Headers/CRMicrosoftAzure.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tK7ylxTtmUA7bzp6SP4bawJtKFo=
+			+CIRZsC6YUXk1InUlGtul1II1AI=
 			</data>
 			<key>hash2</key>
 			<data>
-			hFTf/BFU6h44UkbtJo2JSg/yk//EpjwIE97D4abT9oc=
+			iq2A6FGtDFXRL3ECq4iA49jr394IyvHEMzW/PAnAsh8=
 			</data>
 		</dict>
 		<key>Headers/CRMicrosoftLive.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pcyeEdB7Kjb8L8jPznxd+gaUZSc=
+			scRCIqnokUW9/2tPdl2UdxQobGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8ao0SJ6UgVqsQ/Kz2+w6OYib6FEgXOZe9TZ1GrMWUcg=
+			ZTHeVTapzm7xNaP+n7meFDfgMftIBanEqlPETYS/70s=
 			</data>
 		</dict>
 		<key>Headers/CRNexmo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			23ekekBk1pMTgoeCwUCC0KkEWkg=
+			4ghruXFZR6h3Wh6v1PwghDT/buw=
 			</data>
 			<key>hash2</key>
 			<data>
-			oNOaKBLNcOVTTiD9zXemxICySi9QMJdUnF5V3YiFKuI=
+			Y/2tEIUiyQHX9yMIEytVIcp3BbqveoHzo7+PBSs5aAc=
 			</data>
 		</dict>
 		<key>Headers/CROneDrive.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xBoZ0ltGDrFsrb35+UKbw7R9Bbg=
+			avmLFJl0/jU/nl2wIQG4MD3MQ5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			18gO8Q8QUjQQ5DxWS9VbCqekhPfJ31GbQML1G56DM+4=
+			wXfHdNFdsVF1B1eJmcBGbcR7rCOPZIrU63HB0d2aQeg=
 			</data>
 		</dict>
 		<key>Headers/CROneDriveBusiness.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			awl1jZOJqQjYxas1auyInznatF0=
+			hBD8Oyh5cqDArs/RNtIIYC1Gnx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			yR+RvktdJj+dX1OZgE3Tlam+nobCyP+n+dGsT89ZhVE=
+			Aji2SfM/6XgVBplcK0H4DdHKwDkolqjj4GTdPFSsuTo=
 			</data>
 		</dict>
 		<key>Headers/CRPCloud.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o8gSgJ6/YZH7P9yyO/Hq/XxFmns=
+			kW2d6ArdZSAa7Zi+8EtXE6gCCMs=
 			</data>
 			<key>hash2</key>
 			<data>
-			IebRs15HVqdVAbFXURp4DBbpA75T1DIRdZsHXstOYkg=
+			huNu76zZUO8iYeQP2jll4Wti2YM07UK0AYDvtWz5+WQ=
 			</data>
 		</dict>
 		<key>Headers/CRPOI.h</key>
@@ -993,11 +1008,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fhdKvu6MgDS3LkKvDiD9bnYiRIA=
+			sakLhWT0g23OYlBTvuE0/SU9ScQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			4bpGRF/ex654APEn3OGDkNCCG/WGRYTlVTzHPbDRNGk=
+			qY2zaPRPytDjWp9aZ/x6w9k8cHk6Ov4mMczNt5Otu7A=
 			</data>
 		</dict>
 		<key>Headers/CRPaymentProtocol.h</key>
@@ -1037,11 +1052,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			29Dx9SITXcdd91y4aF3X3z7O1g4=
+			RTX4xNbL2tpa71qiOZnDQTM7OoY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZW1jvDw4UmIBNsTHA4sr31nmHtqg1trz8kQU//4qX1M=
+			DV3exk5klfJCth3IsFPnBEzK0z8TAiSEthAHuPiGmFc=
 			</data>
 		</dict>
 		<key>Headers/CRProfileProtocol.h</key>
@@ -1059,11 +1074,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mKceOw+NLmpU6K9ciU5SDK43/9I=
+			hsch1Ql7v6hX8egpHJa/bidXSDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			BLuRR8hy8sNNaalGHdUJ6KIxXK3KYBfNnGmidzQXo6Y=
+			Un9Vn+zixps9AQ+nYZvv7AnQlVPAvTZuBZvI9A+57Vg=
 			</data>
 		</dict>
 		<key>Headers/CRRefund.h</key>
@@ -1103,33 +1118,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eApfBhA3KNenS/TUQ5ENrQ2K2Sg=
+			wiA/WMX8ocgrb7E1zJay6CpC2PM=
 			</data>
 			<key>hash2</key>
 			<data>
-			/YHs7NI90OHrOL+2i6rPWUQ0iWlNa6XVFjS1mCTZA1c=
+			Afl+oyfzb8D4ZAt7n3jij9eRDQtxVUQlB387X5jWeWk=
 			</data>
 		</dict>
 		<key>Headers/CRSlack.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EKmo8xvAPsS2k1APJbyVs44bbhQ=
+			iId90Q38wwMIV0Q9gUPpr47qrkg=
 			</data>
 			<key>hash2</key>
 			<data>
-			boAqivkXg3aOeczxSkc9+69MQergc+qxvECIaklpRiA=
+			5nQlrg5iowztz6jGh08l1YPl/Q8rHbyo92UIciZSDkM=
 			</data>
 		</dict>
 		<key>Headers/CRSlackBot.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OH1zWCCsFmAphkcJwx4NH3v80bQ=
+			jUcVr43vnvHWcoVpVGJ/lZowGMg=
 			</data>
 			<key>hash2</key>
 			<data>
-			t+V8KzdcegwhwX5SI7XvDdTVM6qZuU3FEFO81L7m1Qc=
+			zDmn1L8aB1pJPREboSegQXVrOyHUoBgeb+Z92UvdLz0=
 			</data>
 		</dict>
 		<key>Headers/CRSocialProtocol.h</key>
@@ -1158,11 +1173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FVwppYF5OOkTZkKPnGSDDZI8M4Q=
+			bYDHQ0Ty67lD1oNDCKsiW6WtDog=
 			</data>
 			<key>hash2</key>
 			<data>
-			GsA1QQt33NQy+zAk/dcNEYJV238Mnja0AaGAeb0oJXE=
+			Q/i5fXMgk01afMW2R2x6BlQksmyVEAMbWBTGe9pQbFY=
 			</data>
 		</dict>
 		<key>Headers/CRSubscription.h</key>
@@ -1191,77 +1206,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QogcDo0wgj6a5+erqY66nqddVBk=
+			RwQXsPV5eolKUzJPPjdhgyZYWaY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4nsCAcoqSdYsCabcg3w/vixSRoP75rc53H6mR3EEGQ8=
+			81+AW6acRaiG88BhHfoJ0yS2LGsoIsklPWtn3kf61ww=
 			</data>
 		</dict>
 		<key>Headers/CRTwilio.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bif6GxZvKZKdd+i+5nVC2AIdbO0=
+			fajOXlSEHVoYGFnOLxeGecA6M9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			3YAXOphm5Fqnt2UKUPxcHUYZ8hlGAQ1/2NOQldRxC2Q=
+			R9eu3oHkfhxulNx8BXLKV8cCPNgkURrDZe3sk09dqTU=
 			</data>
 		</dict>
 		<key>Headers/CRTwitch.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cbbYsyz9orEnPcB/MVbuZU1ShlA=
+			mani9ex05VlR7i+gP/RCWz/vphg=
 			</data>
 			<key>hash2</key>
 			<data>
-			sShDlp9/nOAwZ398g19e8M4EKv3D5LU0glu/OSrTgRw=
+			V72pRFRdlOlcfI9ay2U5lk2ZKIiFHxF5vj0DrirO6VY=
 			</data>
 		</dict>
 		<key>Headers/CRTwitter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nnALViRzWWbaLF/bdR+vjEB/A7s=
+			VvRVSnLXldmyzYl8SFT8tpGH2XI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jfY8QQ1/g5xQO168NwvK63dvtXwUsxi2Mca3Zap2MRA=
+			eb23puw/W/o0hC6JanQMWU/EFrj6ca/EV68UDQRlvuY=
 			</data>
 		</dict>
 		<key>Headers/CRTwizo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aw0sJnY2OWmfNVaeDxMUXxMhWUo=
+			YCT/I7UT1W0NvTKDOdNThucW1UE=
 			</data>
 			<key>hash2</key>
 			<data>
-			kWcAsCUUeBg0x6wNhYJg/Td1d3qwFC51LqoA/z9ZynQ=
+			TNe+Pgx0L4wBKT91e6MVj75HuhRyiDL6d0VaT92ify8=
 			</data>
 		</dict>
 		<key>Headers/CRUploadProgressDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gGYLVFMaHayArhfZo4ZjVn+aZjQ=
+			1PKob3F/N6WxIpnf3kN5y24c48I=
 			</data>
 			<key>hash2</key>
 			<data>
-			CQFQoqAcLkEGtQp47VxbOl9MUhaWFHbrYSfOD3tGlZI=
+			TS6vr1/YPWVQNCzsG8PXdCSyZVfGrz6z87ZQDW5OWXk=
 			</data>
 		</dict>
 		<key>Headers/CRViber.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ReFynezIvS690uejzpnUODF6FdY=
+			yzrzLMzeW3mpxLxZ1p3HW7ayifM=
 			</data>
 			<key>hash2</key>
 			<data>
-			39aVBdZRJpPxbwI4KdzmQ64xRNEBKDmXkRvgzQOJmuE=
+			YIfw0yQzgzyrT1h4P8wmYKMVIyWwHSpglh8dmz82XQQ=
 			</data>
 		</dict>
 		<key>Headers/CRVideoMetaData.h</key>
@@ -1290,66 +1305,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eBM5nV2tbR/XCtVArp7Q+8N3ktE=
+			ex5ohg2eZm6wtiJVkFpdlHhE72E=
 			</data>
 			<key>hash2</key>
 			<data>
-			svaA0zbyLUOg0IbmerAvDYvoYLi1xVRx9sOnnq2WFAA=
+			ELZIrlrV3gnu0srAzi1S526H3dosdvEGWOzL4IlFO+8=
 			</data>
 		</dict>
 		<key>Headers/CRYahoo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bdc4HW8P+z02pDupPkSw64Vf14Q=
+			+e675OoDyWlG77BLw9rZsnkcOuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			nemWMQLI1rPn4bI5k66oAmlTLl8RX0BJtCgpzdRzfLA=
+			WjOHkubogUC49w+I7ZSl3DDRG5OU5Qq33911d38bDzE=
 			</data>
 		</dict>
 		<key>Headers/CRYelp.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h+41SORYDxkxc8EbEefSDlg5T5E=
+			OpdcE0uk1oTcore5k5Umb5ZSQas=
 			</data>
 			<key>hash2</key>
 			<data>
-			oW5ormSKN0MY7metxpcpsa7rofG3hb2hbS77i8ZyVd4=
+			cI0DB12/JgNGITAGExDYzGvBQWKCsLZvCpH4ZKzQZek=
 			</data>
 		</dict>
 		<key>Headers/CRYouTube.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ek7UzFhe5x5X2+clGNgYYAuKzzg=
+			Gawxuy3XD0SrOakqDP35flNpBJw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tsd/JkvAdS/94kbksEUILtOGPA4Qu3DmF3fIILL3PsM=
+			zh7JRnn9C0tIObNxeYWQbNoMGMUlRALhLGRVsWDNm5s=
 			</data>
 		</dict>
 		<key>Headers/CloudRailSI.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JC0UyC/g3YNDrmeyH/FEtXuGXn0=
+			T/tiNXzC/RDyuhnDDAMztptTHd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ivkcnS3gXnWEe6JDoK2PSKSIEpbZCK0MKGSapAswa9s=
+			YExntfBV8gBj12q2l7tcrvsqTNn7cE+db0fJJtov04Y=
 			</data>
 		</dict>
 		<key>Headers/CloudrailSI-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zqVKmBRQTtKTYycXOs37ddP1vpo=
+			INpwxXvFoDpZgqxn+82PlT/5JAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			PG+8OQh082ySNIi+wGvxDxbYRga7My+UNmWIzcw9c+s=
+			WzBMcl5Q9pEUuDxPuJluE5hEQenVuwKh+NyxwLmGTOw=
 			</data>
 		</dict>
 		<key>Headers/CustomStream.h</key>
@@ -1389,44 +1404,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jkQI3uin/U7DgtZ8062GfwY/PSs=
+			WN+ldJfMmyWwDMOiVt3vc/vWXN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Jc8eEP5w1X0wL0cNbL0ZzoOYAKaPUdy+8zsFvq38C8=
+			tlCZIn7caqTqFRMK5NND9dCVZLQCuoOexY0YtTTj7Rk=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O48PZ9DUQj5nGRP3YZloBZ1mYOw=
+			03wKOWXwhWQ1nDoegVNvE6MwGAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			mKFgU3u5pGphG1wX96tcP01HhVRL2vyUfbwVFbQky5c=
+			Pdq4Cb03ae8mlz3aon3AaRnvmCeCcb8wbEpW3rZwQn0=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hhVWt1pdI7qWefGe/uArmDVPXZA=
+			2nGqVPcn4WrqQL6CvWUapjsr0+8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TzTepjZo/MwpDXV8DA/m7akj3KAJUTrftj77LiyNz5U=
+			eegg3jQgHMEIOThtsy2i/XzjeZU62BxOzlF+TuvM7Ko=
 			</data>
 		</dict>
 		<key>Modules/CloudrailSI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n2W8PjoB9KBkjYb3mSEr6Bp9L0c=
+			lehJqPmnxrwrLf5d2najGyvUZtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+XrhZ4ajjzw1d+iwCl3hkSyT3psi6UEANL7GMLdXUdw=
+			ulaV1SbuoorOkg+QPfgngZgjpJ7wgmPiYILihGk7muw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

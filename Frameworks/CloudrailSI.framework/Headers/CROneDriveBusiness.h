@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "CRCloudStorageProtocol.h"
 #import "CRAdvancedRequestSupporterProtocol.h"
-
+#import "CRAuthenticationDelegate.h"
 @interface CROneDriveBusiness : NSObject <CRCloudStorageProtocol, CRAdvancedRequestSupporterProtocol>
 @property (weak, nonatomic) id target;
 
@@ -15,5 +15,5 @@
 -(void)useAdvancedAuthentication;
 -(NSString *) saveAsString;
 -(void) loadAsString:(NSString*) savedState;
-
+-(void) setAuthDelegate:(id<CRAuthenticationDelegate>)delegate;
 @end

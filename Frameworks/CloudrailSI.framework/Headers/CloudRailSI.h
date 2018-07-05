@@ -114,13 +114,16 @@ FOUNDATION_EXPORT const unsigned char CloudRailSIString[];
 #import <CloudRailSI/CRAdvancedRequestResponse.h>
 #import <CloudRailSI/CRAdvancedRequestSpecification.h>
 #import <CloudRailSI/CustomStream.h>
-#import <CloudRailSI/CRUploadProgressDelegate.h>
 #import <CloudRailSI/CRVideoMetaData.h>
 #import <CloudRailSI/CRChannelMetaData.h>
 #import <CloudRailSI/CRMessage.h>
 #import <CloudRailSI/CRMessagingAttachment.h>
 #import <CloudRailSI/CRMessageItem.h>
 #import <CloudRailSI/CRMessageButton.h>
+
+#pragma mark - Helper Protocols
+#import <CloudRailSI/CRAuthenticationDelegate.h>
+#import <CloudRailSI/CRUploadProgressDelegate.h>
 
 #pragma mark - Swift Helpers
 #import <CloudRailSI/CRError.h>

@@ -11,5 +11,6 @@
 @protocol CRUploadProgressDelegate <NSObject>
 
 -(void) didUploadBytes:(long) bytes;
-
+@optional
+-(BOOL) didCancelUpload;
 @end

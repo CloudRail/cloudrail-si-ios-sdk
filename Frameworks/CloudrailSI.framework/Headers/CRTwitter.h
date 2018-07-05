@@ -3,7 +3,7 @@
 #import "CRProfileProtocol.h"
 #import "CRSocialProtocol.h"
 #import "CRAdvancedRequestSupporterProtocol.h"
-
+#import "CRAuthenticationDelegate.h"
 @interface CRTwitter : NSObject <CRProfileProtocol, CRSocialProtocol, CRAdvancedRequestSupporterProtocol>
 @property (weak, nonatomic) id target;
 
@@ -16,5 +16,5 @@
 -(void)useAdvancedAuthentication;
 -(NSString *) saveAsString;
 -(void) loadAsString:(NSString*) savedState;
-
+-(void) setAuthDelegate:(id<CRAuthenticationDelegate>)delegate;
 @end
