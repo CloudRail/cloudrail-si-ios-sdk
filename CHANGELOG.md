@@ -1,6 +1,11 @@
 # Change Log
+## [5.12.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.12.1) (2018-07-11)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.12.0...5.12.1)
 
-## [5.12.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.11.3) (2018-07-05)
+* Fixed bug that freezes during advanced authentication
+* Minor Bug fixes
+
+## [5.12.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.12.0) (2018-07-05)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.11.3...5.12.0)
 
 * Updated to swift 4.1.2
