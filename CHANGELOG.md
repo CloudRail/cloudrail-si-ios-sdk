@@ -1,4 +1,12 @@
 # Change Log
+
+## [5.13.0](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.13.0) (2018-09-23)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.12.1...5.13.0)
+
+* Updated with new compiler. (Swift 4.2)
+* Bug fixes related to rootId in GoogleDrive
+* Bug fixes in backblaze
+
 ## [5.12.1](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/5.12.1) (2018-07-11)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/5.12.0...5.12.1)
 
